@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Диана Павлова](https://up.htmlacademy.ru/adaptive/28/user/2189703).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
