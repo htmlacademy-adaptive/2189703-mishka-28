@@ -1,0 +1,66 @@
+{
+	"projectName": "Мишка",
+	"pages": [
+		{
+			"path": "index.html",
+			"name": "Главная"
+		},
+		{
+			"path": "catalog.html",
+			"name": "Каталог"
+		},
+		{
+			"path": "form.html",
+			"name": "Форма"
+		}
+	],
+	"viewports": {
+		"desktop": 1150,
+		"tablet": 768,
+		"mobile": null
+	},
+	"images": {
+		"map": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 527,
+					"height": 457
+				},
+				{
+					"viewport": "tablet",
+					"width": 768,
+					"height": 457
+				},
+				{
+					"viewport": "mobile",
+					"width": 320,
+					"height": 454
+				}
+			]
+		},
+		"test": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 1150,
+					"height": 500
+				},
+				{
+					"viewport": "tablet",
+					"width": 768,
+					"height": 400
+				},
+				{
+					"viewport": "mobile",
+					"width": 320,
+					"height": 300
+				}
+			]
+		}
+	}
+}

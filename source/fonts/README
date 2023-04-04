@@ -1,1 +1,12 @@
-Папка для шрифтов.
+# Папка для шрифтов
+
+Структура файлов:
+
+```bash
+./
+├── opensans-bold.woff
+├── opensans-bold.woff2
+├── opensans-regular.woff
+├── opensans-regular.woff2
+└── README
+```
