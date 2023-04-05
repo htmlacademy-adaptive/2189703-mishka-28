@@ -1,4 +1,4 @@
-# Личный проект «Cat Energy»
+# Личный проект «Мишка»
 
 [![Project check][check-image]][check-url]
 

@@ -3,7 +3,60 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент страницы каталога
+<main class="catalog">
+	<h1 class="catalog_title">Каталог товаров</h1>
+	<section class="catalog__cards cards">
+		<div class="cards__wrapper page__centerer">
+			<h2 class="cards__title visually-hidden">Карточки товаров.</h2>
+			<ul class="cards__list">
+				<li class="cards__item card">
+					<a class="card__link" href="#">
+						<img class="card__img photo" src="../source/img/catalog/bunny-mobile.jpg" width="260" height="195" alt="Фотография вязаного зайчика.">
+						<h3 class="card__caption caption">Зайчик-попрыгайчик</h3>
+					</a>
+					<p class="card__description description">Рост 30 см, вес 200 г</p>
+					<p class="card__price price">1 200 руб.</p>
+					<button class="card__button cart" type="button">
+						<span class="visually-hidden">Добавить в корзину.</span>
+					</button>
+				</li>
+				<li class="cards__item card">
+					<a class="card__link" href="#">
+						<img class="card__img photo" src="../source/img/catalog/basket-mobile.jpg" width="260" height="195" alt="Фотография вязаной корзинки.">
+						<h3 class="card__caption caption">Корзинка для белья</h3>
+					</a>
+					<p class="card__description description">Диаметр 15 см, высота 10 см</p>
+					<p class="card__price price">690 руб.</p>
+					<button class="card__button cart" type="button">
+						<span class="visually-hidden">Добавить в корзину.</span>
+					</button>
+				</li>
+				<li class="cards__item card">
+					<a class="card__link" href="#">
+						<img class="card__img photo" src="../source/img/catalog/bigbasket-mobile.jpg" width="260" height="195" alt="Фотография большой вязаной корзины с игрушками.">
+						<h3 class="card__caption caption">Большая корзинкадля игрушек</h3>
+					</a>
+					<p class="card__description description">Диаметр 30 см, высота 30 см</p>
+					<p class="card__price price">1 500 руб.</p>
+					<button class="card__button cart" type="button">
+						<span class="visually-hidden">Добавить в корзину.</span>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="catalog_video video">
+		<div class="video__wrapper page__centerer">
+			<h2 class="video__title">Процесс производства</h2>
+			<div class="video__player">
+				<img class="video__player-img" src="../source/img/catalog/video-mobile.jpg" width="260" height="150" alt="Заставка для видео в виде корзинки.">
+				<button class="video__player-button" type="button">
+					<span class="visually-hidden">Запуск видео-плэйера.</span>
+				</button>
+			</div>
+			<p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+			<button class="video_button button" type="button">Сделать заказ</button>
+		</div>
+	</section>
 </main>
 {% endblock %}
