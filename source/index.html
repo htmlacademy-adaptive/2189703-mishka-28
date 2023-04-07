@@ -9,27 +9,26 @@
 	</h1>
 	<img class="main-img" src="../source/img/hero-mobile.jpg" width="320" height="283" alt="Фотография примеров разных изделий ручной работы.">
 	<nav class="main-nav">
-		<a class="main-nav__interior">
+		<a class="main-nav__link main-nav__interior">
 			<div class="main-nav__wrapper">
 				Предметы интерьера
 			</div>
 		</a>
-		<a class="main-nav__toys">
+		<a class="main-nav__link main-nav__toys">
 			<div class="main-nav__wrapper">
 				Детские игрушки
 			</div>
 		</a>
 	</nav>
-
 	<section class="card">
 		<div class="card__wrapper page__centerer">
-			<div class="card__position">
+			<div class="card__slogan">
 				<h2 class="card__title">Вязаные корзинки</h2>
 				<h3 class="card__subtitle">Товар недели</h3>
 			</div>
-			<p class="card__description">
+			<div class="card__description">
 				Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
-			</p>
+			</div>
 			<dl class="card__form">
 				<dt class="card__feature">Цвет:</dt>
 				<dd class="card__value">тиффани/серый</dd>
@@ -40,19 +39,19 @@
 			</dl>
 			<img class="card__img" src="../source/img/triple-set-mobile.jpg" width="260"  height="315" alt="Фотография трех вязанных корзинок.">
 			<span class="card__cost">Цена: 990 руб.</span>
-			<button class="card__button button" type="button">Заказать</button>
+			<a class="card__button button" href="#">Заказать</a>
 		</div>
 	</section>
 	<section class="advantages">
 		<div class="advantages__wrapper page__centerer">
 			<h2 class="advantages__title">Коротко о нас:</h2>
 		<ul class="advantages__list">
-			<li class="advantages__item advantages__item--eco">Экологически чистые материалы</li>
-			<li class="advantages__item advantages__item--stile">Скандинавский стиль по российской цене</li>
-			<li class="advantages__item advantages__item--like">Увеличивает лайки на фотографиях</li>
-			<li class="advantages__item advantages__item--hand">Связано вручную с любовью и умилением</li>
-			<li class="advantages__item advantages__item--support">Поддержка отечественного производителя</li>
-			<li class="advantages__item advantages__item--box">Поставляется в подарочной упаковке</li>
+			<li class="advantages__item">Экологически чистые материалы</li>
+			<li class="advantages__item">Скандинавский стиль по российской цене</li>
+			<li class="advantages__item">Увеличивает лайки на фотографиях</li>
+			<li class="advantages__item">Связано вручную с любовью и умилением</li>
+			<li class="advantages__item">Поддержка отечественного производителя</li>
+			<li class="advantages__item">Поставляется в подарочной упаковке</li>
 		</ul>
 		</div>
 	</section>
@@ -60,30 +59,45 @@
 		<div class="reviews__wrapper page__centerer">
 				<h2 class="reviews__title">Отзывы</h2>
 			<div class="reviews__list">
-				<blockquote class="reviews__item reviews__item--current">
-					<p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как 	у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-					<span class="reviews__author-name">Анастасия Красильникова</span>
-					<span class="reviews__author-email">@misssssiskras</span>
-				</blockquote>
+				<figure class="reviews__item">
+					<blockquote class="reviews__text">
+						Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как 	у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+					</blockquote>
+					<figcaption class="reviews__author">
+						Анастасия Красильникова
+						<a href="#">@misssssiskras</a>
+					</figcaption>
+				</figure>
 			</div>
 			<div class="reviews__list">
-				<blockquote class="reviews__item">
-					<p class="reviews__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+				<figure class="reviews__item">
+					<blockquote class="reviews__text">
+						Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
 						и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-						больше лайков!</p>
-					<span class="reviews__author-name">Екатерина Красильникова</span>
-					<span class="reviews__author-email">@misssssiskras2</span>
-				</blockquote>
+						больше лайков!
+					</blockquote>
+					<figcaption class="reviews__author">
+						Екатерина Красильникова						<a href="#">@misssssiskras2</a>
+					</figcaption>
+				</figure>
 			</div>
 			<div class="reviews__list">
-				<blockquote class="reviews__item reviews__item--active">
-					<p class="reviews__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров 	и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-					<span class="reviews__author-name">Елена Красильникова</span>
-					<span class="reviews__author-email">@misssssiskras3</span>
-				</blockquote>
+				<figure class="reviews__item">
+					<blockquote class="reviews__text">
+						Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров 	и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+					</blockquote>
+					<figcaption class="reviews__author">
+						Елена Красильникова						<a href="#">@misssssiskras3</a>
+					</figcaption>
+				</figure>
 			</div>
-			<button class="reviews__toogle reviews__toogle--before"></button>
-			<button class="reviews__toogle reviews__toogle--after"></button>
+			<button class="reviews__toogle">
+				<span class="visually-hidden">Предыдущий отзыв</span>
+			</button>
+			<button class="reviews__toogle">
+				<span class="visually-hidden">Следующий отзыв</span>
+			</button>
+			<a class="reviews__write" href="#">Написать</a>
 		</div>
 	</section>
 	<section class="contacts">
@@ -93,10 +107,10 @@
 				<span class="contacts__email-label">e-mail:</span>
 				<span class="contacts__email-email">info@mimimishkashop.ru</span>
 			</p>
-			<address class="contacts__address">
+			<p class="contacts__address">
 				<span class="contacts__address-label">адрес:</span>
-				<span class="contacts__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</span>
-			</address>
+				<address class="contacts__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
+			</p>
 		</div>
 		<img class="contacts__img" src="../source/img/map-mobile.jpg" width="320" height="455" alt="Поисково-информационная карта.">
 		<button class="contacts__write page__centerer" type="button">Напишите нам</button>
