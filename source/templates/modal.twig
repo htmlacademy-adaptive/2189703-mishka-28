@@ -1,17 +1,22 @@
 <div class="modal">
-	<button class="modal__close" type="button">
-		<span class="visually-hidden">Закрыть</span>
-	</button>
-	<section class="modal__content">
-		<div class="modal__wrapper page__centerer">
-			<h2 class="modal__title">Добавить в корзину</h2>
-		<span class="modal__text">Выберите размер</span>
-		<button class="modal__button" type="button">S</button>
-		<button class="modal__button" type="button">M</button>
-		<button class="modal__button" type="button">L</button>
-		<button class="madal__button-button button" type="button">Добавить</button>
-		</div>
-
-	</section>
+	<dialog class="modal__dialog" open>
+		<button class="modal__close" type="button">
+			<span class="visually-hidden">Закрыть</span>
+		</button>
+		<form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+			<fieldset class="modal__wrapper page__centerer">
+					<legend class="modal__title">Добавить в корзину</legend>
+				<span class="modal__text">Выберите размер</span>
+				<label class="modal__label" for="s">S</label>
+				<input class="modal__radio" type"radio" name="size" id="s" value="s">
+				<label class="modal__label" for="m">M</label>
+				<input class="modal__radio" type"radio" name="size" id="m" value="m">
+				<label class="modal__label" for="l">L</label>
+				<input class="modal__radio" type"radio" name="size" id="l" value="l">
+				<input class="modal__vendor-code" type="hidden" name="vendor-code">
+				<button class="madal__button-button button" type="submit">Добавить</button>
+			</fieldset>
+		</form>
+	</dialog>
 
 </div>
