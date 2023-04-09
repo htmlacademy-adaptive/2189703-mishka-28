@@ -1,0 +1,9 @@
+.heading {
+	@include list-reset;
+	text-align: center;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #000000;
+	background-color: #f1f1f1;
+}

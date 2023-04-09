@@ -1,0 +1,31 @@
+.card__img {
+	margin-bottom: 28px;
+}
+
+.card__caption {
+	@include list-reset;
+	padding-left: 25px;
+	margin-bottom: 6px;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #000000;
+}
+
+.card__description {
+	padding-left: 25px;
+	font-size: 13px;
+	line-height: 30px;
+	margin-bottom: 17.5px;
+}
+
+.card__price {
+	width: 204px;
+	padding-top: 22.5px;
+	padding-bottom: 28.5px;
+	padding-left: 25px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #000000;
+}

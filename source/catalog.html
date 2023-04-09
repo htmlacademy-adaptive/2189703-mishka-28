@@ -4,8 +4,9 @@
 
 {% block main %}
 <main class="catalog">
-	<h1 class="catalog_title">Каталог товаров</h1>
-	<section class="catalog__cards cards">
+	<div class="catalog__wrapper page__centerer">
+		<h1 class="catalog_title heading">Каталог товаров</h1>
+	<section class="catalog__cards cards page__centerer">
 		<div class="cards__wrapper page__centerer">
 			<h2 class="cards__title visually-hidden">Карточки товаров.</h2>
 			<ul class="cards__list">
@@ -34,7 +35,7 @@
 				<li class="cards__item card">
 					<a class="card__link" href="#">
 						<img class="card__img photo" src="./img/catalog/bigbasket-mobile.jpg" width="260" height="195" alt="Фотография большой вязаной корзины с игрушками.">
-						<h3 class="card__caption caption">Большая корзинкадля игрушек</h3>
+						<h3 class="card__caption caption">Большая корзинка <br> для игрушек</h3>
 					</a>
 					<div class="card__description description">Диаметр 30 см, высота 30 см</div>
 					<div class="card__price price">1 500 руб.</div>
@@ -45,7 +46,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="catalog_video video">
+	<section class="catalog_video video page__centerer">
 		<div class="video__wrapper page__centerer">
 			<h2 class="video__title">Процесс производства</h2>
 			<div class="video__player">
@@ -58,5 +59,7 @@
 			<a class="video_button button" href="#">Сделать заказ</a>
 		</div>
 	</section>
+	</div>
+
 </main>
 {% endblock %}

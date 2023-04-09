@@ -3,48 +3,51 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main class="main-conteiner">
-	<h1 class="main-title">
-		Милые штуки ручной работы для дома
-	</h1>
-	<img class="main-img" src="./img/hero-mobile.jpg" width="320" height="283" alt="Фотография примеров разных изделий ручной работы.">
-	<nav class="main-nav">
-		<a class="main-nav__link main-nav__interior">
-			<div class="main-nav__wrapper">
-				Предметы интерьера
+<main class="main-conteiner main">
+	<div class="main__wrapper page__centerer">
+		<h1 class="main-title heading">
+			Милые штуки ручной работы для дома
+		</h1>
+		<img class="main-img" src="./img/hero-mobile.jpg" width="320" height="283" alt="Фотография примеров разных изделий ручной работы.">
+		<nav class="main-nav">
+			<a class="main-nav__link main-nav__interior" href="#">
+				<div class="main-nav__wrapper">
+					Предметы интерьера
+				</div>
+			</a>
+			<a class="main-nav__link main-nav__toys">
+				<div class="main-nav__wrapper">
+					Детские игрушки
+				</div>
+			</a>
+		</nav>
+	</div>
+
+	<section class="product">
+		<div class="product__wrapper page__centerer">
+			<div class="product__slogan">
+				<h2 class="product__title headline">Вязаные корзинки</h2>
+				<h3 class="product__subtitle">Товар недели</h3>
 			</div>
-		</a>
-		<a class="main-nav__link main-nav__toys">
-			<div class="main-nav__wrapper">
-				Детские игрушки
-			</div>
-		</a>
-	</nav>
-	<section class="card">
-		<div class="card__wrapper page__centerer">
-			<div class="card__slogan">
-				<h2 class="card__title">Вязаные корзинки</h2>
-				<h3 class="card__subtitle">Товар недели</h3>
-			</div>
-			<div class="card__description">
+			<div class="product__description">
 				Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
 			</div>
-			<dl class="card__form">
-				<dt class="card__feature">Цвет:</dt>
-				<dd class="card__value">тиффани/серый</dd>
-				<dt class="card__feature">Диаметр:</dt>
-				<dd class="card__value">25 см</dd>
-				<dt class="card__feature">Высота:</dt>
-				<dd class="card__value">15 см</dd>
+			<dl class="product__form">
+				<dt class="product__feature">Цвет:</dt>
+				<dd class="product__value">тиффани/серый</dd>
+				<dt class="product__feature">Диаметр:</dt>
+				<dd class="product__value">25 см</dd>
+				<dt class="product__feature">Высота:</dt>
+				<dd class="product__value">15 см</dd>
 			</dl>
-			<img class="card__img" src="./img/triple-set-mobile.jpg" width="260" height="315" alt="Фотография трех вязанных корзинок.">
-			<span class="card__cost">Цена: 990 руб.</span>
-			<a class="card__button button" href="#">Заказать</a>
+			<img class="product__img" src="./img/triple-set-mobile.jpg" width="260" height="315" alt="Фотография трех вязанных корзинок.">
+			<span class="product__cost">Цена: 990 руб.</span>
+			<a class="product__button button" href="./templates/modal.twig">Заказать</a>
 		</div>
 	</section>
 	<section class="advantages">
 		<div class="advantages__wrapper page__centerer">
-			<h2 class="advantages__title">Коротко о нас:</h2>
+			<h2 class="advantages__title headline">Коротко о нас:</h2>
 			<ul class="advantages__list">
 				<li class="advantages__item">Экологически чистые материалы</li>
 				<li class="advantages__item">Скандинавский стиль по российской цене</li>
@@ -57,7 +60,7 @@
 	</section>
 	<section class="reviews">
 		<div class="reviews__wrapper page__centerer">
-			<h2 class="reviews__title">Отзывы</h2>
+			<h2 class="reviews__title headline">Отзывы</h2>
 			<div class="reviews__list">
 				<figure class="reviews__item">
 					<blockquote class="reviews__text">
@@ -65,7 +68,7 @@
 					</blockquote>
 					<figcaption class="reviews__author">
 						Анастасия Красильникова
-						<a href="#">@misssssiskras</a>
+						<a class="reviews__link" href="#">@misssssiskras</a>
 					</figcaption>
 				</figure>
 			</div>
@@ -78,7 +81,7 @@
 					</blockquote>
 					<figcaption class="reviews__author">
 						Екатерина Красильникова
-						<a href="#">@misssssiskras2</a>
+						<a class="reviews__link" href="#">@misssssiskras2</a>
 					</figcaption>
 				</figure>
 			</div>
@@ -89,7 +92,7 @@
 					</blockquote>
 					<figcaption class="reviews__author">
 						Елена Красильникова
-						<a href="#">@misssssiskras3</a>
+						<a class="reviews__link" href="#">@misssssiskras3</a>
 					</figcaption>
 				</figure>
 			</div>
@@ -102,19 +105,20 @@
 			<a class="reviews__write" href="#">Написать</a>
 		</div>
 	</section>
-	<section class="contacts">
+	<section class="contacts page__centerer">
 		<div class="contacts__wrapper page__centerer">
-			<h2 class="contacts__title">Контакты</h2>
-			<p class="contacts__email">
+			<h2 class="contacts__title headline">Контакты</h2>
+			<div class="contacts__email">
 				<span class="contacts__email-label">e-mail:</span>
 				<span class="contacts__email-email">info@mimimishkashop.ru</span>
-			</p>
-			<p class="contacts__address">
+			</div>
+			<div class="contacts__address">
 				<span class="contacts__address-label">адрес:</span>
-			<address class="contacts__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
-			</p>
+				<address class="contacts__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
+			</div>
 		</div>
 		<img class="contacts__img" src="./img/map-mobile.jpg" width="320" height="455" alt="Поисково-информационная карта.">
+{# Здесь, наверное, тоже будет ссылка вместо кнопки #}
 		<button class="contacts__write page__centerer" type="button">Напишите нам</button>
 	</section>
 </main>

@@ -1,0 +1,86 @@
+.form__wrapper {
+	width: 260px;
+}
+
+.form__fieldset {
+	@include list-reset;
+	border: none;
+}
+
+.form__style-legend {
+	margin-bottom: 25px;
+}
+
+
+.form__style-label {
+	display: block;
+	padding-left: 61px;
+	margin-bottom: 43px;
+}
+
+.form__color-legend {
+	margin-bottom: 25px;
+}
+
+.form__color-label {
+	display: block;
+	padding: 10px 0 10px 61px;
+	margin-bottom: 23px;
+}
+
+.form__login-legend {
+	padding-top: 10px;
+	margin-bottom: 29px;
+}
+
+.form__login-label {
+	display: block;
+	margin-bottom: 17px;
+}
+
+.form__tel-legend {
+	display: block;
+	padding-top: 17px;
+}
+
+.form__tel-tel {
+	@include input-placeholder;
+	width: 260px;
+	padding-top: 14px;
+	padding-bottom: 19px;
+	margin-bottom: 34.5px;
+	border: none;
+	border-bottom: 2px solid #000000;
+}
+
+.form__email-legend {
+	display: block;
+}
+
+.form__email-email {
+	@include input-placeholder;
+	width: 260px;
+	padding-top: 16px;
+	padding-bottom: 18px;
+	margin-bottom: 53px;
+	border: none;
+	border-bottom: 2px solid #000000;
+}
+
+.form__extra-extra {
+	@include input-placeholder;
+	width: 260px;
+	padding: 17px;
+	margin-bottom: 2px;
+	border: 2px solid #444444;
+}
+
+.form__extra-legend {
+	display: block;
+	margin-bottom: 22.5px;
+}
+
+.form__button {
+	margin-top: 15px;
+	margin-bottom: 55px;
+}

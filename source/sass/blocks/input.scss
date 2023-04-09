@@ -1,0 +1,9 @@
+.input {
+	@include list-reset;
+	@include input-placeholder;
+	width: 260px;
+	padding: 17px 0;
+	margin-bottom: 22px;
+	border: none;
+	border-bottom: 2px solid #000000;
+}

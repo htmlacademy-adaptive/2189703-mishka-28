@@ -1,0 +1,17 @@
+.form-page__wrapper {
+	width: 320px;
+}
+
+.form-page__title {
+	padding: 74px 0;
+	margin-bottom: 17px;
+}
+
+.form-page__text {
+	@include list-reset;
+	width: 260px;
+	padding-left: 30px;
+	margin-bottom: 29px;
+	font-size: 13px;
+	line-height: 24px;
+}
