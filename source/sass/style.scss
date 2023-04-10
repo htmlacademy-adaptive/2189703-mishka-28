@@ -4,48 +4,45 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./blocks/page.scss";
+//@import "./global/visually-hidden.scss"; //временно отключила, чтобы было видно, что где находится
 
-//подключаем базовые стили
 
-@import "../sass/base/body";
-@import "../sass/base/link";
-//@import "../sass/base/visually-hidden.scss"; //временно отключила, чтобы было видно, что где находится
-@import "../sass/base/heading.scss"; //Главный заголовок на каждой странице
-@import "../sass/base/headline.scss"; //Заголовки второго уровня в секциях
+//общие стили для всех страниц
+
+@import "./blocks/heading.scss"; //Главный заголовок на каждой странице
+@import "./blocks/headline.scss"; //Заголовки второго уровня в секциях
 
 //подкючаем шапку
-@import "../sass/blocks/main-header.scss";
-@import "../sass/blocks/header-nav.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/header-nav.scss";
 
 //подключаем главную страницу
 
-@import "../sass/blocks/main-conteiner.scss";
-@import "../sass/blocks/main__wrapper.scss";
-@import "../sass/blocks/main-title.scss";
-@import "../sass/blocks/main-img.scss";
-@import "../sass/blocks/main-nav.scss";
-@import "../sass/blocks/product.scss";
-@import "../sass/blocks/advantages.scss";
-@import "../sass/blocks/reviews.scss";
-@import "../sass/blocks/reviews__toogle.scss";
-@import "../sass/blocks/contacts.scss";
+@import "./blocks/main-conteiner.scss";
+@import "./blocks/main.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/product.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/contacts.scss";
 
 //подключаем подвал
 
-@import "../sass/blocks/main-footer.scss";
-@import "../sass/blocks/social.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
 
 //подключаем каталог
 
-@import "../sass/blocks/catalog.scss";
-@import "../sass/blocks/cards.scss";
-@import "../sass/blocks/card.scss";
-@import "../sass/blocks/video.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/cards.scss";
+@import "./blocks/card.scss";
+@import "./blocks/caption.scss";
+@import "./blocks/video.scss";
 
 //подключаем форму
 
-@import "../sass/blocks/form-page.scss";
-@import "../sass/blocks/form.scss";
-@import "../sass/blocks/legend.scss";
-@import "../sass/blocks/label.scss";
-@import "../sass/blocks/input.scss";
+@import "./blocks/form-page.scss";
+@import "./blocks/form.scss";
+@import "./blocks/legend.scss";
+@import "./blocks/label.scss";
+@import "./blocks/input.scss";

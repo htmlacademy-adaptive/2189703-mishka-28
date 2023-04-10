@@ -1,29 +1,23 @@
 .contacts {
-	width: 320px;
-	padding-top: 38px;
+	padding: 38px 0;
 }
 
 .contacts__wrapper {
-	width: 260px;
-	margin-bottom: 62px;
 	font-size: 14px;
 	line-height: 30px;
 }
 
 .contacts__title {
-	margin-bottom: 28px;
+	margin: 0;
+	padding-bottom: 28px;
 }
 
-.contacts__email {
-	margin-bottom: 30px;
+.contacts__email,
+.contacts__address {
+	padding-bottom: 30px;
 }
 
 .contacts__img {
-	margin-bottom: 42px;
-}
-
-.contacts__write {
-	width: 260px;
-	margin-left: 30px;
-	margin-bottom: 39px;
+	padding-top: 32px;
+	padding-bottom: 42px;
 }

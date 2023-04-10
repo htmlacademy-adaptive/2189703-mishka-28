@@ -1,7 +1,15 @@
-.main-title {
+.main__wrapper {
+	width: 320px;
+}
+
+.main__title {
 	position: absolute;
 	width: 320px;
 	padding: 73px 0;
 	background-color: transparent;
 	z-index: 1;
+}
+
+.main__img {
+	position: relative;
 }
