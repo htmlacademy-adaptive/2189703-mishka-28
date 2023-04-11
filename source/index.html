@@ -40,7 +40,34 @@
 				<dt class="product__feature">Высота:</dt>
 				<dd class="product__value">15 см</dd>
 			</dl>
-			<img class="product__img" src="./img/triple-set-mobile.jpg" width="260" height="315" alt="Фотография трех вязанных корзинок.">
+			<picture>
+				<source type="image/avif" media="(min-width: 1150px)" srcset="img/products/product1-desktop@1.avif 1x,
+				img/products/product1-desktop@2.avif 2x,
+				img/products/product1-desktop@3.avif 3x">
+				<source type="image/avif" media="(min-width: 768px)" srcset="img/products/product1-tablet@1.avif 1x,
+				img/products/product1-tablet@2.avif 2x,
+				img/products/product1-tablet@3.avif 3x">
+				<source type="image/avif" srcset="img/products/product1-mobile@1.avif 1x,
+				img/products/product1-mobile@2.avif 2x,
+				img/products/product1-mobile@3.avif 3x">
+				<source type="image/webp" media="(min-width: 1150px)" srcset="img/products/product1-desktop@1.webp 1x,
+				img/products/product1-desktop@2.webp 2x,
+				img/products/product1-desktop@3.webp 3x">
+				<source type="image/webp" media="(min-width: 768px)" srcset="img/products/product1-tablet@1.webp 1x,
+				img/products/product1-tablet@2.webp 2x,
+				img/products/product1-tablet@3.webp 3x">
+				<source type="image/webp" srcset="img/products/product1-mobile@1.webp 1x,
+				img/products/product1-mobile@2.webp 2x,
+				img/products/product1-mobile@3.webp 3x">
+				<source media="(min-width: 1150px)" srcset="img/products/product1-desktop@1.jpg 1x,
+				img/products/product1-desktop@2.jpg 2x,
+				img/products/product1-desktop@3.jpg 3x">
+				<source media="(min-width: 768px)" srcset="img/products/product1-tablet@1.jpg 1x,
+				img/products/product1-tablet@2.jpg 2x,
+				img/products/product1-tablet@3.jpg 3x">
+				<img class="product__img" src="img/products/product1-mobile@1.jpg" srcset="img/products/product1-mobile@2.jpg 2x,
+				img/products/product1-mobile@3.jpg 3x" alt="Фотография трех вязанных корзинок.">
+			</picture>
 			<span class="product__cost">Цена: 990 руб.</span>
 			<a class="product__button button" href="./templates/modal.twig">Заказать</a>
 		</div>
