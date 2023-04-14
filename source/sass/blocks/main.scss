@@ -3,18 +3,16 @@
 		content: "";
 		width: 320px;
 		height: 283px;
-		background: var(--bg-image) no-repeat center / contain;
-
-		@include bg-image("bg-image1");
-		background-size: cover;
+		background: var(--bg-image) no-repeat center / cover;
 	}
+
+	@include bg-image("bg-image1");
 }
 
 .main__title {
 	margin: 0;
 	padding: 73px 0 121px;
-	background: var(--bg-image) no-repeat center / contain;
+	background: var(--bg-image) no-repeat center / cover;
 
 	@include bg-image("bg-image1");
-	background-size: cover;
 }

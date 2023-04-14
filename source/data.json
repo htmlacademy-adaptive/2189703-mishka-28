@@ -37,7 +37,7 @@
 				{
 					"viewport": "mobile",
 					"width": 320,
-					"height": 454
+					"height": 455
 				}
 			]
 		},
@@ -152,17 +152,12 @@
 			"sizes": [
 				{
 					"viewport": "tablet",
-					"width": 1250,
-					"height": 746
-				},
-				{
-					"viewport": "tablet",
-					"width": 1150,
+					"width": 768,
 					"height": 746
 				},
 				{
 					"viewport": "mobile",
-					"width": 569,
+					"width": 320,
 					"height": 373
 				}
 			]
@@ -174,38 +169,7 @@
 				{
 					"viewport": "tablet",
 					"width": 350,
-					"height": 754
-				},
-				{
-					"viewport": "tablet",
-					"width": 350,
-					"height": 754
-				},
-				{
-					"viewport": "tablet",
-					"width": 350,
-					"height": 754
-				}
-			]
-		},
-		"test": {
-			"ext": "png",
-			"maxdppx": 2,
-			"sizes": [
-				{
-					"viewport": "desktop",
-					"width": 1150,
-					"height": 500
-				},
-				{
-					"viewport": "tablet",
-					"width": 768,
-					"height": 400
-				},
-				{
-					"viewport": "mobile",
-					"width": 320,
-					"height": 300
+					"height": 475
 				}
 			]
 		}
