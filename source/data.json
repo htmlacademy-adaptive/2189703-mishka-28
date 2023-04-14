@@ -21,7 +21,7 @@
 	},
 	"images": {
 		"map": {
-			"ext": "png",
+			"ext": "jpg",
 			"maxdppx": 2,
 			"sizes": [
 				{
@@ -38,6 +38,132 @@
 					"viewport": "mobile",
 					"width": 320,
 					"height": 454
+				}
+			]
+		},
+		"products/product1": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 525,
+					"height": 636
+				},
+				{
+					"viewport": "tablet",
+					"width": 334,
+					"height": 404
+				},
+				{
+					"viewport": "mobile",
+					"width": 260,
+					"height": 315
+				}
+			]
+		},
+		"products/product2": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 316,
+					"height": 462
+				},
+				{
+					"viewport": "tablet",
+					"width": 334,
+					"height": 334
+				},
+				{
+					"viewport": "mobile",
+					"width": 260,
+					"height": 195
+				}
+			]
+		},
+		"products/product3": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 316,
+					"height": 462
+				},
+				{
+					"viewport": "tablet",
+					"width": 334,
+					"height": 334
+				},
+				{
+					"viewport": "mobile",
+					"width": 260,
+					"height": 195
+				}
+			]
+		},
+		"products/product4": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 316,
+					"height": 462
+				},
+				{
+					"viewport": "tablet",
+					"width": 334,
+					"height": 334
+				},
+				{
+					"viewport": "mobile",
+					"width": 260,
+					"height": 195
+				}
+			]
+		},
+		"bg-image1": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 1250,
+					"height": 746
+				},
+				{
+					"viewport": "desktop",
+					"width": 1150,
+					"height": 746
+				},
+				{
+					"viewport": "mobile",
+					"width": 568.48,
+					"height": 373
+				}
+			]
+		},
+		"bg-image2": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "tablet",
+					"width": 350,
+					"height": 754
+				},
+				{
+					"viewport": "tablet",
+					"width": 350,
+					"height": 754
+				},
+				{
+					"viewport": "tablet",
+					"width": 350,
+					"height": 754
 				}
 			]
 		},

@@ -12,7 +12,8 @@
 			<ul class="cards__list">
 				<li class="cards__item card">
 					<a class="card__link" href="#">
-						<img class="card__img photo" src="./img/catalog/bunny-mobile.jpg" width="260" height="195" alt="Фотография вязаного зайчика.">
+						{# <img class="card__img photo" src="./img/catalog/bunny-mobile.jpg" width="260" height="195" alt="Фотография вязаного зайчика."> #}
+						{% include "./templates/picture.twig" with {name: "products/product2", class: "card__img", alt: "Фотография вязаного зайчика."} %}
 						<h3 class="card__caption caption">Зайчик-попрыгайчик</h3>
 					</a>
 					<div class="card__description description">Рост 30 см, вес 200 г</div>
@@ -23,7 +24,8 @@
 				</li>
 				<li class="cards__item card">
 					<a class="card__link" href="#">
-						<img class="card__img photo" src="./img/catalog/basket-mobile.jpg" width="260" height="195" alt="Фотография вязаной корзинки.">
+						{# <img class="card__img photo" src="./img/catalog/basket-mobile.jpg" width="260" height="195" alt="Фотография вязаной корзинки."> #}
+						{% include "./templates/picture.twig" with {name: "products/product3", class: "card__img", alt: "Фотография вязаной корзинки."} %}
 						<h3 class="card__caption caption">Корзинка для белья</h3>
 					</a>
 					<div class="card__description description">Диаметр 15 см, высота 10 см</div>
@@ -34,7 +36,8 @@
 				</li>
 				<li class="cards__item card">
 					<a class="card__link" href="#">
-						<img class="card__img photo" src="./img/catalog/bigbasket-mobile.jpg" width="260" height="195" alt="Фотография большой вязаной корзины с игрушками.">
+						{# <img class="card__img photo" src="./img/catalog/bigbasket-mobile.jpg" width="260" height="195" alt="Фотография большой вязаной корзины с игрушками."> #}
+						{% include "./templates/picture.twig" with {name: "products/product4", class: "card__img", alt: "Фотография большой вязаной корзины с игрушками."} %}
 						<h3 class="card__caption caption">Большая корзинка <br> для игрушек</h3>
 					</a>
 					<div class="card__description description">Диаметр 30 см, высота 30 см</div>
