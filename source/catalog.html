@@ -12,7 +12,6 @@
 			<ul class="cards__list">
 				<li class="cards__item card">
 					<a class="card__link" href="#">
-						{# <img class="card__img photo" src="./img/catalog/bunny-mobile.jpg" width="260" height="195" alt="Фотография вязаного зайчика."> #}
 						{% include "./templates/picture.twig" with {name: "products/product2", class: "card__img", alt: "Фотография вязаного зайчика."} %}
 						<h3 class="card__caption caption">Зайчик-попрыгайчик</h3>
 					</a>
@@ -24,7 +23,6 @@
 				</li>
 				<li class="cards__item card">
 					<a class="card__link" href="#">
-						{# <img class="card__img photo" src="./img/catalog/basket-mobile.jpg" width="260" height="195" alt="Фотография вязаной корзинки."> #}
 						{% include "./templates/picture.twig" with {name: "products/product3", class: "card__img", alt: "Фотография вязаной корзинки."} %}
 						<h3 class="card__caption caption">Корзинка для белья</h3>
 					</a>
@@ -36,7 +34,6 @@
 				</li>
 				<li class="cards__item card">
 					<a class="card__link" href="#">
-						{# <img class="card__img photo" src="./img/catalog/bigbasket-mobile.jpg" width="260" height="195" alt="Фотография большой вязаной корзины с игрушками."> #}
 						{% include "./templates/picture.twig" with {name: "products/product4", class: "card__img", alt: "Фотография большой вязаной корзины с игрушками."} %}
 						<h3 class="card__caption caption">Большая корзинка <br> для игрушек</h3>
 					</a>
@@ -53,7 +50,7 @@
 		<div class="video__wrapper page__centerer">
 			<h2 class="video__title">Процесс производства</h2>
 			<div class="video__player">
-				<img class="video__player-img" src="./img/catalog/video-mobile.jpg" width="260" height="150" alt="Заставка для видео в виде корзинки.">
+				{% include "./templates/picture.twig" with {name: "video", class: "video__player-img", alt: "Заставка для видео в виде корзинки."} %}
 				<button class="video__player-button" type="button">
 					<span class="visually-hidden">Запуск видео-плэйера.</span>
 				</button>

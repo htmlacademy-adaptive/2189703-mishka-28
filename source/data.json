@@ -21,7 +21,7 @@
 	},
 	"images": {
 		"map": {
-			"ext": "jpg",
+			"ext": "png",
 			"maxdppx": 2,
 			"sizes": [
 				{
@@ -125,23 +125,44 @@
 				}
 			]
 		},
-		"bg-image1": {
+		"video": {
 			"ext": "jpg",
 			"maxdppx": 2,
 			"sizes": [
 				{
 					"viewport": "desktop",
+					"width": 683,
+					"height": 455
+				},
+				{
+					"viewport": "tablet",
+					"width": 668,
+					"height": 455
+				},
+				{
+					"viewport": "mobile",
+					"width": 260,
+					"height": 150
+				}
+			]
+		},
+		"bg-image1": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "tablet",
 					"width": 1250,
 					"height": 746
 				},
 				{
-					"viewport": "desktop",
+					"viewport": "tablet",
 					"width": 1150,
 					"height": 746
 				},
 				{
 					"viewport": "mobile",
-					"width": 568.48,
+					"width": 569,
 					"height": 373
 				}
 			]
