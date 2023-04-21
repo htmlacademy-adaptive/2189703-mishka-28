@@ -3,7 +3,12 @@
 }
 
 .social__list {
-	margin: 0;
+	width: 142px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 28px;
 }

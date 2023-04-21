@@ -3,31 +3,33 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main class="main-conteiner main">
-	<div class="main__wrapper page__centerer">
-		<h1 class="main__title heading">
-			Милые штуки ручной работы для дома
-		</h1>
+<main class="main-container main">
+	<div class="main__container">
+		<div class="main__wrapper page__centerer">
+			<h1 class="main__title heading">
+				Милые штуки ручной <br> работы для дома
+			</h1>
 			<nav class="main__nav main-nav">
-			<a class="main-nav__link main-nav__interior" href="#">
-				<div class="main-nav__wrapper">
-					Предметы интерьера
-				</div>
-			</a>
-			<a class="main-nav__link main-nav__toys">
-				<div class="main-nav__wrapper">
-					Детские игрушки
-				</div>
-			</a>
-		</nav>
+				<a class="main-nav__link main-nav__interior" href="#">
+					<div class="main-nav__text">
+						Предметы интерьера
+					</div>
+				</a>
+				<a class="main-nav__link main-nav__toys">
+					<div class="main-nav__text">
+						Детские игрушки
+					</div>
+				</a>
+			</nav>
+		</div>
+
 	</div>
 
-	<section class="product">
+	<section class="main__product product">
 		<div class="product__wrapper page__centerer">
-			<div class="product__slogan">
-				<h2 class="product__title headline">Вязаные корзинки</h2>
-				<h3 class="product__subtitle">Товар недели</h3>
-			</div>
+			<h2 class="product__title headline">Вязаные корзинки</h2>
+			<h3 class="product__subtitle">Товар недели</h3>
+
 			<div class="product__description">
 				Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
 			</div>
@@ -39,12 +41,14 @@
 				<dt class="product__feature">Высота:</dt>
 				<dd class="product__value">15 см</dd>
 			</dl>
-			{% include "./templates/picture.twig" with {name: "products/product1", class: "product__img", alt: "Фотография трех вязанных корзинок."} %}
+			<div class="product__image">
+				{% include "./templates/picture.twig" with {name: "products/product1", class: "product__img", alt: "Фотография трех вязанных корзинок."} %}
+			</div>
 			<span class="product__cost">Цена: 990 руб.</span>
 			<a class="product__button button" href="./templates/modal.twig">Заказать</a>
 		</div>
 	</section>
-	<section class="advantages">
+	<section class="main__advantages advantages">
 		<div class="advantages__wrapper page__centerer">
 			<h2 class="advantages__title headline">Коротко о нас:</h2>
 			<ul class="advantages__list">
@@ -57,7 +61,7 @@
 			</ul>
 		</div>
 	</section>
-	<section class="reviews">
+	<section class="main__reviews reviews">
 		<div class="reviews__wrapper page__centerer">
 			<h2 class="reviews__title headline">Отзывы</h2>
 			<div class="reviews__list">
@@ -71,7 +75,7 @@
 					</figcaption>
 				</figure>
 			</div>
-			<div class="reviews__list">
+			<div class="reviews__list visually-hidden">
 				<figure class="reviews__item">
 					<blockquote class="reviews__text">
 						Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
@@ -84,7 +88,7 @@
 					</figcaption>
 				</figure>
 			</div>
-			<div class="reviews__list">
+			<div class="reviews__list visually-hidden">
 				<figure class="reviews__item">
 					<blockquote class="reviews__text">
 						Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
@@ -95,16 +99,18 @@
 					</figcaption>
 				</figure>
 			</div>
-			<button class="reviews__toogle">
-				<span class="visually-hidden">Предыдущий отзыв</span>
-			</button>
-			<button class="reviews__toogle">
-				<span class="visually-hidden">Следующий отзыв</span>
-			</button>
+			<div class="reviews__toogle">
+				<button class="reviews__unto">
+					<span class="visually-hidden">Предыдущий отзыв</span>
+				</button>
+				<button class="reviews__next">
+					<span class="visually-hidden">Следующий отзыв</span>
+				</button>
+			</div>
 			<a class="reviews__write" href="#">Написать</a>
 		</div>
 	</section>
-	<section class="contacts page__centerer">
+	<section class="contacts">
 		<div class="contacts__wrapper page__centerer">
 			<h2 class="contacts__title headline">Контакты</h2>
 			<div class="contacts__email">
@@ -116,9 +122,10 @@
 				<address class="contacts__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
 			</div>
 		</div>
-		{% include "./templates/picture.twig" with {name: "map", class: "contacts__img", alt: "Поисково-информационная карта."} %}
-{# Здесь, наверное, тоже будет ссылка вместо кнопки #}
-		<button class="contacts__write page__centerer" type="button">Напишите нам</button>
+		<div class="contacts__image">
+			{% include "./templates/picture.twig" with {name: "map", class: "contacts__img", alt: "Поисково-информационная карта."} %}
+		</div>
+		<a class="contacts__write page__centerer link" href="#">Напишите нам</a>
 	</section>
 </main>
 {% endblock %}

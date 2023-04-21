@@ -1,6 +1,14 @@
 .video {
 	padding-top: 22px;
 	padding-bottom: 33px;
+
+	display: flex;
+	flex-direction: column;
+
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+	}
 }
 
 .video__title {
@@ -11,10 +19,38 @@
 	font-weight: 700;
 	line-height: 24px;
 	color: #000000;
+
+	@media #{$desktop-only} {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+}
+
+.video__player {
+	@media #{$tablet-only} {
+		order: -1;
+	}
+
+	@media #{$desktop-only} {
+		grid-column: 1/2;
+		grid-row: 1/4;
+	}
 }
 
 .video__text {
 	padding: 35px 0 41px 34px;
 	font-size: 13px;
 	line-height: 24px;
+
+	@media #{$desktop-only} {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+}
+
+.video__button {
+	@media #{$desktop-only} {
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
 }

@@ -1,10 +1,12 @@
+//@import "./global/outline.scss";
 @import "./global/media.scss";
 @import "./global/mixins.scss";
 @import "./global/fonts.scss";
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./blocks/page.scss";
-//@import "./global/visually-hidden.scss"; //временно отключила, чтобы было видно, что где находится
+@import "./global/visually-hidden.scss";
+@import "./global/link.scss"; // Убирает подчеркивание свех ссылок
 
 
 //общие стили для всех страниц
@@ -15,10 +17,10 @@
 //подкючаем шапку
 @import "./blocks/main-header.scss";
 @import "./blocks/header-nav.scss";
+@import "./blocks/menu-list.scss";
 
 //подключаем главную страницу
 
-@import "./blocks/main-conteiner.scss";
 @import "./blocks/main.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/product.scss";
@@ -29,6 +31,7 @@
 //подключаем подвал
 
 @import "./blocks/main-footer.scss";
+@import "./blocks/logo.scss";
 @import "./blocks/social.scss";
 
 //подключаем каталог
@@ -38,11 +41,18 @@
 @import "./blocks/card.scss";
 @import "./blocks/caption.scss";
 @import "./blocks/video.scss";
+@import "./blocks/buy.scss";
 
 //подключаем форму
 
 @import "./blocks/form-page.scss";
 @import "./blocks/form.scss";
+@import "./blocks/form-box.scss";
+@import "./blocks/login.scss";
 @import "./blocks/legend.scss";
 @import "./blocks/label.scss";
 @import "./blocks/input.scss";
+
+//подключаем модальное окно
+
+@import "./blocks/modal.scss";

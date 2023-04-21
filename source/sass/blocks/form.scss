@@ -1,18 +1,53 @@
 .form {
-	padding-left: 30px;
+	display: flex;
+	flex-direction: column;
 	padding-bottom: 73px;
 }
 
-.form__fieldset {
+.form__style,
+.form__color,
+.form__login {
 	padding: 0;
 	margin: 0;
 	border: none;
 }
 
-.form__style-legend {
+.form__legend {
 	padding: 12px 0;
 }
 
+.form__add {
+	@media #{$tablet-only} {
+		display: grid;
+		grid-template-columns: 25% 1fr;
+	}
+
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: 17% 1fr;
+	}
+}
+
+.form__send {
+	@media #{$tablet-only} {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	@media #{$desktop-only} {
+		padding: 17%;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.form__text {
+	@media #{$not-mobile} {
+		order: 2;
+	}
+}
+
+// эти стили уйдут с декоративным оформлением в другие блоки
 .form__style-label {
 	display: block;
 	padding: 24px 0;

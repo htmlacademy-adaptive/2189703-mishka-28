@@ -1,5 +1,5 @@
 .advantages {
-	padding: 31px;
+	padding: 31px 0;
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 20px;
@@ -18,4 +18,9 @@
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: repeat(2, auto);
+	}
 }

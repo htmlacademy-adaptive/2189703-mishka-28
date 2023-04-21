@@ -1,6 +1,25 @@
-.main-footer__wrapper {
+.main-footer {
 	background-color: #f1f1f1;
 }
+
+.main-footer__wrapper {
+	display: flex;
+	flex-direction: column;
+
+	@media #{$not-mobile} {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.main-footer__logo {
+	display: none;
+
+	@media #{$not-mobile} {
+		display: block;
+	}
+}
+
 
 .main-footer__developed {
 	padding: 30px 0;

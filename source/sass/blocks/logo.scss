@@ -1,0 +1,19 @@
+.logo__header {
+	width: 86px;
+	height: 35px;
+	padding: 22px;
+
+	@media #{$tablet-only} {
+		width: 114px;
+		height: 46px;
+	}
+
+	@media #{$desktop-only} {
+		width: 149px;
+		height: 72px;
+	}
+}
+
+.logo__footer {
+	width: 102px;
+}

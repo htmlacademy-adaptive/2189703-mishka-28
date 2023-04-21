@@ -1,0 +1,17 @@
+.login {
+	display: flex;
+	flex-direction: column;
+
+	@media #{$not-mobile} {
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+}
+
+.login__label {
+	grid-column: 1/2;
+}
+
+.login__input {
+	grid-column: 2/3;
+}

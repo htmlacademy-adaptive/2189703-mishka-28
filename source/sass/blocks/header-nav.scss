@@ -1,21 +1,114 @@
+.header-nav {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-areas: "logo toogle"
+		"menu menu"
+		"user user";
+
+	@media #{$tablet-only} {
+		grid-template-columns: 1fr 1fr;
+
+		grid-template-areas: "logo user"
+			"menu free";
+	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: 1fr 149px 1fr;
+
+		grid-template-areas: "menu logo user"
+			"submenu . free";
+	}
+}
+
 .header-nav__list {
 	padding: 0;
 	margin: 0;
+	list-style-type: none;
+
+	@media #{$not-mobile} {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
-.header-nav__link {
-	font-size: 17px;
-	font-weight: 700;
-	line-height: 24px;
-	text-decoration: none;
-	color: #000000;
-}
 
-.site-list__item,
+.menu-list__item,
 .user-list__item {
-	display: block;
 	padding-left: 75px;
 	padding-top: 28px;
 	padding-bottom: 27px;
 	border: 1px solid #ececec;
+
+	@media #{$not-mobile} {
+		padding: 10px;
+	}
+}
+
+.header-nav__logo {
+	grid-area: logo;
+	justify-self: center;
+}
+
+
+.header-nav__toogle {
+	width: 20px;
+	grid-area: toogle;
+
+	@media #{$not-mobile} {
+		display: none;
+	}
+}
+
+
+.header-nav__list--menu-position {
+	grid-area: menu;
+}
+
+
+.header-nav__list--user-position {
+	grid-area: user;
+}
+
+.header-nav__list--submenu-position {
+	grid-area: submenu;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+
+	@media #{$desktop-only} {
+		position: relative;
+		min-width: 420px;
+		min-height: 24px;
+		margin: 0;
+		clip-path: inset(0%);
+	}
+}
+
+.header-nav__slogan--free-position {
+	grid-area: free;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+
+	@media #{$not-mobile} {
+		position: relative;
+		min-width: 259px;
+		min-height: 24px;
+		margin: 0;
+		clip-path: inset(0%);
+	}
 }

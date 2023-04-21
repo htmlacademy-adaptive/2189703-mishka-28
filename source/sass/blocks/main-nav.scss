@@ -1,18 +1,21 @@
 .main-nav {
 	width: 100%;
+
+	@media #{$not-mobile} {
+		display: flex;
+	}
 }
 
 .main-nav__link {
 	display: block;
+	width: 100%;
 	padding-left: 30px;
 	padding-top: 24px;
 	padding-bottom: 31px;
-	text-decoration: none;
 	background-color: #63d1bb;
 }
 
-.main-nav__wrapper {
-	width: 130px;
+.main-nav__text {
 	font-size: 19px;
 	font-weight: 700;
 	line-height: 24px;

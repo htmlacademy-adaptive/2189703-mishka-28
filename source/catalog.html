@@ -4,50 +4,61 @@
 
 {% block main %}
 <main class="catalog">
-	<div class="catalog__wrapper page__centerer">
-		<h1 class="catalog_title heading">Каталог товаров</h1>
+	<h1 class="catalog_title heading">Каталог товаров</h1>
 	<section class="catalog__cards cards page__centerer">
 		<div class="cards__wrapper page__centerer">
 			<h2 class="cards__title visually-hidden">Карточки товаров.</h2>
 			<ul class="cards__list">
 				<li class="cards__item card">
-					<a class="card__link" href="#">
+					<a class="card__link-img link" href="#">
 						{% include "./templates/picture.twig" with {name: "products/product2", class: "card__img", alt: "Фотография вязаного зайчика."} %}
+					</a>
+					<a class="card__link-caption link"  href="#">
 						<h3 class="card__caption caption">Зайчик-попрыгайчик</h3>
+
 					</a>
 					<div class="card__description description">Рост 30 см, вес 200 г</div>
-					<div class="card__price price">1 200 руб.</div>
-					<a class="card__button cart" href="#">
-						<span class="visually-hidden">Добавить в корзину.</span>
-					</a>
+					<div class="card__buy buy">
+						<div class="buy__price price">1 200 руб.</div>
+						<a class="buy_button cart" href="#">
+							<span class="visually-hidden">Добавить в корзину.</span>
+						</a>
+					</div>
 				</li>
 				<li class="cards__item card">
-					<a class="card__link" href="#">
+					<a class="card__link-img link" href="#">
 						{% include "./templates/picture.twig" with {name: "products/product3", class: "card__img", alt: "Фотография вязаной корзинки."} %}
+					</a>
+					<a class="card__link-caption link" href="#">
 						<h3 class="card__caption caption">Корзинка для белья</h3>
 					</a>
 					<div class="card__description description">Диаметр 15 см, высота 10 см</div>
-					<div class="card__price price">690 руб.</div>
-					<a class="card__button cart" href="#">
-						<span class="visually-hidden">Добавить в корзину.</span>
-					</a>
+					<div class="card__buy buy">
+						<div class="buy__ price">690 руб.</div>
+						<a class="buy__button cart" href="#">
+							<span class="visually-hidden">Добавить в корзину.</span>
+						</a>
+					</div>
 				</li>
 				<li class="cards__item card">
-					<a class="card__link" href="#">
+					<a class="card__link-img link" href="#">
 						{% include "./templates/picture.twig" with {name: "products/product4", class: "card__img", alt: "Фотография большой вязаной корзины с игрушками."} %}
+					</a>
+					<a class="card__link-caption link" href="#">
 						<h3 class="card__caption caption">Большая корзинка <br> для игрушек</h3>
 					</a>
 					<div class="card__description description">Диаметр 30 см, высота 30 см</div>
-					<div class="card__price price">1 500 руб.</div>
-					<a class="card__button cart" href="#">
-						<span class="visually-hidden">Добавить в корзину.</span>
-					</a>
+					<div class="card__buy buy">
+						<div class="buy__price price">1 500 руб.</div>
+						<a class="buy__button cart" href="#">
+							<span class="visually-hidden">Добавить в корзину.</span>
+						</a>
+					</div>
 				</li>
 			</ul>
 		</div>
 	</section>
 	<section class="catalog_video video page__centerer">
-		<div class="video__wrapper page__centerer">
 			<h2 class="video__title">Процесс производства</h2>
 			<div class="video__player">
 				{% include "./templates/picture.twig" with {name: "video", class: "video__player-img", alt: "Заставка для видео в виде корзинки."} %}
@@ -56,10 +67,7 @@
 				</button>
 			</div>
 			<div class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
-			<a class="video_button button" href="#">Сделать заказ</a>
-		</div>
+			<a class="video__button button link" href="#">Сделать заказ</a>
 	</section>
-	</div>
-
 </main>
 {% endblock %}
