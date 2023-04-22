@@ -1,0 +1,39 @@
+.contacts-text {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media #{$tablet-only} {
+		grid-template-columns: auto 1fr;
+	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: 1fr;
+	}
+}
+
+.contacts-text__title {
+	margin: 0;
+	padding-bottom: 28px;
+}
+
+
+.contacts-text__email {
+	display: grid;
+	grid-template-columns: auto 1fr;
+
+	@media #{$tablet-only} {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+}
+
+.contacts-text__address {
+	padding-bottom: 30px;
+	display: grid;
+	grid-template-columns: auto 1fr;
+
+	@media #{$tablet-only} {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+}

@@ -53,10 +53,10 @@
 			<h2 class="advantages__title headline">Коротко о нас:</h2>
 			<ul class="advantages__list">
 				<li class="advantages__item">Экологически чистые материалы</li>
-				<li class="advantages__item">Скандинавский стиль по российской цене</li>
-				<li class="advantages__item">Увеличивает лайки на фотографиях</li>
 				<li class="advantages__item">Связано вручную с любовью и умилением</li>
+				<li class="advantages__item">Скандинавский стиль по российской цене</li>
 				<li class="advantages__item">Поддержка отечественного производителя</li>
+				<li class="advantages__item">Увеличивает лайки на фотографиях</li>
 				<li class="advantages__item">Поставляется в подарочной упаковке</li>
 			</ul>
 		</div>
@@ -107,25 +107,25 @@
 					<span class="visually-hidden">Следующий отзыв</span>
 				</button>
 			</div>
-			<a class="reviews__write" href="#">Написать</a>
+			<a class="reviews__write link" href="#">Написать</a>
 		</div>
 	</section>
 	<section class="contacts">
-		<div class="contacts__wrapper page__centerer">
-			<h2 class="contacts__title headline">Контакты</h2>
-			<div class="contacts__email">
-				<span class="contacts__email-label">e-mail:</span>
-				<span class="contacts__email-email">info@mimimishkashop.ru</span>
+		<div class="contacts-text page__centerer">
+			<h2 class="contacts-text__title headline">Контакты</h2>
+			<div class="contacts-text__email">
+				<span class="contacts-text__email-label">e-mail:</span>
+				<span class="contacts-text__email-email">info@mimimishkashop.ru</span>
 			</div>
-			<div class="contacts__address">
-				<span class="contacts__address-label">адрес:</span>
-				<address class="contacts__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
+			<div class="contacts-text__address">
+				<span class="contacts-text__address-label">адрес:</span>
+				<address class="contacts-text__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
 			</div>
 		</div>
 		<div class="contacts__image">
 			{% include "./templates/picture.twig" with {name: "map", class: "contacts__img", alt: "Поисково-информационная карта."} %}
 		</div>
-		<a class="contacts__write page__centerer link" href="#">Напишите нам</a>
+		<a class="contacts__write link page__centerer" href="#">Напишите нам</a>
 	</section>
 </main>
 {% endblock %}

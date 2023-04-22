@@ -6,13 +6,13 @@
 @import "./global/global.scss";
 @import "./blocks/page.scss";
 @import "./global/visually-hidden.scss";
-@import "./global/link.scss"; // Убирает подчеркивание свех ссылок
 
 
 //общие стили для всех страниц
 
 @import "./blocks/heading.scss"; //Главный заголовок на каждой странице
 @import "./blocks/headline.scss"; //Заголовки второго уровня в секциях
+@import "./blocks/link.scss";
 
 //подкючаем шапку
 @import "./blocks/main-header.scss";
@@ -27,8 +27,9 @@
 @import "./blocks/advantages.scss";
 @import "./blocks/reviews.scss";
 @import "./blocks/contacts.scss";
+@import "./blocks/contact-text.scss";
 
-//подключаем подвал
+// подключаем подвал
 
 @import "./blocks/main-footer.scss";
 @import "./blocks/logo.scss";

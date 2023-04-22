@@ -1,16 +1,18 @@
 .form-box {
+	padding: 0;
+	margin: 0;
+	border: none;
 
 	display: flex;
 	flex-direction: column;
 
 	@media #{$not-mobile} {
-		display: flex;
 		flex-direction: row;
 	}
 }
 
 .form-box__legend {
-	@media #{$tablet-only} {
+	@media #{$not-mobile} {
 		width: 25%;
 	}
 
@@ -24,7 +26,7 @@
 	display: flex;
 	flex-direction: column;
 
-	@media #{$tablet-only} {
+	@media #{$not-mobile} {
 		padding: 78px;
 	}
 
@@ -35,18 +37,16 @@
 
 .form-box__content-color {
 	padding-left: 61px;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	grid-template-columns: repeat(var(--column-count, 1), 1fr);
 
-	@media #{$tablet-only} {
+	@media #{$not-mobile} {
+		--column-count: 2;
 		padding: 78px;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
 	}
 
 	@media #{$desktop-only} {
+		--column-count: 3;
 		padding: 82px;
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
 	}
 }

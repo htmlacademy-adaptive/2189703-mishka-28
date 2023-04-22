@@ -4,8 +4,10 @@
 
 
 	.reviews__wrapper {
+		display: grid;
+		grid-template-columns: 1fr;
+
 		@media #{$not-mobile} {
-			display: grid;
 			grid-template-columns: auto 175px;
 			grid-template-rows: repeat(2, min-content);
 		}
@@ -68,13 +70,13 @@
 	}
 }
 
-.reviews__unto,
+/* .reviews__unto,
 .reviews__next {
 	width: 50px;
 	height: 26px;
-	padding: 13px 38px;
+	padding: 13px 38px;   Это опишу в декоративке
 }
-
+ */
 .reviews__write {
 	width: 175px;
 

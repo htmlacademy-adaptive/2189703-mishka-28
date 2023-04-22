@@ -1,21 +1,24 @@
 .header-nav {
 	display: grid;
 	grid-template-columns: 1fr auto;
-	grid-template-areas: "logo toogle"
+	grid-template-areas:
+		"logo toogle"
 		"menu menu"
 		"user user";
 
 	@media #{$tablet-only} {
 		grid-template-columns: 1fr 1fr;
 
-		grid-template-areas: "logo user"
+		grid-template-areas:
+			"logo user"
 			"menu free";
 	}
 
 	@media #{$desktop-only} {
 		grid-template-columns: 1fr 149px 1fr;
 
-		grid-template-areas: "menu logo user"
+		grid-template-areas:
+			"menu logo user"
 			"submenu . free";
 	}
 }
@@ -25,15 +28,6 @@
 	margin: 0;
 	list-style-type: none;
 
-	@media #{$not-mobile} {
-		display: flex;
-		flex-wrap: wrap;
-	}
-}
-
-
-.menu-list__item,
-.user-list__item {
 	padding-left: 75px;
 	padding-top: 28px;
 	padding-bottom: 27px;
@@ -55,60 +49,34 @@
 	grid-area: toogle;
 
 	@media #{$not-mobile} {
-		display: none;
+		visibility: collapse;
 	}
 }
 
 
-.header-nav__list--menu-position {
+.menu-list {
 	grid-area: menu;
 }
 
 
-.header-nav__list--user-position {
+.user-list {
 	grid-area: user;
 }
 
-.header-nav__list--submenu-position {
-	grid-area: submenu;
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+.submenu-list {
+	visibility: collapse;
 
 	@media #{$desktop-only} {
-		position: relative;
-		min-width: 420px;
-		min-height: 24px;
-		margin: 0;
-		clip-path: inset(0%);
+		display: block;
+		grid-area: submenu;
 	}
 }
 
-.header-nav__slogan--free-position {
-	grid-area: free;
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+.header-nav__slogan {
+	visibility: collapse;
 
 	@media #{$not-mobile} {
-		position: relative;
-		min-width: 259px;
-		min-height: 24px;
-		margin: 0;
-		clip-path: inset(0%);
+		display: block;
+		grid-area: free;
 	}
 }

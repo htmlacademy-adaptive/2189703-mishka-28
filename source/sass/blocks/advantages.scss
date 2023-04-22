@@ -19,8 +19,17 @@
 	margin: 0;
 	list-style-type: none;
 
-	@media #{$not-mobile} {
-		display: grid;
-		grid-template-columns: repeat(2, auto);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+@media #{$mobile-only} {
+	.advantages__list {
+		grid-template-columns: 1fr;
+	}
+
+	.advantages__item:nth-of-type(2n+2) {
+		order: 1;
 	}
 }

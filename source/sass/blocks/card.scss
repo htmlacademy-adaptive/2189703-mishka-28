@@ -1,12 +1,14 @@
 .card {
-	@media #{$tablet-only} {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+	display: grid;
+	grid-template-columns: repeat(var(--column-count, 1), 1fr);
+
+	@media #{$not-mobile} {
+		--column-count: 2;
 		grid-template-rows: auto 1fr auto;
 	}
 
 	@media #{$desktop-only} {
-		display: block;
+		--column-count: 1;
 	}
 }
 
@@ -41,21 +43,6 @@
 }
 
 .card__buy {
-	@media #{$tablet-only} {
-		grid-column: 2/3;
-		grid-row: 3/4;
-	}
-}
-
-.card__price {
-	padding-top: 22.5px;
-	padding-bottom: 28.5px;
-	padding-left: 25px;
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 24px;
-	color: #000000;
-
 	@media #{$tablet-only} {
 		grid-column: 2/3;
 		grid-row: 3/4;
