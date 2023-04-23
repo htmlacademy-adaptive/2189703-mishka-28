@@ -3,44 +3,47 @@
 
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: auto 1fr;
+
 
 	@media #{$desktop-only} {
-		padding-left: 17%;
 		width: 1050px;
+		padding-left: 17%;
 		margin: 0 auto;
+		grid-template-columns: 33% 50%;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas:
+			"title image"
+			"text image"
+			"write image";
+	}
+}
 
-		grid-template-columns: 50% 1fr;
+.contacts__title {
+	@media #{$desktop-only} {
+		grid-area: title;
 	}
 }
 
 .contacts__text {
-	font-size: 14px;
-	line-height: 30px;
-
 	@media #{$desktop-only} {
-		grid-column: 1/2;
-		grid-row: 1/2;
+		grid-area: text;
 	}
 }
 
 .contacts__image {
-	padding-top: 32px;
-	padding-bottom: 42px;
-
 	@media #{$desktop-only} {
-		grid-column: 2/3;
-		grid-row: 1/-1;
+		grid-area: image;
 	}
 }
 
 
 .contacts__write {
+	text-align: center;
+
 	@media #{$desktop-only} {
 		width: 230px;
 		height: 52px;
 
-		grid-column: 1/2;
-		grid-row: 2/3;
+		grid-area: write;
 	}
 }

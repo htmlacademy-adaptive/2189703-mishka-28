@@ -111,8 +111,9 @@
 		</div>
 	</section>
 	<section class="contacts">
-		<div class="contacts-text page__centerer">
-			<h2 class="contacts-text__title headline">Контакты</h2>
+		<h2 class="contacts__title headline">Контакты</h2>
+
+		<div class="contacts__text contacts-text page__centerer">
 			<div class="contacts-text__email">
 				<span class="contacts-text__email-label">e-mail:</span>
 				<span class="contacts-text__email-email">info@mimimishkashop.ru</span>
@@ -122,10 +123,13 @@
 				<address class="contacts-text__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
 			</div>
 		</div>
+
 		<div class="contacts__image">
 			{% include "./templates/picture.twig" with {name: "map", class: "contacts__img", alt: "Поисково-информационная карта."} %}
 		</div>
+
 		<a class="contacts__write link page__centerer" href="#">Напишите нам</a>
+
 	</section>
 </main>
 {% endblock %}
