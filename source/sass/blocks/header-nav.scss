@@ -1,6 +1,7 @@
 .header-nav {
 	display: grid;
 	grid-template-columns: 1fr auto;
+	grid-template-rows: repeat(3, auto);
 	grid-template-areas:
 		"logo toogle"
 		"menu menu"
@@ -65,18 +66,21 @@
 
 .submenu-list {
 	visibility: collapse;
+	margin-bottom: -105px;
 
 	@media #{$desktop-only} {
-		display: block;
+		margin-bottom: 0;
+		visibility: visible;
 		grid-area: submenu;
 	}
 }
 
 .header-nav__slogan {
 	visibility: collapse;
+	margin-bottom: -40px;
 
 	@media #{$not-mobile} {
-		display: block;
+		visibility: visible;
 		grid-area: free;
 	}
 }
