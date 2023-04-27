@@ -1,17 +1,19 @@
 .contacts-text {
+	display: grid;
+	grid-template-columns: 1fr;
 	font-size: 14px;
 	line-height: 30px;
-	display: flex;
-	flex-direction: column;
+
 
 	@media #{$not-mobile} {
-		flex-direction: row;
+		grid-template-columns: 50% 50%;
 	}
 
 	@media #{$desktop-only} {
-		flex-direction: column;
+		grid-template-columns: 1fr;
 	}
 }
+
 
 .contacts-text__email {
 	padding-bottom: 30px;

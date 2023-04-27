@@ -5,22 +5,23 @@
 {% block main %}
 <main class="main-container main">
 	<div class="main__container">
-		<div class="main__wrapper page__centerer">
+		<div class="main__wrapper page__centerer page__centerer--mobile-off">
+
 			<h1 class="main__title heading">
 				Милые штуки ручной <br> работы для дома
 			</h1>
-			<nav class="main__nav main-nav">
-				<a class="main-nav__link link main-nav__interior" href="#">
-					<div class="main-nav__text">
+			<div class="main__nav-inner inner-nav">
+				<a class="inner-nav__link link inner-nav__interior" href="javascript:undefined">
+					<div class="inner-nav__text page__centerer page__centerer--mobile-on">
 						Предметы интерьера
 					</div>
 				</a>
-				<a class="main-nav__link main-nav__toys">
-					<div class="main-nav__text">
+				<a class="inner-nav__link link inner-nav__toys" href="javascript:undefined">
+					<div class="inner-nav__text page__centerer page__centerer--mobile-on">
 						Детские игрушки
 					</div>
 				</a>
-			</nav>
+			</div>
 		</div>
 
 	</div>
@@ -71,7 +72,7 @@
 					</blockquote>
 					<figcaption class="reviews__author">
 						Анастасия Красильникова
-						<a class="reviews__link" href="#">@misssssiskras</a>
+						<a class="reviews__link" href="javascript:undefined">@misssssiskras</a>
 					</figcaption>
 				</figure>
 			</div>
@@ -84,7 +85,7 @@
 					</blockquote>
 					<figcaption class="reviews__author">
 						Екатерина Красильникова
-						<a class="reviews__link" href="#">@misssssiskras2</a>
+						<a class="reviews__link" href="javascript:undefined">@misssssiskras2</a>
 					</figcaption>
 				</figure>
 			</div>
@@ -95,41 +96,42 @@
 					</blockquote>
 					<figcaption class="reviews__author">
 						Елена Красильникова
-						<a class="reviews__link" href="#">@misssssiskras3</a>
+						<a class="reviews__link" href="javascript:undefined">@misssssiskras3</a>
 					</figcaption>
 				</figure>
 			</div>
 			<div class="reviews__toogle">
-				<button class="reviews__unto">
+				<button class="reviews__unto" type="button">
 					<span class="visually-hidden">Предыдущий отзыв</span>
 				</button>
-				<button class="reviews__next">
+				<button class="reviews__next" type="button">
 					<span class="visually-hidden">Следующий отзыв</span>
 				</button>
 			</div>
-			<a class="reviews__write link" href="#">Написать</a>
+			<a class="reviews__write link" href="javascript:undefined">Написать</a>
 		</div>
 	</section>
-	<section class="contacts">
-		<h2 class="contacts__title headline">Контакты</h2>
-
-		<div class="contacts__text contacts-text page__centerer">
-			<div class="contacts-text__email">
-				<span class="contacts-text__email-label">e-mail:</span>
-				<span class="contacts-text__email-email">info@mimimishkashop.ru</span>
+	<div class="main__contacts-container page__centerer page__centerer--desktop-on">
+		<section class="contacts">
+			<div class="contacts__text page__centerer page__centerer--desktop-off">
+				<h2 class="contacts__title headline">Контакты</h2>
+				<div class="contacts-text">
+					<div class="contacts-text__email">
+						<span class="contacts-text__email-label">e-mail:</span>
+						<span class="contacts-text__email-email">info@mimimishkashop.ru</span>
+					</div>
+					<div class="contacts-text__address">
+						<span class="contacts-text__address-label">адрес:</span>
+						<address class="contacts-text__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
+					</div>
+				</div>
 			</div>
-			<div class="contacts-text__address">
-				<span class="contacts-text__address-label">адрес:</span>
-				<address class="contacts-text__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
+			<div class="contacts__image">
+				{% include "./templates/picture.twig" with {name: "map", class: "contacts__img", alt: "Поисково-информационная карта."} %}
 			</div>
-		</div>
+			<a class="contacts__write link page__centerer" href="javascript:undefined">Напишите нам</a>
+		</section>
+	</div>
 
-		<div class="contacts__image">
-			{% include "./templates/picture.twig" with {name: "map", class: "contacts__img", alt: "Поисково-информационная карта."} %}
-		</div>
-
-		<a class="contacts__write link page__centerer" href="#">Напишите нам</a>
-
-	</section>
 </main>
 {% endblock %}

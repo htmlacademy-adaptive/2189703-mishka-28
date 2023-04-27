@@ -22,4 +22,28 @@
 		width: 1050px;
 		margin: 0 auto;
 	}
+
+	&--desktop-on {
+		@media (max-width: 1149px) {
+			display: contents;
+		}
+	}
+
+	&--desktop-off {
+		@media (min-width: 1150px) {
+			display: contents;
+		}
+	}
+
+	&--mobile-on {
+		@media (min-width: 768px) {
+			display: contents;
+		}
+	}
+
+	&--mobile-off {
+		@media (max-width: 767.9px) {
+			display: contents;
+		}
+	}
 }
