@@ -3,4 +3,14 @@
 	font-weight: 700;
 	line-height: 30px;
 	color: #000000;
+
+	@media #{$not-mobile} {
+		font-size: 45px;
+		line-height: 50px;
+
+		@media #{$desktop-only} {
+			font-size: 53px;
+			line-height: 57px;
+		}
+	}
 }

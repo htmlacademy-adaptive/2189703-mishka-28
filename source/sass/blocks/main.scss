@@ -1,17 +1,32 @@
-.main {
-	position: relative;
-}
-
 .main__container {
 	background: var(--bg-image) no-repeat center / cover;
 
 	@include bg-image("bg-image1");
 	background-color: #f1f1f1;
-}
 
+
+	@media #{$not-mobile} {
+		background: none;
+	}
+}
 
 .main__title {
 	margin: 0;
-	padding: 73px 0 121px;
+	padding: 73px 30px 121px 30px;
 	z-index: 3;
+
+	@media #{$not-mobile} {
+		padding-top: 155px;
+		padding-bottom: 372px;
+		font-size: 43px;
+		line-height: 50px;
+		z-index: 3;
+	}
+
+	@media #{$desktop-only} {
+		padding-top: 158px;
+		padding-bottom: 355px;
+		font-size: 53px;
+		line-height: 57px;
+	}
 }

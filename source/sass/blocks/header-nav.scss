@@ -1,15 +1,19 @@
 .header-nav {
+	position: relative;
+}
+
+.header-nav__wrapper {
 	display: grid;
-	grid-template-columns: 1fr auto;
+	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, auto);
 	grid-template-areas:
-		"logo toogle"
-		"menu menu"
-		"user user";
+		"logo"
+		"menu"
+		"user";
 
-	@media #{$tablet-only} {
+	@media #{$not-mobile} {
 		grid-template-columns: 1fr 1fr;
-
+		grid-template-rows: repeat(2, auto);
 		grid-template-areas:
 			"logo user"
 			"menu free";
@@ -24,36 +28,96 @@
 	}
 }
 
+.logo__header {
+	grid-area: logo;
+}
+
+.header-nav__toogle {
+	position: absolute;
+	top: -79px;
+	right: 30px;
+	min-width: 20px;
+	height: 79px;
+	padding: 20px 0;
+	cursor: pointer;
+	border: none;
+
+	@media #{$not-mobile} {
+		display: none;
+	}
+}
+
+
+.header-nav--closed .header-nav__toogle {
+	background-image: url("../../icons/stack.svg#menu");
+}
+
+
+.header-nav--opened .header-nav__toogle {
+	right: 30px;
+	background-image: url("../../icons/stack.svg#menu-close");
+}
+
+.header-nav--nojs .header-nav__toogle {
+	display: none;
+}
+
+
 .header-nav__list {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 
-	padding-left: 75px;
-	padding-top: 28px;
-	padding-bottom: 27px;
-	border: 1px solid #ececec;
-
 	@media #{$not-mobile} {
-		padding: 10px;
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
-.header-nav__logo {
-	grid-area: logo;
-	justify-self: center;
-}
-
-
-.header-nav__toogle {
-	width: 20px;
-	grid-area: toogle;
+// бордюр в выпадающем меню на мобиле
+.header-nav__item {
+	position: relative;
+	border-bottom: 1px solid #ececec;
 
 	@media #{$not-mobile} {
-		visibility: collapse;
+		display: block;
+		border-bottom: none;
 	}
 }
 
+// выпадающее меню при разных состояниях
+
+@media #{$mobile-only} {
+	.header-nav--closed .header-nav__list {
+		display: none;
+	}
+}
+
+@media #{$mobile-only} {
+	.header-nav--opened .header-nav__wrapper {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		min-height: 80vh;
+		background-color: #ffffff;
+	}
+}
+
+@media #{$mobile-only} {
+	.header-nav--nojs .header-nav__wrapper {
+		position: static;
+		min-height: 0;
+	}
+
+	.header-nav--nojs .header-nav__item {
+		display: block;
+	}
+}
+
+// общая сетка шапка на разных вьюпортах
 
 .menu-list {
 	grid-area: menu;
@@ -65,22 +129,27 @@
 }
 
 .submenu-list {
+	max-height: 0;
 	visibility: collapse;
-	margin-bottom: -105px;
 
 	@media #{$desktop-only} {
-		margin-bottom: 0;
+		max-height: 100%;
 		visibility: visible;
 		grid-area: submenu;
 	}
 }
 
 .header-nav__slogan {
+	margin: 0;
+	max-height: 0;
 	visibility: collapse;
-	margin-bottom: -40px;
+
 
 	@media #{$not-mobile} {
+		justify-self: end;
+		max-height: 100%;
 		visibility: visible;
+		margin: auto 0;
 		grid-area: free;
 	}
 }

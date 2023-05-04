@@ -1,16 +1,25 @@
-.logo__header {
-	width: 86px;
-	height: 35px;
-	padding: 22px;
+.logo__img {
+	display: block;
+	width: 100%;
+}
 
-	@media #{$tablet-only} {
+.logo__header {
+	grid-area: logo;
+	width: 86px;
+	padding: 22px;
+	margin: 0 auto;
+
+	@media #{$not-mobile} {
+		position: absolute;
 		width: 114px;
-		height: 46px;
+		padding-left: 0;
+		z-index: 1;
 	}
 
 	@media #{$desktop-only} {
 		width: 149px;
-		height: 72px;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
 

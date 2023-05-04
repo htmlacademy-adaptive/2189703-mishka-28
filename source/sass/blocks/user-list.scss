@@ -1,0 +1,109 @@
+.user-list {
+	display: flex;
+	flex-direction: column;
+
+	@media #{$not-mobile} {
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+}
+
+.user-list__item {
+	padding: 27px 0;
+	padding-left: 76px;
+
+	@media #{$not-mobile} {
+		padding: 32px 0;
+	}
+}
+
+
+.user-list__link {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -46px;
+		width: 22px;
+		height: 22px;
+		background-color: #000000;
+		opacity: 20%;
+	}
+}
+
+.user-list__link--search {
+	@media #{$not-mobile} {
+		max-width: 50px;
+	}
+}
+
+.user-list__sign--search {
+	visibility: visible;
+
+	@media #{$not-mobile} {
+		display: block;
+		visibility: collapse;
+		max-width: 50px;
+		max-height: 0;
+		transform: scale(0);
+	}
+}
+
+
+.user-list__link:hover::before {
+	background-color: var(--accent-color);
+	opacity: 100%;
+}
+
+
+.user-list__link--search::before {
+	mask-image: url("../../icons/stack.svg#search");
+
+	@media #{$not-mobile} {
+		top: -10px;
+	}
+}
+
+.user-list__link--cart::before {
+	mask-image: url("../../icons/stack.svg#cart");
+}
+
+//Общий фон для шапки и страницы для таблета и десктопа
+
+@media #{$not-mobile} {
+	.user-list {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: -10%;
+			width: calc(786px + 20%);
+			height: 758px;
+			margin: 0 auto;
+			transform: translateY(100%);
+			background: var(--bg-image) no-repeat center / cover;
+
+			@include bg-image("bg-image1");
+			background-color: #f9f9f9;
+
+			z-index: -1;
+		}
+	}
+}
+
+@media #{$desktop-only} {
+	.user-list {
+		position: relative;
+
+		&::before {
+			width: 1250px;
+
+			right: -120px;
+			height: 746px;
+		}
+	}
+}

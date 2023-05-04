@@ -13,11 +13,14 @@
 @import "./blocks/heading.scss"; //Главный заголовок на каждой странице
 @import "./blocks/headline.scss"; //Заголовки второго уровня в секциях
 @import "./blocks/link.scss";
+@import "./blocks/button.scss";
 
 //подкючаем шапку
 @import "./blocks/main-header.scss";
 @import "./blocks/header-nav.scss";
 @import "./blocks/menu-list.scss";
+@import "./blocks/user-list.scss";
+@import "./blocks/submenu-list.scss";
 
 //подключаем главную страницу
 
