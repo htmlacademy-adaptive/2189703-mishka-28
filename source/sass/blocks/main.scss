@@ -1,14 +1,35 @@
 .main__container {
+	position: relative;
 	background: var(--bg-image) no-repeat center / cover;
 
 	@include bg-image("bg-image1");
-	background-color: #f1f1f1;
 
+	&::before {
+		content: "";
+		display: none;
+		position: absolute;
+		top: -62px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: var(--bg-image) no-repeat center / cover;
+
+		@include bg-image("bg-image1");
+		background-color: #f9f9f9;
+		border-top: 1px solid #e0e0e0;
+
+		z-index: -1;
+	}
 
 	@media #{$not-mobile} {
 		background: none;
+
+		&::before {
+			display: block;
+		}
 	}
 }
+
 
 .main__title {
 	margin: 0;

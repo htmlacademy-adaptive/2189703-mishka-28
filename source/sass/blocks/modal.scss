@@ -113,6 +113,10 @@
 
 .modal__button-button {
 	width: 260px;
+	color: #ffffff;
+	background-color: #63d1bb;
+	border: none;
+
 
 	@media #{$not-mobile} {
 		width: 350px;

@@ -5,7 +5,7 @@
 {% block main %}
 <main class="main-container main">
 	<div class="main__container">
-		<div class="main__wrapper page__centerer page__centerer--mobile-off">
+		<div class="main__wrapper page__centerer">
 
 			<h1 class="main__title heading">
 				Милые штуки ручной <br> работы для дома
@@ -24,8 +24,8 @@
 			</div>
 		</div>
 	</div>
-	<section class="main__product product">
-		<div class="product__wrapper page__centerer">
+	<section class="main__product product page__centerer">
+		<div class="product__wrapper ">
 			<h2 class="product__title headline">Вязаные корзинки</h2>
 			<h3 class="product__subtitle">Товар недели</h3>
 
@@ -47,16 +47,16 @@
 			<a class="product__button button" href="./templates/modal.twig">Заказать</a>
 		</div>
 	</section>
-	<section class="main__advantages advantages">
+	<section class="main__advantages advantages ">
 		<div class="advantages__wrapper page__centerer">
 			<h2 class="advantages__title headline">Коротко о нас:</h2>
 			<ul class="advantages__list">
-				<li class="advantages__item">Экологически чистые материалы</li>
-				<li class="advantages__item">Связано вручную с любовью и умилением</li>
-				<li class="advantages__item">Скандинавский стиль по российской цене</li>
-				<li class="advantages__item">Поддержка отечественного производителя</li>
-				<li class="advantages__item">Увеличивает лайки на фотографиях</li>
-				<li class="advantages__item">Поставляется в подарочной упаковке</li>
+				<li class="advantages__item advantages__item--eco">Экологически <br> чистые материалы</li>
+				<li class="advantages__item advantages__item--knit">Связано вручную <br> с любовью и умилением</li>
+				<li class="advantages__item advantages__item--style">Скандинавский стиль <br> по российской цене</li>
+				<li class="advantages__item advantages__item--home">Поддержка отечественного <br> производителя</li>
+				<li class="advantages__item advantages__item--like">Увеличивает лайки <br> на фотографиях</li>
+				<li class="advantages__item advantages__item--present">Поставляется <br> в подарочной упаковке</li>
 			</ul>
 		</div>
 	</section>
@@ -99,14 +99,14 @@
 				</figure>
 			</div>
 			<div class="reviews__toogle">
-				<button class="reviews__unto" type="button">
+				<button class="reviews__button reviews__button--unto" type="button">
 					<span class="visually-hidden">Предыдущий отзыв</span>
 				</button>
-				<button class="reviews__next" type="button">
+				<button class="reviews__button" type="button">
 					<span class="visually-hidden">Следующий отзыв</span>
 				</button>
 			</div>
-			<a class="reviews__write link" href="javascript:undefined">Написать</a>
+			<a class="reviews__write button" href="javascript:undefined">Написать</a>
 		</div>
 	</section>
 	<div class="main__contacts-container page__centerer page__centerer--desktop-on">
@@ -120,14 +120,14 @@
 					</div>
 					<div class="contacts-text__address">
 						<span class="contacts-text__address-label">адрес:</span>
-						<address class="contacts-text__address-address">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
+						<address class="contacts-text__address-address">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</address>
 					</div>
 				</div>
 			</div>
 			<div class="contacts__image">
-				{% include "./templates/picture.twig" with {name: "map", class: "contacts__img", alt: "Поисково-информационная карта."} %}
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257260655!2d30.32046711195314!3d59.93871916198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1683295300614!5m2!1sru!2sru" width="320" height="457" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Магазин «Мишка» на информационной карте."></iframe>
 			</div>
-			<a class="contacts__write link page__centerer" href="javascript:undefined">Напишите нам</a>
+			<a class="contacts__write button page__centerer" href="javascript:undefined">Напишите нам</a>
 		</section>
 	</div>
 

@@ -1,6 +1,10 @@
-.logo__img {
+.logo__img svg {
 	display: block;
 	width: 100%;
+}
+
+.logo {
+	object-fit: cover;
 }
 
 .logo__header {
@@ -25,4 +29,12 @@
 
 .logo__footer {
 	width: 102px;
+
+	&:hover {
+		background-color: #46c1ae;
+	}
+
+	&:active {
+		opacity: 30%;
+	}
 }

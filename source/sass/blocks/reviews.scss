@@ -1,18 +1,55 @@
 .reviews {
+	position: relative;
 	padding-top: 27px;
 	padding-bottom: 45px;
 
+	@media #{$not-mobile} {
+		padding-top: 52px;
+		padding-bottom: 80px;
+	}
 
-	.reviews__wrapper {
-		display: grid;
-		grid-template-columns: 1fr;
+	@media #{$desktop-only} {
+		padding-top: 59px;
+		padding-bottom: 80px;
+		padding-left: calc(100% / 6);
+	}
+}
 
-		@media #{$not-mobile} {
-			grid-template-columns: auto 175px;
-			grid-template-rows: repeat(2, min-content);
+.reviews__wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+
+	@media #{$not-mobile} {
+		position: relative;
+		padding-top: 80px;
+		padding-bottom: 47px;
+		grid-template-columns: auto 175px;
+		grid-template-rows: repeat(2, min-content);
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: -50px;
+			width: 350px;
+			height: 457px;
+			background: var(--bg-image) no-repeat center / cover;
+
+			@include bg-image("bg-image2");
+			z-index: -1;
+		}
+	}
+
+	@media #{$desktop-only} {
+		padding-top: 59px;
+		padding-bottom: 160px;
+		grid-template-columns: 67% 175px;
+
+		&::after {
+			left: 0;
 		}
 	}
 }
+
 
 .reviews__title {
 	margin: 0;
@@ -37,6 +74,7 @@
 	@media #{$not-mobile} {
 		grid-column: 1/-1;
 		grid-row: 2/3;
+		font-size: 17px;
 		z-index: 1;
 	}
 }
@@ -44,6 +82,11 @@
 .reviews__text {
 	margin: 0;
 	padding-bottom: 3px;
+
+	@media #{$not-mobile} {
+		padding-top: 40px;
+		padding-bottom: 61px;
+	}
 }
 
 .reviews__author {
@@ -63,24 +106,47 @@
 .reviews__toogle {
 	display: flex;
 	min-width: 175px;
+	margin-bottom: 38px;
 
 	@media #{$not-mobile} {
 		grid-column: 2/3;
 		grid-row: 2/3;
+		align-self: end;
+		margin-bottom: 30px;
+		z-index: 1;
 	}
 }
 
-/* .reviews__unto,
-.reviews__next {
-	width: 50px;
+.reviews__button {
+	width: 130px;
 	height: 26px;
-	padding: 13px 38px;   Это опишу в декоративке
+	padding: 13px 38px;
+	border: none;
+	mask-image: url("../../icons/stack.svg#arrow");
+	background-color: #000000;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 60%;
+	}
+
+	&:active {
+		opacity: 30%;
+	}
 }
- */
+
+.reviews__button--unto {
+	transform: rotate(180deg);
+}
+
+
 .reviews__write {
-	width: 175px;
+	width: 260px;
+	box-sizing: border-box;
 
 	@media #{$not-mobile} {
+		align-self: center;
+		width: 175px;
 		grid-column: 2/3;
 		grid-row: 1/2;
 	}

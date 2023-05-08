@@ -1,6 +1,18 @@
 .label {
+	position: relative;
+	display: flex;
+	height: 40px;
+	align-items: center;
+	margin: auto 0;
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 18px;
 	color: #000000;
+	cursor: pointer;
+
+	@media #{$not-mobile} {
+		font-size: 18px;
+		line-height: 19px;
+		padding: 15px 0;
+	}
 }

@@ -1,15 +1,20 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 73px;
+	padding-top: 12px;
+	padding-bottom: 55px;
 }
 
-.form__legend {
-	padding: 12px 0;
+.form__color {
+	padding: 0;
+	border: none;
 }
 
-.form__add {
+.form__contact {
 	display: grid;
+	padding: 34px 0;
+	gap: 34px;
+	column-gap: 0;
 
 	@media #{$not-mobile} {
 		grid-template-columns: 25% 1fr;
@@ -20,65 +25,80 @@
 	}
 }
 
-.form__send {
-	display: flex;
-	flex-direction: column;
-
-	@media #{$not-mobile} {
-		flex-direction: row;
-		justify-content: space-between;
-	}
-
-	@media #{$desktop-only} {
-		padding-left: 17%;
-	}
-}
-
-.form__text {
-	@media #{$not-mobile} {
-		order: 2;
-	}
-}
-
-// эти стили уйдут с декоративным оформлением в другие блоки
-
-
-.form__login-legend {
-	padding-top: 33px;
-	padding-bottom: 7px;
-}
-
-.form__login-label {
-	display: block;
-	padding-top: 22px;
-}
 
 .form__tel-legend {
 	display: block;
-	padding-top: 34.5px;
 }
 
-.form__tel-tel {
-	padding-top: 14px;
-	padding-bottom: 19px;
-	font-size: 17px;
-	line-height: 18px;
-	border: none;
-	border-bottom: 2px solid #000000;
+
+.form__icon {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 80%;
+		bottom: 25px;
+		background-color: #000000;
+		opacity: 20%;
+		z-index: 1;
+
+		@media #{$not-mobile} {
+			top: 25px;
+		}
+	}
+}
+
+.form__icon:hover::before {
+	background-color: #62d1ba;
+	opacity: 100;
+	z-index: 1;
+}
+
+.form__icon:active::before {
+	background-color: #62d1ba;
+	opacity: 100;
+	z-index: 1;
+}
+
+.form__icon--tel {
+	&::before {
+		mask-image: url("../../icons/stack.svg#tel");
+	}
+}
+
+.form__tel-tel.input {
+	@media #{$not-mobile} {
+		background-color: #f1f1f1;
+	}
+
+	@media #{$desktop-only} {
+		max-width: 700px;
+	}
 }
 
 .form__email-legend {
 	display: block;
-	padding-top: 34.5px;
 }
 
-.form__email-email {
-	padding-top: 16px;
-	padding-bottom: 18px;
-	font-size: 17px;
-	line-height: 18px;
-	border: none;
-	border-bottom: 2px solid #000000;
+.form__email-email.input {
+	@media #{$not-mobile} {
+		background-color: #f1f1f1;
+	}
+
+	@media #{$desktop-only} {
+		max-width: 700px;
+	}
+}
+
+.form__icon--email {
+	&::before {
+		mask-image: url("../../icons/stack.svg#mail");
+	}
 }
 
 .form__extra-legend {
@@ -91,5 +111,41 @@
 	padding: 17px;
 	font-size: 17px;
 	line-height: 18px;
+	max-width: 700px;
 	border: 2px solid #444444;
+
+	&:hover {
+		border-color: #62d1ba;
+	}
+
+	&:active {
+		border-color: #62d1ba;
+	}
+
+	&:focus {
+		border-color: #62d1ba;
+		outline: none;
+	}
+}
+
+
+.form__send.form__contact {
+	@media #{$desktop-only} {
+		max-width: 700px;
+	}
+}
+
+.form__text {
+	display: block;
+
+	@media #{$not-mobile} {
+		order: 2;
+		margin-left: auto;
+	}
+}
+
+.form__button {
+	@media #{$not-mobile} {
+		width: 230px;
+	}
 }

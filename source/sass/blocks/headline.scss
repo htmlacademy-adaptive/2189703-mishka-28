@@ -5,12 +5,12 @@
 	color: #000000;
 
 	@media #{$not-mobile} {
-		font-size: 45px;
+		font-size: 43px;
 		line-height: 50px;
+	}
 
-		@media #{$desktop-only} {
-			font-size: 53px;
-			line-height: 57px;
-		}
+	@media #{$desktop-only} {
+		font-size: 53px;
+		line-height: 57px;
 	}
 }

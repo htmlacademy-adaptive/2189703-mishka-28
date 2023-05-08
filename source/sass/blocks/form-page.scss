@@ -1,12 +1,91 @@
+.form-page__container {
+	background-color: #f1f1f1;
+	z-index: -1;
+
+	@media #{$not-mobile} {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 62px;
+			top: -62px;
+			background-color: #f1f1f1;
+			z-index: -1;
+		}
+	}
+}
+
 .form-page__title {
 	margin: 0;
 	padding: 74px 0;
+	text-align: center;
+	font-size: 27px;
+
+	@media #{$not-mobile} {
+		font-size: 43px;
+		padding-top: 38px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 53px;
+		padding-top: 40px;
+		padding-bottom: 96px;
+	}
+}
+
+.form-page__wrapper {
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 24px;
+		top: -20px;
+		left: 0;
+		background-color: #ffffff;
+		display: none;
+		transform: translateY(8px);
+
+
+		@media #{$not-mobile} {
+			display: block;
+			block-size: 20px;
+			background: url("../../icons/stack.svg#wave") repeat-x center / 35px 17px;
+			stroke: #ffffff;
+			filter: drop-shadow(0 6px 0 #ffffff);
+		}
+	}
 }
 
 .form-page__text {
 	margin: 0;
 	padding: 17px 0;
-	padding-left: 30px;
 	font-size: 13px;
 	line-height: 24px;
+
+	@media #{$not-mobile} {
+		padding: 54px 0;
+		padding-right: 90px;
+		font-size: 17px;
+		line-height: 30px;
+	}
+
+	@media #{$desktop-only} {
+		padding: 0 calc(100% / 6);
+		padding-top: 99px;
+		padding-bottom: 50px;
+	}
+}
+
+.form__wrapper {
+	@media #{$not-mobile} {
+		background-color: #f1f1f1;
+	}
+}
+
+.modal {
+	display: none;
 }

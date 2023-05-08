@@ -1,17 +1,44 @@
 .contacts {
-	padding: 38px 0;
+	position: relative;
+	padding: 44px 0;
+	padding-bottom: 39px;
 
 	display: grid;
 	grid-template-columns: 1fr;
 
+	@media #{$not-mobile} {
+		padding-top: 68px;
+	}
+
 	@media #{$desktop-only} {
 		padding-left: 17%;
-		grid-template-columns: 33% 50%;
-		grid-template-rows: auto 1fr auto;
+		padding-top: 68px;
+		padding-bottom: 105px;
+		grid-template-columns: 32% 1fr;
+		grid-template-rows: auto 240px auto;
 		grid-template-areas:
 			"title image"
 			"text image"
 			"write image";
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		height: 6px;
+		width: 100%;
+		mask: url("../../icons/stack.svg#wave") repeat-x center / 15px 8px;
+		background-color: #f1f1f1;
+
+		@media #{$not-mobile} {
+			height: 17px;
+			mask: url("../../icons/stack.svg#wave") repeat-x center / 35px 17px;
+		}
+
+		@media #{$desktop-only} {
+			height: 23px;
+		}
 	}
 }
 
@@ -22,8 +49,30 @@
 
 
 .contacts__title {
+	margin: 0;
+
+	@media #{$not-mobile} {
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 47px;
+			height: 82px;
+			background-image: url("../../icons/stack.svg#flag");
+		}
+	}
+
 	@media #{$desktop-only} {
 		grid-area: title;
+		padding-top: 60px;
+
+		&::before {
+			left: -110px;
+		}
 	}
 }
 
@@ -35,20 +84,50 @@
 
 .contacts__image {
 	display: block;
+	position: relative;
+	height: 454px;
+	padding-bottom: 42px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 45%;
+		transform: translateY(-50%) translateY(-50%);
+		width: 67px;
+		height: 100px;
+		background-image: url("../../icons/stack.svg#map-pin");
+		z-index: 100;
+	}
+
+	@media #{$not-mobile} {
+		height: 457px;
+		padding-bottom: 55px;
+	}
 
 	@media #{$desktop-only} {
 		grid-area: image;
 	}
 }
 
+.contacts iframe {
+	border: none;
+	display: block;
+	width: 100%;
+}
+
 
 .contacts__write {
-	text-align: center;
+	display: block;
+	width: 260px;
+	justify-self: center;
 
 	@media #{$desktop-only} {
+		left: 0;
 		width: 230px;
 		height: 52px;
-
+		justify-self: start;
 		grid-area: write;
+		justify-content: start;
 	}
 }

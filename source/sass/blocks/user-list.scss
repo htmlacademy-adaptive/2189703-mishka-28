@@ -3,8 +3,19 @@
 	flex-direction: column;
 
 	@media #{$not-mobile} {
+		position: relative;
 		flex-direction: row;
 		justify-content: flex-end;
+
+		/* &::before {
+			content: "";
+			position: absolute;
+			right: -120px;
+			height: 89px;
+			width: calc(100vw + 120px);
+			border-bottom: 1px solid #e0e0e0;
+			z-index: -1;
+		} */
 	}
 }
 
@@ -14,6 +25,16 @@
 
 	@media #{$not-mobile} {
 		padding: 32px 0;
+	}
+}
+
+.user-list__item--search {
+	@media #{$not-mobile} {
+		left: -83px;
+		width: 83px;
+		height: 22px;
+		border-left: 1px solid #e5e5e5;
+		border-right: 1px solid #e5e5e5;
 	}
 }
 
@@ -33,11 +54,6 @@
 	}
 }
 
-.user-list__link--search {
-	@media #{$not-mobile} {
-		max-width: 50px;
-	}
-}
 
 .user-list__sign--search {
 	visibility: visible;
@@ -45,7 +61,6 @@
 	@media #{$not-mobile} {
 		display: block;
 		visibility: collapse;
-		max-width: 50px;
 		max-height: 0;
 		transform: scale(0);
 	}
@@ -59,51 +74,18 @@
 
 
 .user-list__link--search::before {
+	content: "";
+	width: 22px;
 	mask-image: url("../../icons/stack.svg#search");
 
+
 	@media #{$not-mobile} {
-		top: -10px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%);
 	}
 }
 
 .user-list__link--cart::before {
 	mask-image: url("../../icons/stack.svg#cart");
-}
-
-//Общий фон для шапки и страницы для таблета и десктопа
-
-@media #{$not-mobile} {
-	.user-list {
-		position: relative;
-
-		&::before {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			right: -10%;
-			width: calc(786px + 20%);
-			height: 758px;
-			margin: 0 auto;
-			transform: translateY(100%);
-			background: var(--bg-image) no-repeat center / cover;
-
-			@include bg-image("bg-image1");
-			background-color: #f9f9f9;
-
-			z-index: -1;
-		}
-	}
-}
-
-@media #{$desktop-only} {
-	.user-list {
-		position: relative;
-
-		&::before {
-			width: 1250px;
-
-			right: -120px;
-			height: 746px;
-		}
-	}
 }
