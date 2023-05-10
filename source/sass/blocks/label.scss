@@ -1,9 +1,10 @@
 .label {
 	position: relative;
+	box-sizing: border-box;
 	display: flex;
+	gap: 30px;
 	height: 40px;
 	align-items: center;
-	margin: auto 0;
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 18px;

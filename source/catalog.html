@@ -4,7 +4,11 @@
 
 {% block main %}
 <main class="catalog">
-	<h1 class="catalog__title heading">Каталог товаров</h1>
+	<div class="catalog__title-container">
+		<div class="catalog__title-wrapper page__centerer">
+			<h1 class="catalog__title heading">Каталог товаров</h1>
+		</div>
+	</div>
 	<section class="catalog__cards cards page__centerer">
 			<h2 class="cards__title visually-hidden">Карточки товаров.</h2>
 			<ul class="cards__list">
@@ -15,10 +19,10 @@
 					<a class="card__link-caption link"  href="javascript:undefined">
 						<h3 class="card__caption caption">Зайчик-попрыгайчик</h3>
 					</a>
-					<div class="card__description description">Рост 30 см, вес 200 г</div>
+					<div class="card__description">Рост 30 см, вес 200 г</div>
 					<div class="card__buy buy">
 						<div class="buy__price">1 200 руб.</div>
-						<a class="buy__button cart" href="javascript:undefined">
+						<a class="buy__button" href="javascript:undefined">
 							<span class="visually-hidden">Добавить в корзину.</span>
 						</a>
 					</div>
@@ -30,10 +34,10 @@
 					<a class="card__link-caption link" href="javascript:undefined">
 						<h3 class="card__caption caption">Корзинка для белья</h3>
 					</a>
-					<div class="card__description description">Диаметр 15 см, высота 10 см</div>
+					<div class="card__description">Диаметр 15 см, высота 10 см</div>
 					<div class="card__buy buy">
 						<div class="buy__price">690 руб.</div>
-						<a class="buy__button cart" href="javascript:undefined">
+						<a class="buy__button" href="javascript:undefined">
 							<span class="visually-hidden">Добавить в корзину.</span>
 						</a>
 					</div>
@@ -45,10 +49,10 @@
 					<a class="card__link-caption link" href="javascript:undefined">
 						<h3 class="card__caption caption">Большая корзинка <br> для игрушек</h3>
 					</a>
-					<div class="card__description description">Диаметр 30 см, высота 30 см</div>
+					<div class="card__description">Диаметр 30 см, высота 30 см</div>
 					<div class="card__buy buy">
-						<div class="buy__price price">1 500 руб.</div>
-						<a class="buy__button cart" href="javascript:undefined">
+						<div class="buy__price">1 500 руб.</div>
+						<a class="buy__button link" href="javascript:undefined">
 							<span class="visually-hidden">Добавить в корзину.</span>
 						</a>
 					</div>
@@ -59,12 +63,17 @@
 			<h2 class="video__title">Процесс производства</h2>
 			<div class="video__player">
 				{% include "./templates/picture.twig" with {name: "video", class: "video__player-img", alt: "Заставка для видео в виде корзинки."} %}
-				<button class="video__player-button" type="button">
-					<span class="visually-hidden">Запуск видео-плэйера.</span>
-				</button>
+				<div class="video__button-position">
+					<button class="video__player-button" type="button">
+						<span class="visually-hidden">Запуск видео-плэйера.</span>
+					</button>
+				</div>
 			</div>
-			<div class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
-			<a class="video__button button link" href="javascript:undefined">Сделать заказ</a>
+			<div class="video__order">
+				<div class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
+				<a class="video__button button link" href="javascript:undefined">Сделать заказ</a>
+
+			</div>
 	</section>
 </main>
 {% endblock %}

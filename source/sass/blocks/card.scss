@@ -48,6 +48,19 @@
 }
 
 .card__buy {
+	position: relative;
+	border-bottom: 1px solid #ececec;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		height: 1px;
+		width: 80%;
+		margin: 0 10%;
+		background-color: #ececec;
+	}
+
 	@media #{$tablet-only} {
 		grid-column: 2/3;
 		grid-row: 3/4;

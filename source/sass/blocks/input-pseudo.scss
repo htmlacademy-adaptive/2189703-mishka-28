@@ -1,0 +1,32 @@
+.input-pseudo {
+	display: flex;
+	box-sizing: border-box;
+	appearance: none;
+	min-width: 42px;
+	height: 42px;
+	cursor: pointer;
+	border: 2px solid #444444;
+
+	@media #{$not-mobile} {
+		min-width: 52px;
+		height: 52px;
+		left: -130px;
+	}
+
+	&:hover {
+		border-color: #61d1bb;
+	}
+
+	&:active {
+		border-color: #b3b3b3;
+		opacity: 30%;
+	}
+
+	&::after {
+		content: "";
+		box-sizing: border-box;
+		width: 100%;
+		top: 50%;
+		transform: scale(0);
+	}
+}

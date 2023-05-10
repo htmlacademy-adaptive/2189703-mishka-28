@@ -4,11 +4,30 @@
 }
 
 .buy__price {
-	padding-top: 22.5px;
-	padding-bottom: 28.5px;
+	padding-top: 23px;
+	padding-bottom: 29px;
 	padding-left: 25px;
 	font-size: 15px;
 	font-weight: 700;
 	line-height: 24px;
 	color: #000000;
+}
+
+.buy__button {
+	width: 20px;
+	height: 20px;
+	margin-right: 27px;
+	align-self: center;
+	mask-image: url("../../icons/stack.svg#cart");
+	background-color: #000000;
+	opacity: 20%;
+
+	&:hover {
+		background-color: #63d1bb;
+		opacity: 100%;
+	}
+
+	&:active {
+		opacity: 30%;
+	}
 }

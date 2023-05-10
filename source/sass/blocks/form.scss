@@ -12,7 +12,7 @@
 
 .form__contact {
 	display: grid;
-	padding: 34px 0;
+	padding: 50px 0;
 	gap: 34px;
 	column-gap: 0;
 
@@ -39,17 +39,14 @@
 		position: absolute;
 		width: 24px;
 		height: 24px;
-		top: 50%;
-		transform: translateY(-50%);
-		left: 80%;
-		bottom: 25px;
+		right: 6px;
 		background-color: #000000;
 		opacity: 20%;
 		z-index: 1;
+	}
 
-		@media #{$not-mobile} {
-			top: 25px;
-		}
+	@media #{$desktop-only} {
+		max-width: 700px;
 	}
 }
 
@@ -147,5 +144,11 @@
 .form__button {
 	@media #{$not-mobile} {
 		width: 230px;
+	}
+}
+
+.form__wrapper {
+	@media #{$not-mobile} {
+		background-color: #f1f1f1;
 	}
 }

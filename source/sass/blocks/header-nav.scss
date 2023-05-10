@@ -28,16 +28,14 @@
 	}
 }
 
-.logo__header {
-	grid-area: logo;
-}
 
 .header-nav__toogle {
 	position: absolute;
-	top: -79px;
+	box-sizing: border-box;
+	top: -69px;
 	right: 30px;
 	min-width: 20px;
-	height: 79px;
+	height: 39px;
 	padding: 20px 0;
 	cursor: pointer;
 	border: none;
@@ -117,27 +115,6 @@
 	}
 }
 
-// общая сетка шапка на разных вьюпортах
-
-.menu-list {
-	grid-area: menu;
-}
-
-
-.user-list {
-	grid-area: user;
-}
-
-.submenu-list {
-	max-height: 0;
-	visibility: collapse;
-
-	@media #{$desktop-only} {
-		max-height: 100%;
-		visibility: visible;
-		grid-area: submenu;
-	}
-}
 
 .header-nav__slogan {
 	margin: 0;

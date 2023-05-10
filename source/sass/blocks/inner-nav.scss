@@ -69,7 +69,6 @@
 
 .inner-nav__text {
 	position: relative;
-	width: 50%;
 	display: block;
 	font-size: 19px;
 	font-weight: 700;
@@ -81,6 +80,8 @@
 		position: absolute;
 		width: 62px;
 		height: 62px;
+		right: 0;
+		transform: translateX(-33px);
 		mask-image: url("../../icons/stack.svg#interior");
 		background-color: #149080;
 		opacity: 50%;

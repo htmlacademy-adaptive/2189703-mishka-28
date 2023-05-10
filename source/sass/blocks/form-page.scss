@@ -79,13 +79,3 @@
 		padding-bottom: 50px;
 	}
 }
-
-.form__wrapper {
-	@media #{$not-mobile} {
-		background-color: #f1f1f1;
-	}
-}
-
-.modal {
-	display: none;
-}

@@ -8,10 +8,11 @@
 }
 
 .logo__header {
-	grid-area: logo;
 	width: 86px;
 	padding: 22px;
 	margin: 0 auto;
+	grid-area: logo;
+
 
 	@media #{$not-mobile} {
 		position: absolute;
@@ -31,7 +32,7 @@
 	width: 102px;
 
 	&:hover {
-		background-color: #46c1ae;
+		fill: #46c1ae;
 	}
 
 	&:active {

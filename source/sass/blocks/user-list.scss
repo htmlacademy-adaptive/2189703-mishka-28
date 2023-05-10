@@ -1,4 +1,6 @@
 .user-list {
+	grid-area: user;
+
 	display: flex;
 	flex-direction: column;
 
@@ -6,16 +8,6 @@
 		position: relative;
 		flex-direction: row;
 		justify-content: flex-end;
-
-		/* &::before {
-			content: "";
-			position: absolute;
-			right: -120px;
-			height: 89px;
-			width: calc(100vw + 120px);
-			border-bottom: 1px solid #e0e0e0;
-			z-index: -1;
-		} */
 	}
 }
 
