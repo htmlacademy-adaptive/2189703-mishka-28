@@ -62,7 +62,9 @@
 	grid-template-columns: repeat(var(--column-count, 1), 1fr);
 	gap: 24px;
 
-	--column-count: 2;
+	@media #{$not-mobile} {
+		--column-count: 2;
+	}
 
 
 	@media #{$desktop-only} {

@@ -5,16 +5,16 @@
 {% block main %}
 <main class="form-page">
 	<div class="form-page__container">
-			<h1 class="form-page__title headline">Вязание на заказ</h1>
+		<h1 class="form-page__title headline">Вязание на заказ</h1>
 	</div>
 	<section class="form-page__order">
 		<div class="form-page__wrapper page__centerer">
-				<h2 class="form-page__subtitle visually-hidden">Форма заказа.</h2>
-				<p class="form-page__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+			<h2 class="form-page__subtitle visually-hidden">Форма заказа.</h2>
+			<p class="form-page__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 		</div>
 		<form class="form-page__form form" action="https://echo.htmlacademy.ru/" method="post">
-			<fieldset class="form__style form-box page__centerer">
-					<span  class="form-box__legend legend">Тип</span>
+			<div class="form__style form-box page__centerer" role="group" aria-labelledby="type">
+				<div class="form-box__legend legend" id="type">Тип</div>
 
 				<div class="form-box__content-style">
 					<label class="form-box__label label" for="interior">
@@ -26,10 +26,10 @@
 						Детская игрушка
 					</label>
 				</div>
-			</fieldset>
+			</div>
 			<div class="form__wrapper">
-				<fieldset class="form__color form-box  page__centerer">
-					<span class="form-box__legend form-box__legend--color legend">Цвет</span>
+				<div class="form__color form-box  page__centerer" role="group" aria-labelledby="color">
+					<div class="form-box__legend form-box__legend--color legend" id="color">Цвет</div>
 					<div class="form-box__content-color">
 						<label class="form-box__label label" for="white">
 							<input class="form-box__checkbox  input-pseudo" type="checkbox" name="color" id="white" value="white" checked>Белый
@@ -55,10 +55,10 @@
 							Оранжевый
 						</label>
 					</div>
-				</fieldset>
+				</div>
 			</div>
-			<fieldset class="form__login form-box page__centerer">
-				<span class="form-box__legend legend">ФИО</span>
+			<div class="form__login form-box page__centerer" role="group" aria-labelledby="fullname">
+				<div class="form-box__legend legend" id="fullname">ФИО</div>
 				<div class="form-box__content-login login">
 					<div class="login__name">
 						<label class="login__label" for="name">Имя:</label>
@@ -73,9 +73,10 @@
 						<input class="login__input input" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
 					</div>
 				</div>
-			</fieldset>
+			</div>
 			<div class="form__wrapper">
-				<div class="form__contact page__centerer">
+				<div class="form__contact page__centerer" role="group" aria-labelledby="contacts">
+					<div class="visually-hidden" id="contacts">Контакты</div>
 					<label class="form__tel-legend legend" for="tel">тел</label>
 					<div class="form__icon form__icon--tel">
 						<input class="form__tel-tel input" type="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
