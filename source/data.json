@@ -1,16 +1,17 @@
 {
+	"SERVER_ROOT": "./build/",
 	"projectName": "Мишка",
 	"pages": [
 		{
-			"path": "index.html",
+			"path": "./",
 			"name": "Главная"
 		},
 		{
-			"path": "catalog.html",
+			"path": "./catalog.html",
 			"name": "Каталог"
 		},
 		{
-			"path": "form.html",
+			"path": "./form.html",
 			"name": "Форма"
 		}
 	],

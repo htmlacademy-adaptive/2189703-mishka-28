@@ -1,28 +1,28 @@
 <header class="main-header">
 	<div class="main-header__container page__centerer page__centerer--mobile-off">
 		<div class="main-header__logo logo logo__header">
-			<a class="logo__link link" href="index.html"  {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-					<picture>
-						<source media="(min-width: 1150px)" srcset="img/logo.svg#desktop" width="149" height="72">
-						<source media="(min-width: 768px)" srcset="./img/logo.svg#tablet" width="114" height="46">
-						<img class="logo__img" src="./img/logo.svg#mobile" width="86" height="35" alt="Магазин «Мишка».">
-					</picture>
+			<a class="logo__link link" href="./" {% if permalink == "./" %}aria-current="page" {% endif %}>
+				<picture>
+					<source media="(min-width: 1150px)" srcset="img/logo.svg#desktop" width="149" height="72">
+					<source media="(min-width: 768px)" srcset="./img/logo.svg#tablet" width="114" height="46">
+					<img class="logo__img" src="./img/logo.svg#mobile" width="86" height="35" alt="Магазин «Мишка».">
+				</picture>
 			</a>
 		</div>
 
-		<nav class="main-header__nav header-nav header-nav--closed header-nav--nojs">
+		<nav class="main-header__nav header-nav header-nav--opened header-nav--nojs">
 			<button class="header-nav__toogle button" type="button">
 				<span class="visually-hidden">Открыть меню</span>
 			</button>
 			<div class="header-nav__wrapper">
 				<ul class="header-nav__list menu-list">
 					<li class="header-nav__item menu-list__item menu-list__item--catalog">
-						<a class="menu-list__link link" href="catalog.html" {% if permalink == "catalog.html" %}aria-current="page"{% endif %}>
+						<a class="menu-list__link link" href="./catalog.html" {% if permalink == "./catalog.html" %}aria-current="page"{% endif %}>
 							Каталог товаров
 						</a>
 					</li>
 					<li class="header-nav__item menu-list__item">
-						<a class="menu-list__link link" href="form.html"  {% if permalink == "form.html" %}aria-current="page"{% endif %}>
+						<a class="menu-list__link link" href="./form.html" {% if permalink == "./form.html" %}aria-current="page"{% endif %}>
 							Вязание на заказ
 						</a>
 					</li>
@@ -32,15 +32,13 @@
 						<a class="user-list__link user-list__link--search link" href="javascript:undefined">
 							<span class="user-list__sign user-list__sign--search">
 								Поиск по сайту
-
 							</span>
 						</a>
 					</li>
 					<li class="header-nav__item user-list__item">
-						<a class="user-list__link user-list__link--cart  link" href="../templates/modal.twig">
+						<a class="user-list__link user-list__link--cart link" href="javascript:undefined">
 							<span class="user-list__sign">
 								Корзина: пока пуста
-
 							</span>
 						</a>
 					</li>
