@@ -1,14 +1,12 @@
-.logo__img svg {
+.logo__img {
+	object-fit: cover;
 	display: block;
 	width: 100%;
 }
 
-.logo {
-	object-fit: cover;
-}
-
 .logo__header {
 	width: 86px;
+	height: 35px;
 	padding: 22px;
 	margin: 0 auto;
 	grid-area: logo;
@@ -17,6 +15,7 @@
 	@media #{$not-mobile} {
 		position: absolute;
 		width: 114px;
+		height: 45px;
 		padding-left: 0;
 		z-index: 1;
 	}
@@ -25,10 +24,14 @@
 		width: 149px;
 		left: 50%;
 		transform: translateX(-50%);
+		padding-top: 9px;
+		padding-bottom: 7px;
+		height: 72px;
 	}
 }
 
 .logo__footer {
+
 	width: 102px;
 
 	&:hover {

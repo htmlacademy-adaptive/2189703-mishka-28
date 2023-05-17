@@ -57,12 +57,17 @@
 			stroke: #ffffff;
 			filter: drop-shadow(0 6px 0 #ffffff);
 		}
+
+		@media #{$desktop-only} {
+			background: url("../../icons/stack.svg#wave") repeat-x center / 52px 23px;
+		}
 	}
 }
 
 .form-page__text {
 	margin: 0;
 	padding: 17px 0;
+	padding-right: 20px;
 	font-size: 13px;
 	line-height: 24px;
 
@@ -76,6 +81,6 @@
 	@media #{$desktop-only} {
 		padding: 0 calc(100% / 6);
 		padding-top: 99px;
-		padding-bottom: 50px;
+		padding-bottom: 63px;
 	}
 }

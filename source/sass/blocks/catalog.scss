@@ -2,6 +2,14 @@
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
+
+	@media #{$not-mobile} {
+		gap: 53px;
+	}
+
+	@media #{$desktop-only} {
+		gap: 57px;
+	}
 }
 
 .catalog__title-container {
@@ -26,7 +34,20 @@
 .catalog__title {
 	margin: 0;
 	padding: 74px 0;
+	font-size: 27px;
 	background-color: #f1f1f1;
+	text-align: center;
+
+	@media #{$not-mobile} {
+		font-size: 43px;
+		padding-top: 37px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 53px;
+		line-height: 57px;
+		padding-bottom: 95px;
+	}
 }
 
 .catalog__title-wrapper {
@@ -51,6 +72,10 @@
 			background: url("../../icons/stack.svg#wave") repeat-x center / 35px 17px;
 			stroke: #ffffff;
 			filter: drop-shadow(0 6px 0 #ffffff);
+		}
+
+		@media #{$desktop-only} {
+			background: url("../../icons/stack.svg#wave") repeat-x center / 52px 23px;
 		}
 	}
 }

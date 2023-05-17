@@ -1,15 +1,16 @@
 .developed {
-	padding: 22px;
-	width: 215px;
+	padding: 22px 39px;
 	align-content: center;
 	display: flex;
+	gap: 26px;
+
 	justify-content: space-between;
 	align-items: center;
 
 	@media #{$not-mobile} {
 		width: 180px;
-		gap: 26px;
 		padding: 0;
+		margin: 0;
 	}
 
 	@media #{$desktop-only} {

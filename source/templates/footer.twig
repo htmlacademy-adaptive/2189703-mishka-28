@@ -1,7 +1,9 @@
 <footer class="main-footer">
 	<div class="main-footer__wrapper page__centerer">
 		<a class="main-footer__logo logo" href="./" {% if permalink == "./" %}aria-current="page"{% endif %}>
-			<img class="logo__footer logo" src="./img/logo.svg#footer" width="102" height="34" alt="Магазин «Мишка».">
+			<svg class="logo__footer logo" width="102" height="34" role="img" aria-label="Магазин «Мишка».">
+				<use href="../img/logo.svg#footer" aria-hidden="true" />
+			</svg>
 		</a>
 		<div class="main-footer__social social page__centerer">
 			<ul class="social__list">
@@ -22,7 +24,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="main-footer__developed developed">
+		<div class="main-footer__developed developed  page__centerer">
 			<span class="developed__label">Разработано</span>
 			<a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
 				<span class="visually-hidden">Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>

@@ -9,6 +9,8 @@
 }
 
 .login__name {
+	padding: 8px 0;
+
 	@media #{$not-mobile} {
 		display: flex;
 		flex-direction: row;
@@ -23,6 +25,10 @@
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 18px;
+
+	@media #{$not-mobile} {
+		padding-top: 0;
+	}
 }
 
 .login__input {

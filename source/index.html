@@ -5,12 +5,11 @@
 {% block main %}
 <main class="main-container main">
 	<div class="main__container">
-		<div class="main__wrapper page__centerer">
-
+		<div class="main__wrapper">
 			<h1 class="main__title heading">
 				Милые штуки ручной <br> работы для дома
 			</h1>
-			<div class="main__nav-inner inner-nav">
+			<div class="main__nav-inner inner-nav page__centerer page__centerer--mobile-off">
 				<a class="inner-nav__link link inner-nav__link--interior" href="javascript:undefined">
 					<div class="inner-nav__text">
 						Предметы <br> интерьера
@@ -47,7 +46,7 @@
 			<a class="product__button button" href="./templates/modal.twig">Заказать</a>
 		</div>
 	</section>
-	<section class="main__advantages advantages ">
+	<section class="main__advantages advantages">
 		<div class="advantages__wrapper page__centerer">
 			<h2 class="advantages__title headline">Коротко о нас:</h2>
 			<ul class="advantages__list">
@@ -125,7 +124,10 @@
 				</div>
 			</div>
 			<div class="contacts__image">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257260655!2d30.32046711195314!3d59.93871916198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1683295300614!5m2!1sru!2sru" width="320" height="457" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Магазин «Мишка» на информационной карте."></iframe>
+				<iframe class="contacts__image-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257260655!2d30.32046711195314!3d59.93871916198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1683295300614!5m2!1sru!2sru" width="320" height="457" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Магазин «Мишка» на информационной карте."></iframe>
+				<noscript>
+					{% include "./templates/picture.twig" with {name: "map", class: "contacts__image-map", alt: "Заставка для информационной карты."} %}
+				</noscript>
 			</div>
 			<a class="contacts__write button page__centerer" href="javascript:undefined">Напишите нам</a>
 		</section>

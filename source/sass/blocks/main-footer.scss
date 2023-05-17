@@ -10,6 +10,8 @@
 	@media #{$not-mobile} {
 		flex-direction: row;
 		justify-content: space-between;
+		padding-top: 51px;
+		padding-bottom: 58px;
 	}
 }
 
@@ -20,6 +22,7 @@
 	@media #{$not-mobile} {
 		display: block;
 		align-self: center;
+		height: 34px;
 	}
 }
 

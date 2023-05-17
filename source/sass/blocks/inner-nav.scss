@@ -20,9 +20,15 @@
 		@media #{$not-mobile} {
 			display: block;
 			block-size: 20px;
+
 			background: url("../../icons/stack.svg#wave") repeat-x center / 35px 17px;
 			stroke: #ffffff;
 			filter: drop-shadow(0 6px 0 #ffffff);
+		}
+
+		@media #{$desktop-only} {
+			height: 21px;
+			background-size: 52px 23px;
 		}
 	}
 }
@@ -80,14 +86,13 @@
 		position: absolute;
 		width: 62px;
 		height: 62px;
-		right: 0;
 		transform: translateX(-33px);
 		mask-image: url("../../icons/stack.svg#interior");
 		background-color: #149080;
 		opacity: 50%;
 
 		@media #{$not-mobile} {
-			right: calc(-100% * 3 + 36px);
+			right: calc(-100% * 3);
 		}
 	}
 

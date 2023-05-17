@@ -1,6 +1,7 @@
 .card {
 	display: grid;
 	grid-template-columns: repeat(var(--column-count, 1), 1fr);
+	border: 1px solid #ececec;
 
 	@media #{$not-mobile} {
 		--column-count: 2;
@@ -24,7 +25,7 @@
 	width: 100%;
 }
 
-.card__title {
+.card__caption {
 	margin: 0;
 	padding-top: 27.5px;
 	padding-left: 25px;
@@ -40,6 +41,11 @@
 	padding-left: 25px;
 	font-size: 13px;
 	line-height: 30px;
+	padding-bottom: 17px;
+
+	@media #{$not-mobile} {
+		font-size: 15px;
+	}
 
 	@media #{$tablet-only} {
 		grid-column: 2/3;
@@ -49,7 +55,6 @@
 
 .card__buy {
 	position: relative;
-	border-bottom: 1px solid #ececec;
 
 	&::before {
 		content: "";

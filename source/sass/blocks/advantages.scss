@@ -5,8 +5,18 @@
 	line-height: 20px;
 	color: #000000;
 
+	@media #{$not-mobile} {
+		padding-top: 55px;
+	}
+
 	@media #{$desktop-only} {
-		padding-left: calc(100% / 6);
+		padding-top: 75px;
+	}
+}
+
+.advantages__wrapper {
+	@media #{$desktop-only} {
+		padding-left: 225px;
 	}
 }
 
@@ -21,7 +31,16 @@
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+
+	@media #{$not-mobile} {
+		padding-top: 10px;
+		row-gap: 24px;
+	}
+
+	@media #{$desktop-only} {
+		width: 700px;
+		row-gap: 27px;
+	}
 }
 
 @media #{$mobile-only} {

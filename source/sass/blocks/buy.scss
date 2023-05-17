@@ -5,12 +5,16 @@
 
 .buy__price {
 	padding-top: 23px;
-	padding-bottom: 29px;
+	padding-bottom: 27px;
 	padding-left: 25px;
 	font-size: 15px;
 	font-weight: 700;
 	line-height: 24px;
 	color: #000000;
+
+	@media #{$not-mobile} {
+		font-size: 17px;
+	}
 }
 
 .buy__button {

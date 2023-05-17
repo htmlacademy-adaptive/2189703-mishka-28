@@ -6,7 +6,6 @@
 
 	@media #{$not-mobile} {
 		grid-template-columns: 25% 1fr;
-		padding: 50px 0;
 	}
 
 	@media #{$desktop-only} {
@@ -15,8 +14,7 @@
 }
 
 .form-box__legend {
-	padding-top: 33px;
-	padding-bottom: 27px;
+	padding: 13px 0;
 
 	@media #{$not-mobile} {
 		padding: 10px 0;
@@ -27,7 +25,7 @@
 .form-box__content-style {
 	display: flex;
 	flex-direction: column;
-	padding: 30px 0;
+	padding: 17px 0;
 	gap: 10px;
 
 	@media #{$not-mobile} {
@@ -60,6 +58,7 @@
 .form-box__content-color {
 	display: grid;
 	grid-template-columns: repeat(var(--column-count, 1), 1fr);
+	padding: 12px 0;
 	gap: 24px;
 
 	@media #{$not-mobile} {
