@@ -38,8 +38,9 @@
 	min-width: 20px;
 	height: 39px;
 	padding: 20px 0;
-	cursor: pointer;
 	border: none;
+	background-color: #ffffff;
+
 
 	@media #{$not-mobile} {
 		display: none;

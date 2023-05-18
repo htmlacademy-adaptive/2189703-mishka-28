@@ -13,7 +13,14 @@
 	color: #000000;
 
 	@media #{$not-mobile} {
+		padding-left: 0;
+		padding-top: 24px;
+		padding-bottom: 25px;
 		font-size: 17px;
+	}
+
+	@media #{$desktop-only} {
+		padding: 23px 0;
 	}
 }
 

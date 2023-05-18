@@ -24,27 +24,31 @@
 }
 
 .social__link {
-	width: 28px;
-	height: 28px;
-	background-color: #231f20;
+	&::before {
+		content: "";
+		display: block;
+		width: 28px;
+		height: 28px;
+		background-color: #231f20;
+	}
 
-	&:hover {
+	&:hover::before {
 		background-color: #46c1ae;
 	}
 
-	&:active {
+	&:active::before {
 		opacity: 30%;
 	}
 }
 
-.social__link--vk {
+.social__link--vk::before {
 	mask-image: url("../../icons/stack.svg#vkontakte");
 }
 
-.social__link--telegram {
+.social__link--telegram::before {
 	mask-image: url("../../icons/stack.svg#telegram");
 }
 
-.social__link--youtube {
+.social__link--youtube::before {
 	mask-image: url("../../icons/stack.svg#youtube");
 }
