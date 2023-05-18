@@ -7,7 +7,7 @@
 	grid-template-columns: 1fr;
 
 	@media #{$not-mobile} {
-		padding-top: 83px;
+		padding-top: 85px;
 		padding-bottom: 57px;
 	}
 
@@ -92,7 +92,7 @@
 	padding-bottom: 42px;
 
 	@media #{$not-mobile} {
-		padding-bottom: 50px;
+		padding-bottom: 60px;
 	}
 
 	@media #{$desktop-only} {
@@ -104,8 +104,14 @@
 	}
 }
 
+.contacts__image-map {
+	grid-area: 1 / 1 /1 /1;
+}
+
+
 .contacts__image-js {
 	width: 100%;
+	grid-area: 1 / 1 /1 /1;
 }
 
 

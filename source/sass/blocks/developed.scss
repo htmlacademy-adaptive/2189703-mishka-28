@@ -1,5 +1,5 @@
 .developed {
-	padding: 22px 39px;
+	padding: 21px 39px;
 	align-content: center;
 	display: flex;
 	gap: 26px;
@@ -24,17 +24,21 @@
 }
 
 .developed__link {
-	display: block;
-	width: 35px;
-	height: 35px;
-	background-color: #63d1bb;
-	mask-image: url("../../icons/stack.svg#htmlacademy");
+	&::before {
+		content: "";
+		display: block;
+		width: 35px;
+		height: 35px;
+		background-color: #63d1bb;
+		mask-image: url("../../icons/stack.svg#htmlacademy");
+	}
 
-	&:hover {
+
+	&:hover::before {
 		background-color: #46c1ae;
 	}
 
-	&:active {
+	&:active::before {
 		opacity: 30%;
 	}
 }

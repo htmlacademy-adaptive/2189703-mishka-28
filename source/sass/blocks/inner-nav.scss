@@ -37,9 +37,18 @@
 	display: block;
 	width: 100%;
 	padding-left: 30px;
-	padding-top: 24px;
-	padding-bottom: 31px;
+	padding-top: 23px;
+	padding-bottom: 18px;
 	background-color: #63d1bb;
+
+	@media #{$not-mobile} {
+		padding-top: 34px;
+	}
+
+	@media #{$desktop-only} {
+		padding-top: 25px;
+		padding-bottom: 34px;
+	}
 
 	&:hover {
 		background-color: #63d1bb;
@@ -74,37 +83,32 @@
 
 
 .inner-nav__text {
-	position: relative;
-	display: block;
+	display: flex;
+	justify-content: space-between;
 	font-size: 19px;
 	font-weight: 700;
 	line-height: 24px;
 	color: #ffffff;
 
-	&::before {
+	&::after {
 		content: "";
-		position: absolute;
+		display: block;
 		width: 62px;
 		height: 62px;
 		transform: translateX(-33px);
 		mask-image: url("../../icons/stack.svg#interior");
 		background-color: #149080;
 		opacity: 50%;
-
-		@media #{$not-mobile} {
-			right: calc(-100% * 3);
-		}
 	}
 
 	@media #{$not-mobile} {
-		width: 25%;
 		font-size: 20px;
 		line-height: 30px;
 	}
 }
 
 
-.inner-nav__text--toys::before {
+.inner-nav__text--toys::after {
 	mask-image: url("../../icons/stack.svg#toys");
 }
 
