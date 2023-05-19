@@ -1,8 +1,7 @@
 .label {
-	position: relative;
 	box-sizing: border-box;
 	display: flex;
-	gap: 30px;
+	gap: 24px;
 	height: 40px;
 	align-items: center;
 	font-size: 17px;
@@ -15,5 +14,6 @@
 		font-size: 18px;
 		line-height: 19px;
 		padding: 15px 0;
+		gap: 30px;
 	}
 }

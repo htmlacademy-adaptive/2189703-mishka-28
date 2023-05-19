@@ -21,16 +21,26 @@
 	}
 }
 
+.form-box__legend--color {
+	@media #{$not-mobile} {
+		padding-top: 25px;
+	}
+
+	@media #{$desktop-only} {
+		padding-top: 22px;
+	}
+}
+
 
 .form-box__content-style {
 	display: flex;
 	flex-direction: column;
 	padding: 17px 0;
-	gap: 10px;
+	gap: 15px;
 
 	@media #{$not-mobile} {
 		padding: 0;
-		gap: 24px;
+		gap: 35px;
 	}
 }
 
@@ -59,14 +69,19 @@
 	display: grid;
 	grid-template-columns: repeat(var(--column-count, 1), 1fr);
 	padding: 12px 0;
-	gap: 24px;
+	padding-bottom: 18px;
+	gap: 21px;
 
 	@media #{$not-mobile} {
 		--column-count: 2;
+		gap: 24px;
+		row-gap: 35px;
+		padding-bottom: 8px;
 	}
 
 
 	@media #{$desktop-only} {
 		--column-count: 3;
+		column-gap: 0;
 	}
 }

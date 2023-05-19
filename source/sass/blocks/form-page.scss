@@ -72,7 +72,8 @@
 	line-height: 24px;
 
 	@media #{$not-mobile} {
-		padding: 54px 0;
+		padding: 68px 0;
+		padding-bottom: 59px;
 		padding-right: 90px;
 		font-size: 17px;
 		line-height: 30px;
@@ -80,7 +81,7 @@
 
 	@media #{$desktop-only} {
 		padding: 0 calc(100% / 6);
-		padding-top: 99px;
+		padding-top: 115px;
 		padding-bottom: 63px;
 	}
 }

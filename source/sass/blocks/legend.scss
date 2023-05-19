@@ -1,4 +1,6 @@
 .legend {
+	display: flex;
+	gap: 30px;
 	box-sizing: border-box;
 	font-size: 17px;
 	align-self: start;
@@ -7,7 +9,6 @@
 	text-transform: uppercase;
 	color: #63d1bb;
 	position: relative;
-	display: block;
 	width: 100%;
 
 	@media #{$not-mobile} {
@@ -25,11 +26,10 @@
 
 	&::after {
 		content: "";
-		position: absolute;
-		right: 0;
-		left: 60px;
-		bottom: 50%;
+		flex-grow: 1;
+		align-self: center;
 		height: 1px;
+		width: 100%;
 		background-color: #62d1ba;
 	}
 }
