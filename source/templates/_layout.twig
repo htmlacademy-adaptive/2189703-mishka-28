@@ -23,7 +23,9 @@
 
 	{% include "./footer.twig" %}
 
-	{% include "./modal.twig" %}
+	{% if permalink == "./" or permalink == "./catalog.html" %}
+		{% include "./modal.twig" %}
+	{% endif %}
 	<script src="./js/main.js"></script>
 </body>
 

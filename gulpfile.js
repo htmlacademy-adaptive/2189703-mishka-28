@@ -21,7 +21,7 @@ import sharpResponsive from "gulp-sharp-responsive"
 import { stacksvg } from "gulp-stacksvg"
 import { deleteAsync } from "del"
 
-const { src, dest, watch, series, parallel, lastRun } = gulp
+const { src, dest, watch, series, parallel } = gulp
 const sass = gulpSass(dartSass)
 const SOURCE_ROOT = `./source/`
 const DATA_PATH = `${SOURCE_ROOT}data.json`
@@ -90,7 +90,6 @@ export function createStack () {
 		.pipe(svgo())
 		.pipe(stacksvg())
 		.pipe(dest(`${SERVER_ROOT}icons`))
-		.pipe(server.stream())
 }
 
 export function optimizeImages () {
@@ -113,7 +112,6 @@ export function optimizeImages () {
 			.pipe(cached(`images`))
 			.pipe(remember(`images`))
 			.pipe(dest(`${SERVER_ROOT}img`))
-			.pipe(server.stream())
 	}
 }
 
@@ -126,7 +124,7 @@ const ASSETS_PATHS = [
 ]
 
 export function copyAssets () {
-	return src(ASSETS_PATHS, { since: lastRun(copyAssets), base: SOURCE_ROOT })
+	return src(ASSETS_PATHS, { base: SOURCE_ROOT })
 		.pipe(cached(`assets`))
 		.pipe(remember(`assets`))
 		.pipe(dest(SERVER_ROOT))
@@ -135,6 +133,11 @@ export function copyAssets () {
 
 export async function removeBuild () {
 	await deleteAsync(SERVER_ROOT)
+}
+
+function reloadServer (done) {
+	server.reload()
+	done()
 }
 
 export function startServer () {
@@ -150,9 +153,9 @@ export function startServer () {
 	watch(`${SOURCE_ROOT}**/*.{html,twig}`, series(processMarkup))
 	watch(`${SOURCE_ROOT}sass/**/*.scss`, series(processStyles))
 	watch(`${SOURCE_ROOT}js/**/*.js`, series(processScripts))
-	watch(`${SOURCE_ROOT}icons/**/*.svg`, series(createStack))
+	watch(`${SOURCE_ROOT}icons/**/*.svg`, series(createStack, reloadServer))
 		.on(`unlink`, takeOutTheTrash(`icons`))
-	watch(`${SOURCE_ROOT}img/**/*.{jpg,png}`, series(optimizeImages))
+	watch(`${SOURCE_ROOT}img/**/*.{jpg,png}`, series(optimizeImages, reloadServer))
 		.on(`unlink`, takeOutTheTrash(`images`))
 	watch(ASSETS_PATHS, series(copyAssets))
 		.on(`unlink`, takeOutTheTrash(`assets`))
@@ -188,7 +191,6 @@ export function buildProd (done) {
 
 export function runDev (done) {
 	series(
-		removeBuild,
 		compileProject,
 		startServer
 	)(done)
