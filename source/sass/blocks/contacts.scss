@@ -74,7 +74,8 @@
 		padding-top: 80px;
 
 		&::before {
-			transform: translateX(-320px) translateY(-30px);
+			transform: translateX(-320px) translateY(-25px);
+			right: 20px;
 		}
 	}
 }
@@ -103,7 +104,6 @@
 		padding-bottom: 0;
 	}
 
-	& noscript,
 	& picture,
 	& source {
 		display: contents;

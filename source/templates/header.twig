@@ -1,7 +1,7 @@
 <header class="main-header">
 	<div class="main-header__container page__centerer page__centerer--mobile-off">
-		<div class="main-header__logo logo logo__header">
-			<a class="logo__link" href="./" {% if permalink == "./" %}aria-current="page" {% endif %}>
+		<div class="main-header__logo logo">
+			<a class="logo__header link" href="./" {% if permalink == "./" %}aria-current="page" {% endif %}>
 				<picture>
 					<source media="(min-width: 1150px)" srcset="img/logo.svg#desktop" width="149" height="72">
 					<source media="(min-width: 768px)" srcset="./img/logo.svg#tablet" width="114" height="46">
@@ -29,28 +29,26 @@
 				</ul>
 				<ul class="header-nav__list user-list">
 					<li class="header-nav__item user-list__item user-list__item--search">
-						<a class="user-list__link user-list__link--search link" href="javascript:undefined">
+						<a class="user-list__link user-list__link--search link" href="#href">
 							<span class="user-list__sign user-list__sign--search">
 								Поиск по сайту
 							</span>
 						</a>
 					</li>
 					<li class="header-nav__item user-list__item">
-						<a class="user-list__link user-list__link--cart link" href="javascript:undefined">
-							<span class="user-list__sign">
+						<a class="user-list__link user-list__link--cart link" href="#href">
 								Корзина: пока пуста
-							</span>
 						</a>
 					</li>
 				</ul>
 				<ul class="header-nav__list submenu-list">
 					<li class="header-nav__item submenu-list__item">
-						<a class="submenu-list__link link" href="javascript:undefined">
+						<a class="submenu-list__link link" href="#href">
 							Новые поступления
 						</a>
 					</li>
 					<li class="header-nav__item submenu-list__item">
-						<a class="submenu-list__link link" href="javascript:undefined">
+						<a class="submenu-list__link link" href="#href">
 							Распродажа
 						</a>
 					</li>

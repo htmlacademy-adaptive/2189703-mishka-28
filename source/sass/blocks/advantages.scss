@@ -39,6 +39,7 @@
 
 	@media #{$desktop-only} {
 		width: 700px;
+		padding-top: 10px;
 		row-gap: 27px;
 	}
 }

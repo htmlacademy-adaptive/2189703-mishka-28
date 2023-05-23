@@ -1,16 +1,9 @@
-.logo__img {
-	object-fit: cover;
-	display: block;
-	width: 100%;
-}
-
-.logo__header {
+.logo {
 	width: 86px;
 	height: 35px;
 	padding: 22px;
 	margin: 0 auto;
 	grid-area: logo;
-
 
 	@media #{$not-mobile} {
 		position: absolute;
@@ -28,6 +21,12 @@
 		padding-bottom: 7px;
 		height: 72px;
 	}
+}
+
+.logo__img {
+	object-fit: cover;
+	display: block;
+	width: 100%;
 }
 
 .logo__footer {

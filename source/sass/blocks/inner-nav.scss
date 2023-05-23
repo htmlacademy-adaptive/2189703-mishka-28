@@ -42,11 +42,11 @@
 	background-color: #63d1bb;
 
 	@media #{$not-mobile} {
-		padding-top: 34px;
+		padding-top: 25px;
+		padding-bottom: 30px;
 	}
 
 	@media #{$desktop-only} {
-		padding-top: 25px;
 		padding-bottom: 34px;
 	}
 

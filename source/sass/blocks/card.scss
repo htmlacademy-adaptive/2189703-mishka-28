@@ -5,13 +5,28 @@
 
 	@media #{$not-mobile} {
 		--column-count: 2;
-		grid-template-rows: auto 1fr auto;
 	}
 
 	@media #{$desktop-only} {
 		--column-count: 1;
-		grid-template-rows: repeat(4, auto);
 	}
+}
+
+.card__wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.card__wrapper:hover {
+	box-shadow: 0 6px 10px rgb(0 0 0 / 0.1);
+}
+
+.card__wrapper:active {
+	box-shadow: 0 3px 5px rgb(0 0 0 / 0.1);
+}
+
+.card a {
+	text-decoration: none;
 }
 
 .card__link-img {
@@ -31,6 +46,7 @@
 	padding-top: 27.5px;
 	padding-left: 25px;
 	padding-bottom: 6px;
+	text-decoration: none;
 
 	@media #{$not-mobile} {
 		padding-left: 34px;
@@ -46,20 +62,19 @@
 	}
 }
 
+
 .card__description {
 	padding-left: 25px;
 	font-size: 13px;
 	line-height: 30px;
 	padding-bottom: 17px;
+	flex-grow: 1;
 
 	@media #{$not-mobile} {
+		flex-grow: 1;
+
 		font-size: 15px;
 		padding-left: 34px;
-	}
-
-	@media #{$tablet-only} {
-		grid-column: 2/3;
-		grid-row: 2/3;
 	}
 
 	@media #{$desktop-only} {
@@ -74,10 +89,18 @@
 		content: "";
 		position: absolute;
 		top: 0;
+		left: 28px;
 		height: 1px;
 		width: 80%;
-		margin: 0 10%;
 		background-color: #ececec;
+
+		@media #{$not-mobile} {
+			left: 33px;
+		}
+
+		@media #{$desktop-only} {
+			left: 28px;
+		}
 	}
 
 	@media #{$tablet-only} {

@@ -5,7 +5,7 @@
 
 	@media #{$not-mobile} {
 		padding-top: 52px;
-		padding-bottom: 62px;
+		padding-bottom: 75px;
 	}
 
 	@media #{$desktop-only} {
@@ -109,6 +109,7 @@
 		grid-column: 2/4;
 		grid-row: 2/3;
 		padding-top: 25px;
+		padding-right: 50px;
 	}
 }
 
@@ -210,7 +211,7 @@
 		grid-column: 2/4;
 		height: 24px;
 		padding-top: 105px;
-		padding-bottom: 20px;
+		padding-bottom: 18px;
 		padding-right: 58px;
 	}
 }
@@ -226,6 +227,6 @@
 
 	@media #{$desktop-only} {
 		grid-column: 2/4;
-		align-self: start;
+		align-self: end;
 	}
 }

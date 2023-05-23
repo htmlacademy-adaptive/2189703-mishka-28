@@ -20,49 +20,61 @@
 			<h2 class="cards__title visually-hidden">Карточки товаров.</h2>
 			<ul class="cards__list">
 				<li class="cards__item card">
-					<a class="card__link-img link" href="javascript:undefined">
+					<a class="card__link-img" href="#href">
 						{% include "./templates/picture.twig" with {name: "products/product2", class: "card__img", alt: "Фотография вязаного зайчика."} %}
 					</a>
-					<a class="card__link-caption link"  href="javascript:undefined">
-						<h3 class="card__caption caption">Зайчик-попрыгайчик</h3>
-					</a>
-					<div class="card__description">Рост 30 см, вес 200 г</div>
-					<div class="card__buy buy">
-						<div class="buy__price">1 200 руб.</div>
-						<a class="buy__button" href="javascript:undefined">
-							<span class="visually-hidden">Добавить в корзину.</span>
+					<div class="card__wrapper">
+						<a class="card__link-caption"  href="#href">
+							<h3 class="card__caption caption">Зайчик-попрыгайчик</h3>
 						</a>
+						<div class="card__description">Рост 30 см, вес 200 г</div>
+						<div class="card__buy buy">
+							<div class="buy__price">1 200 руб.</div>
+							<a class="buy__button" href="#href">
+								<span class="visually-hidden">Добавить в корзину.</span>
+							</a>
+						</div>
 					</div>
+
+
 				</li>
 				<li class="cards__item card">
-					<a class="card__link-img link" href="javascript:undefined">
+					<a class="card__link-img" href="#href">
 						{% include "./templates/picture.twig" with {name: "products/product3", class: "card__img", alt: "Фотография вязаной корзинки."} %}
 					</a>
-					<a class="card__link-caption link" href="javascript:undefined">
-						<h3 class="card__caption caption">Корзинка для белья</h3>
-					</a>
-					<div class="card__description">Диаметр 15 см, высота 10 см</div>
-					<div class="card__buy buy">
-						<div class="buy__price">690 руб.</div>
-						<a class="buy__button" href="javascript:undefined">
-							<span class="visually-hidden">Добавить в корзину.</span>
+					<div class="card__wrapper">
+						<a class="card__link-caption" href="#href">
+							<h3 class="card__caption caption">Корзинка для белья</h3>
 						</a>
+						<div class="card__description">Диаметр 15 см, высота 10 см</div>
+						<div class="card__buy buy">
+							<div class="buy__price">690 руб.</div>
+							<a class="buy__button" href="#href">
+								<span class="visually-hidden">Добавить в корзину.</span>
+							</a>
+						</div>
 					</div>
+
+
 				</li>
 				<li class="cards__item card">
-					<a class="card__link-img link" href="javascript:undefined">
+					<a class="card__link-img" href="#href">
 						{% include "./templates/picture.twig" with {name: "products/product4", class: "card__img", alt: "Фотография большой вязаной корзины с игрушками."} %}
 					</a>
-					<a class="card__link-caption link" href="javascript:undefined">
-						<h3 class="card__caption caption">Большая корзинка <br> для игрушек</h3>
-					</a>
-					<div class="card__description">Диаметр 30 см, высота 30 см</div>
-					<div class="card__buy buy">
-						<div class="buy__price">1 500 руб.</div>
-						<a class="buy__button link" href="javascript:undefined">
-							<span class="visually-hidden">Добавить в корзину.</span>
+
+					<div class="card__wrapper">
+						<a class="card__link-caption" href="#href">
+							<h3 class="card__caption caption">Большая корзинка <br> для игрушек</h3>
 						</a>
+						<div class="card__description">Диаметр 30 см, высота 30 см</div>
+						<div class="card__buy buy">
+							<div class="buy__price">1 500 руб.</div>
+							<a class="buy__button link" href="#href">
+								<span class="visually-hidden">Добавить в корзину.</span>
+							</a>
+						</div>
 					</div>
+
 				</li>
 			</ul>
 	</section>
@@ -78,7 +90,7 @@
 			</div>
 			<div class="video__order">
 				<div class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
-				<a class="video__button button link" href="javascript:undefined">Сделать заказ</a>
+				<a class="video__button button link" href="#href">Сделать заказ</a>
 
 			</div>
 	</section>

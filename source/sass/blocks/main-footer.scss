@@ -18,9 +18,9 @@
 .main-footer__logo {
 	display: none;
 
-
 	@media #{$not-mobile} {
 		display: block;
+		margin: 0;
 		align-self: center;
 		height: 34px;
 	}

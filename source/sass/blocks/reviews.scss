@@ -9,7 +9,7 @@
 	}
 
 	@media #{$desktop-only} {
-		padding-top: 70px;
+		padding-top: 75px;
 		padding-bottom: 0;
 		padding-left: 225px;
 	}
@@ -168,5 +168,6 @@
 		width: 175px;
 		grid-column: 2/3;
 		grid-row: 1/2;
+		align-self: center;
 	}
 }

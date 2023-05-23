@@ -82,6 +82,7 @@
 
 	@media #{$desktop-only} {
 		--column-count: 3;
-		column-gap: 0;
+		width: 760px;
+		column-gap: 15px;
 	}
 }

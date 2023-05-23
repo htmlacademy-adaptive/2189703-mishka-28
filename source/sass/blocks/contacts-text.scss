@@ -1,13 +1,14 @@
 .contacts-text {
-	padding: 28px 0;
 	display: grid;
 	grid-template-columns: 1fr;
+	padding: 25px 0;
+	padding-bottom: 30px;
 	font-size: 14px;
 	line-height: 30px;
 
 
 	@media #{$not-mobile} {
-		padding: 49px 0;
+		padding: 50px 0;
 		grid-template-columns: 50% 50%;
 		font-size: 17px;
 	}
@@ -29,6 +30,7 @@
 	}
 
 	@media #{$desktop-only} {
+		padding-top: 5px;
 		padding-bottom: 30px;
 	}
 }

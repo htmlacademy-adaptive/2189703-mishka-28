@@ -26,10 +26,6 @@
 .form__color.form-box {
 	padding: 0;
 	border: none;
-
-	@media #{$desktop-only} {
-		padding-right: 243px;
-	}
 }
 
 .form__login.form-box {
@@ -53,7 +49,7 @@
 
 	@media #{$desktop-only} {
 		grid-template-columns: 17% 1fr;
-		row-gap: 9px;
+		row-gap: 14px;
 		padding-top: 0;
 	}
 }
@@ -73,15 +69,25 @@
 .form__icon {
 	display: flex;
 	justify-content: space-between;
-	padding-right: 7px;
+	align-self: center;
 	border-bottom: 2px solid #000000;
 
 	&::after {
 		content: "";
 		width: 35px;
 		height: 35px;
+		align-self: center;
 		background-color: #000000;
 		opacity: 20%;
+
+		@media #{$not-mobile} {
+			margin-right: 26px;
+		}
+
+		@media #{$desktop-only} {
+			//margin: 6px 0;
+			margin-right: 5px;
+		}
 	}
 
 	@media #{$desktop-only} {
@@ -89,10 +95,18 @@
 	}
 }
 
+.form__icon:hover {
+	border-color: #62d1ba;
+}
+
+.form__icon:active {
+	border-color: #62d1ba;
+}
+
+
 .form__icon:hover::after {
 	background-color: #62d1ba;
 	opacity: 100;
-	align-self: center;
 	z-index: 1;
 }
 
@@ -114,7 +128,6 @@
 	border: none;
 
 	@media #{$not-mobile} {
-		padding: 18px;
 		box-sizing: border-box;
 		height: 18px;
 		padding-top: 10px;
@@ -122,9 +135,11 @@
 	}
 
 	@media #{$desktop-only} {
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-bottom: 35px;
+
 		max-width: 700px;
-		height: 57px;
-		padding-bottom: 25px;
 	}
 }
 
@@ -162,9 +177,8 @@
 }
 
 .form__add {
-	@media #{$desktop-only} {
+	@media #{$not-mobile} {
 		padding: 50px 0;
-		padding-top: 48px;
 	}
 }
 
@@ -205,10 +219,10 @@
 
 
 .form__send.form__contact {
-	padding-top: 10px;
+	padding-top: 15px;
 
 	@media #{$not-mobile} {
-		padding-top: 52px;
+		padding-top: 0;
 	}
 
 	@media #{$desktop-only} {
@@ -220,13 +234,17 @@
 .form__text {
 	display: block;
 	margin: 0;
-	margin-bottom: 14px;
+	margin-bottom: 16px;
+	font-size: 14px;
+	line-height: 16px;
 
 	@media #{$not-mobile} {
 		order: 2;
 		margin-left: auto;
-		padding-top: 18px;
+		padding-top: 14px;
+		margin-bottom: 10px;
 		font-size: 17px;
+		line-height: 30px;
 	}
 
 	@media #{$desktop-only} {
@@ -235,6 +253,9 @@
 }
 
 .form__button {
+	font-size: 17px;
+	line-height: 16px;
+
 	@media #{$not-mobile} {
 		width: 230px;
 	}
