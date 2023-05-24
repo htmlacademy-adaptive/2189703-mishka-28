@@ -1,37 +1,37 @@
 .menu-list {
-	grid-area: menu;
+  grid-area: menu;
 }
 
 .menu-list__item a {
-	font-size: 17px;
-	padding: 27px 0;
-	padding-left: 76px;
-	z-index: 1;
+  font-size: 17px;
+  padding: 27px 0;
+  padding-left: 76px;
+  z-index: 1;
 
-	@media #{$not-mobile} {
-		font-size: 15px;
-		padding: 20px 0;
-	}
+  @media #{$not-mobile} {
+    font-size: 15px;
+    padding: 20px 0;
+  }
 
-	@media #{$desktop-only} {
-		font-size: 17px;
-		padding: 32px 0;
-	}
+  @media #{$desktop-only} {
+    font-size: 17px;
+    padding: 32px 0;
+  }
 }
 
 
 .menu-list__item--catalog {
-	@media #{$desktop-only} {
-		position: relative;
+  @media #{$desktop-only} {
+    position: relative;
 
-		&::before {
-			content: "";
-			position: absolute;
-			right: 35px;
-			top: 0;
-			width: 1px;
-			height: 100%;
-			background-color: #e5e5e5;
-		}
-	}
+    &::before {
+      content: "";
+      position: absolute;
+      right: 35px;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: #e5e5e5;
+    }
+  }
 }

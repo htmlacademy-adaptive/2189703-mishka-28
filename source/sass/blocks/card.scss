@@ -1,115 +1,115 @@
 .card {
-	display: grid;
-	grid-template-columns: repeat(var(--column-count, 1), 1fr);
-	border: 1px solid #ececec;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count, 1), 1fr);
+  border: 1px solid #ececec;
 
-	@media #{$not-mobile} {
-		--column-count: 2;
-	}
+  @media #{$not-mobile} {
+    --column-count: 2;
+  }
 
-	@media #{$desktop-only} {
-		--column-count: 1;
-	}
+  @media #{$desktop-only} {
+    --column-count: 1;
+  }
 }
 
 .card__wrapper {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .card__wrapper:hover {
-	box-shadow: 0 6px 10px rgb(0 0 0 / 0.1);
+  box-shadow: 0 6px 10px rgb(0 0 0 / 0.1);
 }
 
 .card__wrapper:active {
-	box-shadow: 0 3px 5px rgb(0 0 0 / 0.1);
+  box-shadow: 0 3px 5px rgb(0 0 0 / 0.1);
 }
 
 .card a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .card__link-img {
-	@media #{$tablet-only} {
-		grid-column: 1/2;
-		grid-row: 1/-1;
-	}
+  @media #{$tablet-only} {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
 }
 
 .card__img {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .card__caption {
-	margin: 0;
-	padding-top: 27.5px;
-	padding-left: 25px;
-	padding-bottom: 6px;
-	text-decoration: none;
+  margin: 0;
+  padding-top: 27.5px;
+  padding-left: 25px;
+  padding-bottom: 6px;
+  text-decoration: none;
 
-	@media #{$not-mobile} {
-		padding-left: 34px;
-	}
+  @media #{$not-mobile} {
+    padding-left: 34px;
+  }
 
-	@media #{$tablet-only} {
-		grid-column: 2/3;
-		grid-row: 1/2;
-	}
+  @media #{$tablet-only} {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 
-	@media #{$desktop-only} {
-		padding-left: 28px;
-	}
+  @media #{$desktop-only} {
+    padding-left: 28px;
+  }
 }
 
 
 .card__description {
-	padding-left: 25px;
-	font-size: 13px;
-	line-height: 30px;
-	padding-bottom: 17px;
-	flex-grow: 1;
+  padding-left: 25px;
+  font-size: 13px;
+  line-height: 30px;
+  padding-bottom: 17px;
+  flex-grow: 1;
 
-	@media #{$not-mobile} {
-		flex-grow: 1;
+  @media #{$not-mobile} {
+    flex-grow: 1;
 
-		font-size: 15px;
-		padding-left: 34px;
-	}
+    font-size: 15px;
+    padding-left: 34px;
+  }
 
-	@media #{$desktop-only} {
-		padding-left: 28px;
-	}
+  @media #{$desktop-only} {
+    padding-left: 28px;
+  }
 }
 
 .card__buy {
-	position: relative;
+  position: relative;
 
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 28px;
-		height: 1px;
-		width: 80%;
-		background-color: #ececec;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 28px;
+    height: 1px;
+    width: 80%;
+    background-color: #ececec;
 
-		@media #{$not-mobile} {
-			left: 33px;
-		}
+    @media #{$not-mobile} {
+      left: 33px;
+    }
 
-		@media #{$desktop-only} {
-			left: 28px;
-		}
-	}
+    @media #{$desktop-only} {
+      left: 28px;
+    }
+  }
 
-	@media #{$tablet-only} {
-		grid-column: 2/3;
-		grid-row: 3/4;
-		padding-left: 34px;
-	}
+  @media #{$tablet-only} {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding-left: 34px;
+  }
 
-	@media #{$desktop-only} {
-		padding-left: 28px;
-	}
+  @media #{$desktop-only} {
+    padding-left: 28px;
+  }
 }

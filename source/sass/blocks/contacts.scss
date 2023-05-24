@@ -1,139 +1,139 @@
 .contacts {
-	position: relative;
-	padding: 44px 0;
-	padding-bottom: 39px;
+  position: relative;
+  padding: 44px 0;
+  padding-bottom: 39px;
 
-	display: grid;
-	grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 
-	@media #{$not-mobile} {
-		padding-top: 85px;
-		padding-bottom: 57px;
-	}
+  @media #{$not-mobile} {
+    padding-top: 85px;
+    padding-bottom: 57px;
+  }
 
-	@media #{$desktop-only} {
-		padding-left: 17%;
-		padding-top: 95px;
-		padding-bottom: 105px;
-		grid-template-columns: 350px 1fr;
-		justify-items: start;
-		grid-template-rows: 170px 150px auto;
-		grid-template-areas:
-			"title image"
-			"text image"
-			"write image";
-	}
+  @media #{$desktop-only} {
+    padding-left: 17%;
+    padding-top: 95px;
+    padding-bottom: 105px;
+    grid-template-columns: 350px 1fr;
+    justify-items: start;
+    grid-template-rows: 170px 150px auto;
+    grid-template-areas:
+      "title image"
+      "text image"
+      "write image";
+  }
 
-	&::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		height: 6px;
-		width: 100%;
-		mask: url("../../icons/stack.svg#wave") repeat-x center / 15px 8px;
-		background-color: #f1f1f1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 6px;
+    width: 100%;
+    mask: url("../../icons/stack.svg#wave") repeat-x center / 15px 8px;
+    background-color: #f1f1f1;
 
-		@media #{$not-mobile} {
-			height: 17px;
-			mask: url("../../icons/stack.svg#wave") repeat-x center / 35px 17px;
-		}
+    @media #{$not-mobile} {
+      height: 17px;
+      mask: url("../../icons/stack.svg#wave") repeat-x center / 35px 17px;
+    }
 
-		@media #{$desktop-only} {
-			height: 23px;
-			mask: url("../../icons/stack.svg#wave") repeat-x center / 52px 25px;
-		}
-	}
+    @media #{$desktop-only} {
+      height: 23px;
+      mask: url("../../icons/stack.svg#wave") repeat-x center / 52px 25px;
+    }
+  }
 }
 
 .contacts__img {
-	display: block;
-	width: 100%;
+  display: block;
+  width: 100%;
 }
 
 
 .contacts__title {
-	margin: 0;
+  margin: 0;
 
-	@media #{$not-mobile} {
-		position: relative;
+  @media #{$not-mobile} {
+    position: relative;
 
-		&::before {
-			content: "";
-			position: absolute;
-			right: 0;
-			top: 50%;
-			transform: translateY(-50%);
-			width: 47px;
-			height: 82px;
-			background-image: url("../../icons/stack.svg#flag");
-		}
-	}
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 47px;
+      height: 82px;
+      background-image: url("../../icons/stack.svg#flag");
+    }
+  }
 
-	@media #{$desktop-only} {
-		grid-area: title;
-		padding-top: 80px;
+  @media #{$desktop-only} {
+    grid-area: title;
+    padding-top: 80px;
 
-		&::before {
-			transform: translateX(-320px) translateY(-25px);
-			right: 20px;
-		}
-	}
+    &::before {
+      transform: translateX(-320px) translateY(-25px);
+      right: 20px;
+    }
+  }
 }
 
 .contacts__text {
-	@media #{$desktop-only} {
-		grid-area: text;
-	}
+  @media #{$desktop-only} {
+    grid-area: text;
+  }
 }
 
 .contacts__image {
-	display: grid;
-	position: relative;
-	height: 454px;
-	padding-bottom: 42px;
+  display: grid;
+  position: relative;
+  height: 454px;
+  padding-bottom: 42px;
 
-	@media #{$not-mobile} {
-		padding-bottom: 60px;
-	}
+  @media #{$not-mobile} {
+    padding-bottom: 60px;
+  }
 
-	@media #{$desktop-only} {
-		grid-area: image;
-		box-sizing: border-box;
-		width: 527px;
-		height: 457px;
-		padding-bottom: 0;
-	}
+  @media #{$desktop-only} {
+    grid-area: image;
+    box-sizing: border-box;
+    width: 527px;
+    height: 457px;
+    padding-bottom: 0;
+  }
 
-	& picture,
-	& source {
-		display: contents;
-	}
+  & picture,
+  & source {
+    display: contents;
+  }
 }
 
 .contacts__image-map {
-	grid-area: 1 / 1 /1 /1;
+  grid-area: 1 / 1 /1 /1;
 }
 
 
 .contacts__image-js {
-	width: 100%;
-	grid-area: 1 / 1 /1 /1;
+  width: 100%;
+  grid-area: 1 / 1 /1 /1;
 }
 
 
 .contacts__write {
-	display: block;
-	width: 260px;
-	justify-self: center;
+  display: block;
+  width: 260px;
+  justify-self: center;
 
-	@media #{$not-mobile} {
-		width: 230px;
-	}
+  @media #{$not-mobile} {
+    width: 230px;
+  }
 
-	@media #{$desktop-only} {
-		width: 230px;
-		height: 52px;
-		grid-area: write;
-		margin: auto auto 0 0;
-	}
+  @media #{$desktop-only} {
+    width: 230px;
+    height: 52px;
+    grid-area: write;
+    margin: auto auto 0 0;
+  }
 }

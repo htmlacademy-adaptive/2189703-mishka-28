@@ -4,11 +4,11 @@
 
 ```bash
 ./
-├── _layout.twig		# Шаблон каркаса всех страниц
-├── footer.twig			# Шаблон подвала сайта
-├── header.twig			# Шаблон шапки сайта
-├── picture.twig		# Шаблон для тега picture
-├── [*.twig]			# Другие шаблоны
+├── _layout.twig    # Шаблон каркаса всех страниц
+├── footer.twig     # Шаблон подвала сайта
+├── header.twig     # Шаблон шапки сайта
+├── picture.twig    # Шаблон для тега picture
+├── [*.twig]        # Другие шаблоны
 └── README
 ```
 
@@ -22,27 +22,27 @@
 
 ```json
 "image-name": {
-	// формат исходного изображения
-	"ext": "jpg",
-	// максимальная плотность пикселей
-	"maxdppx": 2,
-	// размеры изображения для каждого из вьюпортов в порядке их убывания
-	"sizes": [
-		{
-			"viewport": "desktop",
-			"width": 1220,
-			"height": 400
-		},
-		{
-			"viewport": "tablet",
-			"width": 768,
-			"height": 400
-		},
-		{
-			"viewport": "mobile",
-			"width": 320,
-			"height": 362
-		}
-	]
+  // формат исходного изображения
+  "ext": "jpg",
+  // максимальная плотность пикселей
+  "maxdppx": 2,
+  // размеры изображения для каждого из вьюпортов в порядке их убывания
+  "sizes": [
+    {
+      "viewport": "desktop",
+      "width": 1220,
+      "height": 400
+    },
+    {
+      "viewport": "tablet",
+      "width": 768,
+      "height": 400
+    },
+    {
+      "viewport": "mobile",
+      "width": 320,
+      "height": 362
+    }
+  ]
 }
 ```

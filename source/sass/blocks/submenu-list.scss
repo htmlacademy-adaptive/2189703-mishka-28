@@ -1,15 +1,15 @@
 .submenu-list {
-	max-height: 0;
-	visibility: collapse;
+  max-height: 0;
+  visibility: collapse;
 
-	@media #{$desktop-only} {
-		max-height: 100%;
-		visibility: visible;
-		grid-area: submenu;
-	}
+  @media #{$desktop-only} {
+    max-height: 100%;
+    visibility: visible;
+    grid-area: submenu;
+  }
 }
 
 .submenu-list a {
-	padding: 20px 0;
-	font-size: 15px;
+  padding: 20px 0;
+  font-size: 15px;
 }

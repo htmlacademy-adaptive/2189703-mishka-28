@@ -1,44 +1,44 @@
 .developed {
-	padding: 21px 39px;
-	align-content: center;
-	display: flex;
-	gap: 26px;
+  padding: 21px 39px;
+  align-content: center;
+  display: flex;
+  gap: 26px;
 
-	justify-content: space-between;
-	align-items: center;
+  justify-content: space-between;
+  align-items: center;
 
-	@media #{$not-mobile} {
-		width: 180px;
-		padding: 0;
-		margin: 0;
-	}
+  @media #{$not-mobile} {
+    width: 180px;
+    padding: 0;
+    margin: 0;
+  }
 
-	@media #{$desktop-only} {
-		width: 183px;
-		gap: 28px;
-	}
+  @media #{$desktop-only} {
+    width: 183px;
+    gap: 28px;
+  }
 }
 
 .developed__label {
-	display: block;
+  display: block;
 }
 
 .developed__link {
-	&::before {
-		content: "";
-		display: block;
-		width: 35px;
-		height: 35px;
-		background-color: #63d1bb;
-		mask-image: url("../../icons/stack.svg#htmlacademy");
-	}
+  &::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #63d1bb;
+    mask-image: url("../../icons/stack.svg#htmlacademy");
+  }
 
 
-	&:hover::before {
-		background-color: #46c1ae;
-	}
+  &:hover::before {
+    background-color: #46c1ae;
+  }
 
-	&:active::before {
-		opacity: 30%;
-	}
+  &:active::before {
+    opacity: 30%;
+  }
 }

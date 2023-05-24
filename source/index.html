@@ -11,133 +11,133 @@
 <!-- 🔷 Webp генерируется в прод-сборке. Проверить — `npm run preview` 🔷 -->
 
 <main class="main-container main">
-	<div class="main__container">
-		<div class="main__wrapper">
-			<h1 class="main__title heading">
-				Милые штуки ручной <br> работы для дома
-			</h1>
-			<div class="main__nav-inner inner-nav page__centerer page__centerer--mobile-off">
-				<a class="inner-nav__link link inner-nav__link--interior" href="#href">
-					<div class="inner-nav__text">
-						Предметы <br> интерьера
-					</div>
-				</a>
-				<a class="inner-nav__link link inner-nav__link--toys" href="#href">
-					<div class="inner-nav__text inner-nav__text--toys">
-						Детские <br> игрушки
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<section class="main__product product page__centerer">
-		<div class="product__wrapper ">
-			<h2 class="product__title headline">Вязаные корзинки</h2>
-			<h3 class="product__subtitle">Товар недели</h3>
+  <div class="main__container">
+    <div class="main__wrapper">
+      <h1 class="main__title heading">
+        Милые штуки ручной <br> работы для дома
+      </h1>
+      <div class="main__nav-inner inner-nav page__centerer page__centerer--mobile-off">
+        <a class="inner-nav__link link inner-nav__link--interior" href="#href">
+          <div class="inner-nav__text">
+            Предметы <br> интерьера
+          </div>
+        </a>
+        <a class="inner-nav__link link inner-nav__link--toys" href="#href">
+          <div class="inner-nav__text inner-nav__text--toys">
+            Детские <br> игрушки
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <section class="main__product product page__centerer">
+    <div class="product__wrapper ">
+      <h2 class="product__title headline">Вязаные корзинки</h2>
+      <h3 class="product__subtitle">Товар недели</h3>
 
-			<div class="product__description">
-				Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
-			</div>
-			<dl class="product__form">
-				<dt class="product__feature">Цвет:</dt>
-				<dd class="product__value">тиффани/серый</dd>
-				<dt class="product__feature">Диаметр:</dt>
-				<dd class="product__value">25 см</dd>
-				<dt class="product__feature">Высота:</dt>
-				<dd class="product__value">15 см</dd>
-			</dl>
-			<div class="product__image">
-				{% include "./templates/picture.twig" with {name: "products/product1", class: "product__img", alt: "Фотография трех вязанных корзинок."} %}
-			</div>
-			<span class="product__cost">Цена: 990 руб.</span>
-			<a class="product__button button" href="./templates/modal.twig">Заказать</a>
-		</div>
-	</section>
-	<section class="main__advantages advantages">
-		<div class="advantages__wrapper page__centerer">
-			<h2 class="advantages__title headline">Коротко о нас:</h2>
-			<ul class="advantages__list">
-				<li class="advantages__item advantages__item--eco">Экологически <br> чистые материалы</li>
-				<li class="advantages__item advantages__item--knit">Связано вручную <br> с любовью и умилением</li>
-				<li class="advantages__item advantages__item--style">Скандинавский стиль <br> по российской цене</li>
-				<li class="advantages__item advantages__item--home">Поддержка отечественного <br> производителя</li>
-				<li class="advantages__item advantages__item--like">Увеличивает лайки <br> на фотографиях</li>
-				<li class="advantages__item advantages__item--present">Поставляется <br> в подарочной упаковке</li>
-			</ul>
-		</div>
-	</section>
-	<section class="main__reviews reviews">
-		<div class="reviews__wrapper page__centerer">
-			<h2 class="reviews__title headline">Отзывы</h2>
-			<div class="reviews__list">
-				<figure class="reviews__item">
-					<blockquote class="reviews__text">
-						Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров&nbsp;и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают&nbsp;больше лайков!
-					</blockquote>
-					<figcaption class="reviews__author">
-						Анастасия Красильникова
-						<a class="reviews__link" href="#href">@misssssiskras</a>
-					</figcaption>
-				</figure>
-			</div>
-			<div class="reviews__list visually-hidden">
-				<figure class="reviews__item">
-					<blockquote class="reviews__text">
-						Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В отчаянии, я накупила аксессуаров&nbsp;и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-						больше лайков!
-					</blockquote>
-					<figcaption class="reviews__author">
-						Екатерина Красильникова
-						<a class="reviews__link" href="#href">@misssssiskras2</a>
-					</figcaption>
-				</figure>
-			</div>
-			<div class="reviews__list visually-hidden">
-				<figure class="reviews__item">
-					<blockquote class="reviews__text">
-						Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-					</blockquote>
-					<figcaption class="reviews__author">
-						Елена Красильникова
-						<a class="reviews__link" href="#href">@misssssiskras3</a>
-					</figcaption>
-				</figure>
-			</div>
-			<div class="reviews__toogle">
-				<button class="reviews__button reviews__button--unto" type="button">
-					<span class="visually-hidden">Предыдущий отзыв</span>
-				</button>
-				<button class="reviews__button" type="button">
-					<span class="visually-hidden">Следующий отзыв</span>
-				</button>
-			</div>
-			<a class="reviews__write button" href="#href">Написать</a>
-		</div>
-	</section>
-	<div class="main__contacts-container page__centerer page__centerer--desktop-on">
-		<section class="contacts">
-			<div class="contacts__text page__centerer page__centerer--desktop-off">
-				<h2 class="contacts__title headline">Контакты</h2>
-				<div class="contacts-text">
-					<div class="contacts-text__email">
-						<span class="contacts-text__email-label">e-mail:</span>
-						<span class="contacts-text__email-email">info@mimimishkashop.ru</span>
-					</div>
-					<div class="contacts-text__address">
-						<span class="contacts-text__address-label">адрес:</span>
-						<address class="contacts-text__address-address">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</address>
-					</div>
-				</div>
-			</div>
-			<div class="contacts__image">
-				<iframe class="contacts__image-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257260655!2d30.32046711195314!3d59.93871916198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1683295300614!5m2!1sru!2sru" width="320" height="457" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Магазин «Мишка» на информационной карте."></iframe>
-				<noscript>
-					{% include "./templates/picture.twig" with {name: "map", class: "contacts__image-map", alt: "Заставка для информационной карты."} %}
-				</noscript>
-			</div>
-			<a class="contacts__write button page__centerer" href="#href">Напишите нам</a>
-		</section>
-	</div>
+      <div class="product__description">
+        Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
+      </div>
+      <dl class="product__form">
+        <dt class="product__feature">Цвет:</dt>
+        <dd class="product__value">тиффани/серый</dd>
+        <dt class="product__feature">Диаметр:</dt>
+        <dd class="product__value">25 см</dd>
+        <dt class="product__feature">Высота:</dt>
+        <dd class="product__value">15 см</dd>
+      </dl>
+      <div class="product__image">
+        {% include "./templates/picture.twig" with {name: "products/product1", class: "product__img", alt: "Фотография трех вязанных корзинок."} %}
+      </div>
+      <span class="product__cost">Цена: 990 руб.</span>
+      <a class="product__button button" href="./templates/modal.twig">Заказать</a>
+    </div>
+  </section>
+  <section class="main__advantages advantages">
+    <div class="advantages__wrapper page__centerer">
+      <h2 class="advantages__title headline">Коротко о нас:</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--eco">Экологически <br> чистые материалы</li>
+        <li class="advantages__item advantages__item--knit">Связано вручную <br> с любовью и умилением</li>
+        <li class="advantages__item advantages__item--style">Скандинавский стиль <br> по российской цене</li>
+        <li class="advantages__item advantages__item--home">Поддержка отечественного <br> производителя</li>
+        <li class="advantages__item advantages__item--like">Увеличивает лайки <br> на фотографиях</li>
+        <li class="advantages__item advantages__item--present">Поставляется <br> в подарочной упаковке</li>
+      </ul>
+    </div>
+  </section>
+  <section class="main__reviews reviews">
+    <div class="reviews__wrapper page__centerer">
+      <h2 class="reviews__title headline">Отзывы</h2>
+      <div class="reviews__list">
+        <figure class="reviews__item">
+          <blockquote class="reviews__text">
+            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров&nbsp;и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают&nbsp;больше лайков!
+          </blockquote>
+          <figcaption class="reviews__author">
+            Анастасия Красильникова
+            <a class="reviews__link" href="#href">@misssssiskras</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="reviews__list visually-hidden">
+        <figure class="reviews__item">
+          <blockquote class="reviews__text">
+            Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В отчаянии, я накупила аксессуаров&nbsp;и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+            больше лайков!
+          </blockquote>
+          <figcaption class="reviews__author">
+            Екатерина Красильникова
+            <a class="reviews__link" href="#href">@misssssiskras2</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="reviews__list visually-hidden">
+        <figure class="reviews__item">
+          <blockquote class="reviews__text">
+            Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          </blockquote>
+          <figcaption class="reviews__author">
+            Елена Красильникова
+            <a class="reviews__link" href="#href">@misssssiskras3</a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="reviews__toogle">
+        <button class="reviews__button reviews__button--unto" type="button">
+          <span class="visually-hidden">Предыдущий отзыв</span>
+        </button>
+        <button class="reviews__button" type="button">
+          <span class="visually-hidden">Следующий отзыв</span>
+        </button>
+      </div>
+      <a class="reviews__write button" href="#href">Написать</a>
+    </div>
+  </section>
+  <div class="main__contacts-container page__centerer page__centerer--desktop-on">
+    <section class="contacts">
+      <div class="contacts__text page__centerer page__centerer--desktop-off">
+        <h2 class="contacts__title headline">Контакты</h2>
+        <div class="contacts-text">
+          <div class="contacts-text__email">
+            <span class="contacts-text__email-label">e-mail:</span>
+            <span class="contacts-text__email-email">info@mimimishkashop.ru</span>
+          </div>
+          <div class="contacts-text__address">
+            <span class="contacts-text__address-label">адрес:</span>
+            <address class="contacts-text__address-address">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</address>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__image">
+        <iframe class="contacts__image-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257260655!2d30.32046711195314!3d59.93871916198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1683295300614!5m2!1sru!2sru" width="320" height="457" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Магазин «Мишка» на информационной карте."></iframe>
+        <noscript>
+          {% include "./templates/picture.twig" with {name: "map", class: "contacts__image-map", alt: "Заставка для информационной карты."} %}
+        </noscript>
+      </div>
+      <a class="contacts__write button page__centerer" href="#href">Напишите нам</a>
+    </section>
+  </div>
 
 </main>
 {% endblock %}

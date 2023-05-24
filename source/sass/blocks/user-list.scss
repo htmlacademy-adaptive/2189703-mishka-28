@@ -1,83 +1,83 @@
 .user-list {
-	grid-area: user;
+  grid-area: user;
 
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	@media #{$not-mobile} {
-		position: relative;
-		flex-direction: row;
-		justify-content: flex-end;
-	}
+  @media #{$not-mobile} {
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 
 .user-list__item {
-	padding: 27px 0;
-	padding-left: 76px;
+  padding: 27px 0;
+  padding-left: 76px;
 
-	@media #{$not-mobile} {
-		padding: 32px 0;
-	}
+  @media #{$not-mobile} {
+    padding: 32px 0;
+  }
 }
 
 .user-list__item--search {
-	@media #{$not-mobile} {
-		left: -83px;
-		width: 83px;
-		height: 22px;
-		border-left: 1px solid #e5e5e5;
-		border-right: 1px solid #e5e5e5;
-	}
+  @media #{$not-mobile} {
+    left: -83px;
+    width: 83px;
+    height: 22px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+  }
 }
 
 
 .user-list__link {
-	position: relative;
+  position: relative;
 
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: -46px;
-		width: 22px;
-		height: 22px;
-		background-color: #000000;
-		opacity: 20%;
-	}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -46px;
+    width: 22px;
+    height: 22px;
+    background-color: #000000;
+    opacity: 20%;
+  }
 }
 
 
 .user-list__sign--search {
-	visibility: visible;
+  visibility: visible;
 
-	@media #{$not-mobile} {
-		display: block;
-		visibility: collapse;
-		max-height: 0;
-		transform: scale(0);
-	}
+  @media #{$not-mobile} {
+    display: block;
+    visibility: collapse;
+    max-height: 0;
+    transform: scale(0);
+  }
 }
 
 
 .user-list__link:hover::before {
-	background-color: var(--accent-color);
-	opacity: 100%;
+  background-color: var(--accent-color);
+  opacity: 100%;
 }
 
 
 .user-list__link--search::before {
-	content: "";
-	width: 22px;
-	mask-image: url("../../icons/stack.svg#search");
+  content: "";
+  width: 22px;
+  mask-image: url("../../icons/stack.svg#search");
 
 
-	@media #{$not-mobile} {
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%);
-	}
+  @media #{$not-mobile} {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .user-list__link--cart::before {
-	mask-image: url("../../icons/stack.svg#cart");
+  mask-image: url("../../icons/stack.svg#cart");
 }

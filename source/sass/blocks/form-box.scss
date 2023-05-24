@@ -1,88 +1,88 @@
 .form-box {
-	display: grid;
-	grid-template-columns: 1fr;
-	padding: 0;
-	border: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0;
+  border: none;
 
-	@media #{$not-mobile} {
-		grid-template-columns: 25% 1fr;
-	}
+  @media #{$not-mobile} {
+    grid-template-columns: 25% 1fr;
+  }
 
-	@media #{$desktop-only} {
-		grid-template-columns: 17% 1fr;
-	}
+  @media #{$desktop-only} {
+    grid-template-columns: 17% 1fr;
+  }
 }
 
 .form-box__legend {
-	padding: 13px 0;
+  padding: 13px 0;
 
-	@media #{$not-mobile} {
-		padding: 10px 0;
-	}
+  @media #{$not-mobile} {
+    padding: 10px 0;
+  }
 }
 
 .form-box__legend--color {
-	@media #{$not-mobile} {
-		padding-top: 25px;
-	}
+  @media #{$not-mobile} {
+    padding-top: 25px;
+  }
 
-	@media #{$desktop-only} {
-		padding-top: 22px;
-	}
+  @media #{$desktop-only} {
+    padding-top: 22px;
+  }
 }
 
 
 .form-box__content-style {
-	display: flex;
-	flex-direction: column;
-	padding: 17px 0;
-	gap: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 17px 0;
+  gap: 15px;
 
-	@media #{$not-mobile} {
-		padding: 0;
-		gap: 35px;
-	}
+  @media #{$not-mobile} {
+    padding: 0;
+    gap: 35px;
+  }
 }
 
 .form-box__radio {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .form-box__radio:checked {
-	&::after {
-		mask-image: url("../../icons/stack.svg#radio-tick");
-		background-color: #61d1bb;
-		transform: scale(1);
-	}
+  &::after {
+    mask-image: url("../../icons/stack.svg#radio-tick");
+    background-color: #61d1bb;
+    transform: scale(1);
+  }
 }
 
 .form-box__checkbox:checked {
-	&::after {
-		mask-image: url("../../icons/stack.svg#checkbox-tick");
-		background-color: #000000;
-		transform: scale(1);
-	}
+  &::after {
+    mask-image: url("../../icons/stack.svg#checkbox-tick");
+    background-color: #000000;
+    transform: scale(1);
+  }
 }
 
 
 .form-box__content-color {
-	display: grid;
-	grid-template-columns: repeat(var(--column-count, 1), 1fr);
-	padding: 12px 0;
-	padding-bottom: 18px;
-	gap: 21px;
+  display: grid;
+  grid-template-columns: repeat(var(--column-count, 1), 1fr);
+  padding: 12px 0;
+  padding-bottom: 18px;
+  gap: 21px;
 
-	@media #{$not-mobile} {
-		--column-count: 2;
-		gap: 24px;
-		row-gap: 35px;
-		padding-bottom: 8px;
-	}
+  @media #{$not-mobile} {
+    --column-count: 2;
+    gap: 24px;
+    row-gap: 35px;
+    padding-bottom: 8px;
+  }
 
 
-	@media #{$desktop-only} {
-		--column-count: 3;
-		width: 760px;
-		column-gap: 15px;
-	}
+  @media #{$desktop-only} {
+    --column-count: 3;
+    width: 760px;
+    column-gap: 15px;
+  }
 }

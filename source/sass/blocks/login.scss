@@ -1,47 +1,47 @@
 .login {
-	display: flex;
-	flex-direction: column;
-	gap: 22px;
-	padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding-top: 15px;
 
-	@media #{$not-mobile} {
-		padding-top: 0;
-		gap: 34px;
-	}
+  @media #{$not-mobile} {
+    padding-top: 0;
+    gap: 34px;
+  }
 
-	@media #{$desktop-only} {
-		padding-right: calc(100% / 6);
-	}
+  @media #{$desktop-only} {
+    padding-right: calc(100% / 6);
+  }
 }
 
 .login__name {
-	@media #{$not-mobile} {
-		display: flex;
-		flex-direction: row;
-		gap: 24px;
-	}
+  @media #{$not-mobile} {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 
 .login__label {
-	flex-basis: content;
-	width: auto;
-	padding-top: 22px;
-	font-size: 17px;
-	font-weight: 700;
-	line-height: 18px;
+  flex-basis: content;
+  width: auto;
+  padding-top: 22px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
 
-	@media #{$not-mobile} {
-		padding-top: 4px;
-		font-size: 19px;
-	}
+  @media #{$not-mobile} {
+    padding-top: 4px;
+    font-size: 19px;
+  }
 }
 
 .login__input.input {
-	grid-column: 2/3;
+  grid-column: 2/3;
 
-	@media #{$not-mobile} {
-		padding-bottom: 19px;
-		padding-left: 20px;
-		font-size: 19px;
-	}
+  @media #{$not-mobile} {
+    padding-bottom: 19px;
+    padding-left: 20px;
+    font-size: 19px;
+  }
 }

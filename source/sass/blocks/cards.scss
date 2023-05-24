@@ -1,22 +1,22 @@
 .cards__list {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 
-	@media #{$not-mobile} {
-		padding-top: 24px;
-		gap: 54px;
-	}
+  @media #{$not-mobile} {
+    padding-top: 24px;
+    gap: 54px;
+  }
 
 
-	@media #{$desktop-only} {
-		padding-top: 72px;
-		flex-direction: row;
-		flex-wrap: wrap;
-		gap: 47px;
-	}
+  @media #{$desktop-only} {
+    padding-top: 72px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 47px;
+  }
 }

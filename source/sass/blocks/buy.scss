@@ -1,44 +1,44 @@
 .buy {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .buy__price {
-	padding-top: 23px;
-	padding-bottom: 27px;
-	padding-left: 25px;
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 24px;
-	color: #000000;
+  padding-top: 23px;
+  padding-bottom: 27px;
+  padding-left: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
 
-	@media #{$not-mobile} {
-		padding-left: 0;
-		padding-top: 24px;
-		padding-bottom: 25px;
-		font-size: 17px;
-	}
+  @media #{$not-mobile} {
+    padding-left: 0;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-size: 17px;
+  }
 
-	@media #{$desktop-only} {
-		padding: 23px 0;
-	}
+  @media #{$desktop-only} {
+    padding: 23px 0;
+  }
 }
 
 .buy__button {
-	width: 20px;
-	height: 20px;
-	margin-right: 27px;
-	align-self: center;
-	mask-image: url("../../icons/stack.svg#cart");
-	background-color: #000000;
-	opacity: 20%;
+  width: 20px;
+  height: 20px;
+  margin-right: 27px;
+  align-self: center;
+  mask-image: url("../../icons/stack.svg#cart");
+  background-color: #000000;
+  opacity: 20%;
 
-	&:hover {
-		background-color: #63d1bb;
-		opacity: 100%;
-	}
+  &:hover {
+    background-color: #63d1bb;
+    opacity: 100%;
+  }
 
-	&:active {
-		opacity: 30%;
-	}
+  &:active {
+    opacity: 30%;
+  }
 }
