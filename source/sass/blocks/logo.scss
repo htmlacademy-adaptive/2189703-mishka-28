@@ -22,22 +22,3 @@
     height: 72px;
   }
 }
-
-.logo__img {
-  object-fit: cover;
-  display: block;
-  width: 100%;
-}
-
-.logo__footer {
-
-  width: 102px;
-
-  &:hover {
-    fill: #46c1ae;
-  }
-
-  &:active {
-    opacity: 30%;
-  }
-}

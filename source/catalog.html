@@ -77,20 +77,23 @@
     </ul>
   </section>
   <section class="catalog__video video page__centerer">
-    <h2 class="video__title">Процесс производства</h2>
-    <div class="video__player">
-      {% include "./templates/picture.twig" with {name: "video", class: "video__player-img", alt: "Заставка для видео в виде корзинки."} %}
-      <div class="video__button-position">
-        <button class="video__player-button" type="button">
-          <span class="visually-hidden">Запуск видео-плэйера.</span>
-        </button>
+    <div class="video__wrapper">
+      <h2 class="video__title">Процесс производства</h2>
+      <div class="video__player">
+        {% include "./templates/picture.twig" with {name: "video", class: "video__player-img", alt: "Заставка для видео в виде корзинки."} %}
+        <div class="video__button-position">
+          <button class="video__player-button" type="button">
+            <span class="visually-hidden">Запуск видео-плэйера.</span>
+          </button>
+        </div>
+      </div>
+      <div class="video__order">
+        <div class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
+        <a class="video__button button link" href="#href">Сделать заказ</a>
+
       </div>
     </div>
-    <div class="video__order">
-      <div class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</div>
-      <a class="video__button button link" href="#href">Сделать заказ</a>
 
-    </div>
   </section>
 </main>
 {% endblock %}

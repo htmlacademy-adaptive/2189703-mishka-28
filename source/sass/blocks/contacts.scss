@@ -23,26 +23,6 @@
       "text image"
       "write image";
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 6px;
-    width: 100%;
-    mask: url("../../icons/stack.svg#wave") repeat-x center / 15px 8px;
-    background-color: #f1f1f1;
-
-    @media #{$not-mobile} {
-      height: 17px;
-      mask: url("../../icons/stack.svg#wave") repeat-x center / 35px 17px;
-    }
-
-    @media #{$desktop-only} {
-      height: 23px;
-      mask: url("../../icons/stack.svg#wave") repeat-x center / 52px 25px;
-    }
-  }
 }
 
 .contacts__img {

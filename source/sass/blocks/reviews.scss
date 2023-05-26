@@ -6,12 +6,50 @@
   @media #{$not-mobile} {
     padding-top: 52px;
     padding-bottom: 68px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 52px;
+      left: -50px;
+      width: 350px;
+      height: 457px;
+      background: var(--bg-image) no-repeat center / cover;
+
+      @include bg-image("bg-image2");
+      z-index: -1;
+    }
   }
 
   @media #{$desktop-only} {
     padding-top: 75px;
     padding-bottom: 0;
     padding-left: 225px;
+
+    &::before {
+      top: 75px;
+      left: 0;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 6px;
+    width: 100%;
+    mask: url("../../icons/stack.svg#wave") repeat-x center / 15px 8px;
+    background-color: #f1f1f1;
+
+    @media #{$not-mobile} {
+      height: 17px;
+      mask: url("../../icons/stack.svg#wave") repeat-x center / 35px 17px;
+    }
+
+    @media #{$desktop-only} {
+      height: 23px;
+      mask: url("../../icons/stack.svg#wave") repeat-x center / 52px 25px;
+    }
   }
 }
 
@@ -25,28 +63,12 @@
     padding-bottom: 47px;
     grid-template-columns: auto 179px;
     grid-template-rows: repeat(2, min-content);
-
-    &::after {
-      content: "";
-      position: absolute;
-      transform: translateX(-175px) translateY(-15px);
-      width: 350px;
-      height: 457px;
-      background: var(--bg-image) no-repeat center / cover;
-
-      @include bg-image("bg-image2");
-      z-index: -1;
-    }
   }
 
   @media #{$desktop-only} {
     padding-top: 59px;
     padding-bottom: 160px;
     grid-template-columns: 67% 175px;
-
-    &::after {
-      left: 0;
-    }
   }
 }
 

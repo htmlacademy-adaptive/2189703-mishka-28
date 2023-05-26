@@ -17,6 +17,15 @@
 
 .main-footer__logo {
   display: none;
+  width: 102px;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 
   @media #{$not-mobile} {
     display: block;
@@ -24,6 +33,12 @@
     align-self: center;
     height: 34px;
   }
+}
+
+.main-footer__img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
 }
 
 

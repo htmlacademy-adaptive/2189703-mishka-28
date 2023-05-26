@@ -3,19 +3,34 @@
   padding-top: 22px;
   padding-bottom: 58px;
 
-  display: grid;
-  grid-template-columns: 1fr;
-
   @media #{$not-mobile} {
     padding-top: 0;
     padding-bottom: 64px;
   }
 
   @media #{$desktop-only} {
-    grid-template-columns: auto 230px;
-    column-gap: 79px;
-    padding-right: 57px;
     padding-bottom: 105px;
+  }
+}
+
+.video__wrapper {
+  border: 1px solid #ececec;
+  padding-bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgb(0 0 0 / 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.1);
+  }
+
+  @media #{$desktop-only} {
+    grid-template-columns: auto 230px;
+    padding-right: 57px;
+    column-gap: 79px;
   }
 }
 
@@ -113,6 +128,7 @@
 
   &:hover {
     transform: scale(1.2);
+    transition: transform 0.4s ease-in-out;
     transform-origin: center;
   }
 
