@@ -3,13 +3,6 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-
-<!-- ⚠️ Проверяющему ⚠️ -->
-
-<!-- 🔷 Валидация и проверка БЭМ-классов включены в `npm run lint` 🔷 -->
-
-<!-- 🔷 Webp генерируется в прод-сборке. Проверить — `npm run preview` 🔷 -->
-
 <main class="main-container main">
   <div class="main__container">
     <div class="main__wrapper">
@@ -67,52 +60,44 @@
     </div>
   </section>
   <section class="main__reviews reviews page__centerer">
-    <div class="reviews__wrapper">
-      <h2 class="reviews__title headline">Отзывы</h2>
-      <div class="reviews__list">
-        <figure class="reviews__item">
-          <blockquote class="reviews__text">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров&nbsp;и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают&nbsp;больше лайков!
-          </blockquote>
-          <figcaption class="reviews__author">
-            Анастасия Красильникова
-            <a class="reviews__link" href="#href">@misssssiskras</a>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="reviews__list visually-hidden">
-        <figure class="reviews__item">
-          <blockquote class="reviews__text">
-            Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В отчаянии, я накупила аксессуаров&nbsp;и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-            больше лайков!
-          </blockquote>
-          <figcaption class="reviews__author">
-            Екатерина Красильникова
-            <a class="reviews__link" href="#href">@misssssiskras2</a>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="reviews__list visually-hidden">
-        <figure class="reviews__item">
-          <blockquote class="reviews__text">
-            Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          </blockquote>
-          <figcaption class="reviews__author">
-            Елена Красильникова
-            <a class="reviews__link" href="#href">@misssssiskras3</a>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="reviews__toogle">
-        <button class="reviews__button reviews__button--unto" type="button">
-          <span class="visually-hidden">Предыдущий отзыв</span>
-        </button>
-        <button class="reviews__button" type="button">
-          <span class="visually-hidden">Следующий отзыв</span>
-        </button>
-      </div>
-      <a class="reviews__write button" href="#href">Написать</a>
+    <h2 class="reviews__title headline">Отзывы</h2>
+    <figure class="reviews__item">
+      <blockquote class="reviews__text">
+        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров&nbsp;и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают&nbsp;больше лайков!
+      </blockquote>
+      <figcaption class="reviews__author">
+        Анастасия Красильникова
+        <a class="reviews__link" href="#href">@misssssiskras</a>
+      </figcaption>
+    </figure>
+    <figure class="reviews__item visually-hidden">
+      <blockquote class="reviews__text">
+        Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В отчаянии, я накупила аксессуаров&nbsp;и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+        больше лайков!
+      </blockquote>
+      <figcaption class="reviews__author">
+        Екатерина Красильникова
+        <a class="reviews__link" href="#href">@misssssiskras2</a>
+      </figcaption>
+    </figure>
+    <figure class="reviews__item visually-hidden">
+      <blockquote class="reviews__text">
+        Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+      </blockquote>
+      <figcaption class="reviews__author">
+        Елена Красильникова
+        <a class="reviews__link" href="#href">@misssssiskras3</a>
+      </figcaption>
+    </figure>
+    <div class="reviews__toogle">
+      <button class="reviews__button reviews__button--unto" type="button">
+        <span class="visually-hidden">Предыдущий отзыв</span>
+      </button>
+      <button class="reviews__button" type="button">
+        <span class="visually-hidden">Следующий отзыв</span>
+      </button>
     </div>
+    <a class="reviews__write button" href="#href">Написать</a>
   </section>
   <div class="main__contacts-container page__centerer page__centerer--desktop-on">
     <section class="contacts">
@@ -131,7 +116,7 @@
       </div>
       <div class="contacts__image">
         <iframe class="contacts__image-js" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257260655!2d30.32046711195314!3d59.93871916198991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1683295300614!5m2!1sru!2sru" width="320" height="457" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Магазин «Мишка» на информационной карте."></iframe>
-        <noscript>
+        <noscript class="contacts__image-nojs">
           {% include "./templates/picture.twig" with {name: "map", class: "contacts__image-map", alt: "Заставка для информационной карты."} %}
         </noscript>
       </div>

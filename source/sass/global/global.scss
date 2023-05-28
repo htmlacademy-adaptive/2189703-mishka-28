@@ -2,4 +2,8 @@ img {
   height: auto;
   max-width: 100%;
   object-fit: contain;
+
+  &[src*=".svg"] {
+    object-fit: cover;
+  }
 }

@@ -6,11 +6,11 @@
 
   @media #{$not-mobile} {
     padding-top: 0;
-    gap: 34px;
+    gap: 22px;
   }
 
   @media #{$desktop-only} {
-    padding-right: calc(100% / 6);
+    padding-right: 20%;
   }
 }
 
@@ -31,18 +31,16 @@
   line-height: 18px;
 
   @media #{$not-mobile} {
-    padding-top: 4px;
+    padding-top: 19px;
     font-size: 19px;
   }
 }
 
 .login__input.input {
-  grid-column: 2/3;
-
+  grid-column: 2 / 3;
 
   @media #{$not-mobile} {
-    padding-bottom: 19px;
-    padding-left: 20px;
+    padding: 13px 0 8px 20px;
     font-size: 19px;
   }
 }

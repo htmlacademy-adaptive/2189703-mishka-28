@@ -1,14 +1,12 @@
 <header class="main-header">
   <div class="main-header__container page__centerer page__centerer--mobile-off">
-    <div class="main-header__logo logo">
-      <a class="logo__header link" href="./" {% if permalink=="./" %}aria-current="page" {% endif %}>
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo.svg#desktop" width="149" height="72">
-          <source media="(min-width: 768px)" srcset="./img/logo.svg#tablet" width="114" height="46">
-          <img class="logo__img" src="./img/logo.svg#mobile" width="86" height="35" alt="Магазин «Мишка».">
-        </picture>
-      </a>
-    </div>
+    <a class="main-header__logo logo link" href="./" {% if permalink=="./" %}aria-current="page" {% endif %}>
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo.svg#desktop" width="149" height="72">
+        <source media="(min-width: 768px)" srcset="./img/logo.svg#tablet" width="114" height="46">
+        <img class="logo__img" src="./img/logo.svg#mobile" width="86" height="35" alt="Магазин «Мишка».">
+      </picture>
+    </a>
 
     <nav class="main-header__nav header-nav header-nav--opened header-nav--nojs">
       <button class="header-nav__toogle" type="button">

@@ -12,8 +12,8 @@
   }
 
   @media #{$desktop-only} {
-    padding-left: 17%;
-    padding-top: 95px;
+    grid-area: content;
+    padding-top: 70px;
     padding-bottom: 105px;
     grid-template-columns: 350px 1fr;
     justify-items: start;
@@ -40,8 +40,8 @@
     &::before {
       content: "";
       position: absolute;
-      right: 0;
-      top: 50%;
+      right: 3px;
+      top: 40%;
       transform: translateY(-50%);
       width: 47px;
       height: 82px;
@@ -54,8 +54,7 @@
     padding-top: 80px;
 
     &::before {
-      transform: translateX(-320px) translateY(-25px);
-      right: 20px;
+      transform: translate(-332px, -7px);
     }
   }
 }
@@ -69,18 +68,18 @@
 .contacts__image {
   display: grid;
   position: relative;
-  height: 454px;
+  min-height: 454px;
   padding-bottom: 42px;
 
   @media #{$not-mobile} {
-    padding-bottom: 60px;
+    padding-bottom: 53px;
   }
 
   @media #{$desktop-only} {
     grid-area: image;
     box-sizing: border-box;
     width: 527px;
-    height: 457px;
+    min-height: 457px;
     padding-bottom: 0;
   }
 
@@ -90,16 +89,19 @@
   }
 }
 
-.contacts__image-map {
-  grid-area: 1 / 1 /1 /1;
+.contacts__image-nojs {
+  grid-area: 1 / 1 / 1 / 1;
 }
-
 
 .contacts__image-js {
   width: 100%;
-  grid-area: 1 / 1 /1 /1;
+  grid-area: 1 / 1 / 1 / 1;
 }
 
+.contacts__image-map {
+  display: block;
+  width: 100%;
+}
 
 .contacts__write {
   display: block;

@@ -1,8 +1,6 @@
 .main__container {
   position: relative;
 
-  @include bg-image("bg-image1");
-
   &::before {
     content: "";
     position: absolute;
@@ -10,15 +8,18 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: #f9f9f9 var(--bg-image) no-repeat center / cover;
+    background: #f9f9f9 var(--bg-image) no-repeat center var(--bg-pos-top, -17px) / contain;
 
     z-index: -1;
 
     @media #{$not-mobile} {
+      --bg-pos-top: 0;
       top: -64px;
       border-top: 1px solid #e0e0e0;
     }
   }
+
+  @include bg-image("bg-image1");
 }
 
 
@@ -39,5 +40,13 @@
     padding-bottom: 355px;
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.main__contacts-container {
+  @media #{$desktop-only} {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: ". content";
   }
 }

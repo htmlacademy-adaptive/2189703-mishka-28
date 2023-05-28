@@ -10,35 +10,44 @@
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  color: var(--main-color);
 
   @media #{$not-mobile} {
     padding-left: 0;
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
     font-size: 17px;
   }
 
   @media #{$desktop-only} {
-    padding: 23px 0;
+    padding: 19px 0 24px;
   }
 }
 
 .buy__button {
-  width: 20px;
-  height: 20px;
   margin-right: 27px;
   align-self: center;
-  mask-image: url("../../icons/stack.svg#cart");
-  background-color: #000000;
-  opacity: 20%;
+
+  @media #{$not-mobile} {
+    margin-right: 30px;
+  }
 
   &:hover {
-    background-color: #63d1bb;
-    opacity: 100%;
+    --icon-fill: var(--accent-color);
+    --icon-opacity: 100%;
   }
 
   &:active {
-    opacity: 30%;
+    --icon-opacity: 30%;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../icons/stack.svg#cart");
+    background: var(--icon-fill, var(--main-color));
+    opacity: var(--icon-opacity, 20%);
   }
 }

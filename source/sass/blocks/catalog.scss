@@ -54,28 +54,23 @@
   position: relative;
 
   &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 24px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff;
-    display: none;
-    transform: translateY(8px);
-    z-index: 10;
-
-
     @media #{$not-mobile} {
-      display: block;
-      block-size: 20px;
-      background: url("../../icons/stack.svg#wave") repeat-x center / 35px 17px;
-      stroke: #ffffff;
-      filter: drop-shadow(0 6px 0 #ffffff);
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: -50px;
+      right: -50px;
+      height: 24px;
+      transform: translateY(8px);
+      background: url("../../icons/stack.svg#wave") repeat-x center / 38.5px 24px;
     }
 
     @media #{$desktop-only} {
-      background: url("../../icons/stack.svg#wave") repeat-x center / 52px 23px;
+      bottom: -10px;
+      left: calc((100% - 100vw) / 2);
+      right: calc((100% - 100vw) / 2);
+      height: 34px;
+      background-size: 57.5px 34px;
     }
   }
 }

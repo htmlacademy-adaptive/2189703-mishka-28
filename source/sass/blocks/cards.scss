@@ -2,9 +2,7 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
-
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 30px;
 
   @media #{$not-mobile} {
@@ -14,9 +12,8 @@
 
 
   @media #{$desktop-only} {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 51px;
     padding-top: 72px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 47px;
   }
 }

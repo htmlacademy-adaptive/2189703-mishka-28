@@ -1,12 +1,12 @@
 .advantages {
-  padding: 31px 0;
+  padding: 28px 0 32px;
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
-  color: #000000;
+  color: var(--main-color);
 
   @media #{$not-mobile} {
-    padding-top: 55px;
+    padding-top: 50px;
   }
 
   @media #{$desktop-only} {
@@ -16,7 +16,8 @@
 
 .advantages__wrapper {
   @media #{$desktop-only} {
-    padding-left: 225px;
+    box-sizing: border-box;
+    padding-inline: 175px;
   }
 }
 
@@ -65,8 +66,11 @@
     height: 55px;
     top: 22px;
     left: -5px;
-  }
 
+    @media #{$not-mobile} {
+      top: 18px;
+    }
+  }
 
   @media #{$not-mobile} {
     font-size: 20px;

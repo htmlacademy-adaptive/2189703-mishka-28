@@ -41,19 +41,18 @@
     left: -46px;
     width: 22px;
     height: 22px;
-    background-color: #000000;
+    background-color: var(--main-color);
     opacity: 20%;
+
+    @media #{$not-mobile} {
+      left: -52px;
+    }
   }
 }
 
-
 .user-list__sign--search {
-  visibility: visible;
-
   @media #{$not-mobile} {
-    display: block;
-    visibility: collapse;
-    max-height: 0;
+    position: fixed;
     transform: scale(0);
   }
 }

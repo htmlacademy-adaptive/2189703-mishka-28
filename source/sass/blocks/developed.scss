@@ -3,7 +3,7 @@
   align-content: center;
   display: flex;
   gap: 26px;
-
+  transform: translateY(-3px);
   justify-content: space-between;
   align-items: center;
 
@@ -29,8 +29,12 @@
     display: block;
     width: 35px;
     height: 35px;
-    background-color: #63d1bb;
+    background-color: var(--accent-color);
     mask-image: url("../../icons/stack.svg#htmlacademy");
+
+    @media #{$not-mobile} {
+      transform: translateX(-4px);
+    }
   }
 
 

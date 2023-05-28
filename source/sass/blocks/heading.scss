@@ -3,9 +3,5 @@
   font-size: 27px;
   font-weight: 700;
   line-height: 30px;
-  color: #000000;
-
-  @media #{$not-mobile} {
-    //
-  }
+  color: var(--main-color);
 }

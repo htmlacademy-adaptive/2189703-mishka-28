@@ -5,9 +5,7 @@
 .header-nav__wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, auto);
   grid-template-areas:
-    "logo"
     "menu"
     "user";
 
@@ -20,8 +18,7 @@
   }
 
   @media #{$desktop-only} {
-    grid-template-columns: 1fr 149px 1fr;
-
+    grid-template-columns: 1fr 168px 1fr;
     grid-template-areas:
       "menu logo user"
       "submenu . free";
@@ -75,7 +72,6 @@
   }
 }
 
-// бордюр в выпадающем меню на мобиле
 .header-nav__item {
   position: relative;
   border-bottom: 1px solid #ececec;
@@ -85,8 +81,6 @@
     border-bottom: none;
   }
 }
-
-// выпадающее меню при разных состояниях
 
 @media #{$mobile-only} {
   .header-nav--closed .header-nav__list {
@@ -101,7 +95,6 @@
     right: 0;
     left: 0;
     z-index: 10;
-    min-height: 80vh;
     background-color: #ffffff;
   }
 }
@@ -122,6 +115,7 @@
   margin: 0;
   max-height: 0;
   visibility: collapse;
+  color: var(--second-color);
 
 
   @media #{$not-mobile} {
