@@ -1,13 +1,4 @@
 .modal {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  z-index: 10;
-  pointer-events: none;
-}
-
-.modal__dialog {
   box-sizing: border-box;
   width: 100%;
   max-width: 566px;
@@ -18,10 +9,13 @@
   box-shadow: 0 5px 10px 0 rgb(0 1 1 / 0.25);
   outline: 1px solid #c6c6c6;
   border: none;
-  pointer-events: initial;
 
   @media #{$not-mobile} {
     padding-top: 24px;
+  }
+
+  &::backdrop {
+    background-color: rgb(255 255 255 / 0.8);
   }
 }
 
@@ -36,17 +30,6 @@
     font-size: 30px;
     line-height: 57px;
   }
-}
-
-.modal__paranja {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  inline-size: 100%;
-  display: block;
-  appearance: none;
-  border: none;
-  background-color: rgb(255 255 255 / 0.8);
 }
 
 .modal__form {

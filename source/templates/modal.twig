@@ -1,28 +1,23 @@
-<div class="modal">
-  <!-- 🔷 Для открытия модалки добавить атрибут `open` на `dialog` 🔷 -->
-  <dialog class="modal__dialog">
-    <button class="modal__paranja" type="button">
-      <span class="visually-hidden">Закрыть окно</span>
-    </button>
-    <h2 class="modal__title">Добавить в корзину</h2>
-    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
-      <input class="modal__vendor-code" type="hidden" name="vendor-code">
-      <div class="modal__legend" id="size-choice">Выберите размер:</div>
-      <ul class="modal__fields" role="group" aria-labelledby="size-choice">
-        <li class="modal__field">
-          <input class="modal__radio" type="radio" name="size" id="s" value="s" checked>
-          <label class="modal__label" for="s">S</label>
-        </li>
-        <li class="modal__field">
-          <input class="modal__radio" type="radio" name="size" id="m" value="m">
-          <label class="modal__label" for="m">M</label>
-        </li>
-        <li class="modal__field">
-          <input class="modal__radio" type="radio" name="size" id="l" value="l">
-          <label class="modal__label" for="l">L</label>
-        </li>
-      </ul>
-      <button class="modal__submit button" type="submit">Добавить</button>
-    </form>
-  </dialog>
-</div>
+<dialog class="modal">
+  <h2 class="modal__title">Добавить в корзину</h2>
+  <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+    <input class="modal__vendor-code" type="hidden" name="vendor-code">
+    <div class="modal__legend" id="size-choice">Выберите размер:</div>
+    <ul class="modal__fields" role="group" aria-labelledby="size-choice">
+      <li class="modal__field">
+        <input class="modal__radio" type="radio" name="size" id="s" value="s" checked>
+        <label class="modal__label" for="s">S</label>
+      </li>
+      <li class="modal__field">
+        <input class="modal__radio" type="radio" name="size" id="m" value="m">
+        <label class="modal__label" for="m">M</label>
+      </li>
+      <li class="modal__field">
+        <input class="modal__radio" type="radio" name="size" id="l" value="l">
+        <label class="modal__label" for="l">L</label>
+      </li>
+    </ul>
+    <button class="modal__submit button" type="submit">Добавить</button>
+  </form>
+</dialog>
+<script src="./js/modal.js" defer></script>
